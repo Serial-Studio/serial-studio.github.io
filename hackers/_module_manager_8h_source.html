@@ -118,38 +118,39 @@ $(document).ready(function(){initNavTree('_module_manager_8h_source.html',''); i
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QSplashScreen&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;QQmlApplicationEngine&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>Misc {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_misc_1_1_module_manager.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="class_misc_1_1_module_manager.html">ModuleManager</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Q_OBJECT</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="class_misc_1_1_module_manager.html#ad81c8ebd0b6ba54d98571306a709f267">ModuleManager</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a7481af5a9083aba204bccdb1410d5395">configureUpdater</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a33fdcd54b7589562d547e912d30969c6">registerQmlTypes</a>();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a4f2bbe3e23634c2b9e68f95540c4e015">autoUpdaterEnabled</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a5b2106f93a2abcb57f62e6d612bcc7a0">initializeQmlInterface</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    QQmlApplicationEngine *<a class="code hl_function" href="class_misc_1_1_module_manager.html#ac52af9b2fae82d7b2e17cab41a71c959">engine</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Q_INVOKABLE <span class="keywordtype">int</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#aa483e8aef63531472fcaafb0533d9124">renderingEngine</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    Q_INVOKABLE QVector&lt;QString&gt; <a class="code hl_function" href="class_misc_1_1_module_manager.html#a67697729612069b8dafe646cabf2bc72">renderingEngines</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#aa279323d2e738badf91b07bcb8b61f12">quit</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#afd536a7848cc1091b1e023c3bac1e216">stopOperations</a>();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a24a7ced736305c7bb36763be73c7d1d7">hideSplashscreen</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a537a2671c6877857e8c91dae44362a94">setRenderingEngine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#ac52af9b2fae82d7b2e17cab41a71c959">engine</a>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a39a0b1fcd86ddb8d7458c2595962299f">setSplashScreenMessage</a>(<span class="keyword">const</span> QString &amp;message);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    QSettings m_settings;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    QSplashScreen m_splash;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QQmlApplicationEngine m_engine;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_misc_1_1_module_manager_html"><div class="ttname"><a href="class_misc_1_1_module_manager.html">Misc::ModuleManager</a></div><div class="ttdoc">The ModuleManager class.</div><div class="ttdef"><b>Definition:</b> ModuleManager.h:42</div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>Misc</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_misc_1_1_module_manager.html">   42</a></span><span class="keyword">class </span><a class="code hl_class" href="class_misc_1_1_module_manager.html">ModuleManager</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Q_OBJECT</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="class_misc_1_1_module_manager.html#ad81c8ebd0b6ba54d98571306a709f267">ModuleManager</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a7481af5a9083aba204bccdb1410d5395">configureUpdater</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a33fdcd54b7589562d547e912d30969c6">registerQmlTypes</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a4f2bbe3e23634c2b9e68f95540c4e015">autoUpdaterEnabled</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#a5b2106f93a2abcb57f62e6d612bcc7a0">initializeQmlInterface</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    QQmlApplicationEngine *<a class="code hl_function" href="class_misc_1_1_module_manager.html#ac52af9b2fae82d7b2e17cab41a71c959">engine</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    Q_INVOKABLE <span class="keywordtype">int</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#aa483e8aef63531472fcaafb0533d9124">renderingEngine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    Q_INVOKABLE QVector&lt;QString&gt; <a class="code hl_function" href="class_misc_1_1_module_manager.html#a67697729612069b8dafe646cabf2bc72">renderingEngines</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#aa279323d2e738badf91b07bcb8b61f12">quit</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#afd536a7848cc1091b1e023c3bac1e216">stopOperations</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a24a7ced736305c7bb36763be73c7d1d7">hideSplashscreen</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a537a2671c6877857e8c91dae44362a94">setRenderingEngine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_misc_1_1_module_manager.html#ac52af9b2fae82d7b2e17cab41a71c959">engine</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_misc_1_1_module_manager.html#a39a0b1fcd86ddb8d7458c2595962299f">setSplashScreenMessage</a>(<span class="keyword">const</span> QString &amp;message);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    QSettings m_settings;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QSplashScreen m_splash;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    QQmlApplicationEngine m_engine;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_misc_1_1_module_manager_html"><div class="ttname"><a href="class_misc_1_1_module_manager.html">Misc::ModuleManager</a></div><div class="ttdoc">The ModuleManager class.</div><div class="ttdef"><b>Definition:</b> ModuleManager.h:43</div></div>
 <div class="ttc" id="aclass_misc_1_1_module_manager_html_a24a7ced736305c7bb36763be73c7d1d7"><div class="ttname"><a href="class_misc_1_1_module_manager.html#a24a7ced736305c7bb36763be73c7d1d7">Misc::ModuleManager::hideSplashscreen</a></div><div class="ttdeci">void hideSplashscreen()</div><div class="ttdef"><b>Definition:</b> ModuleManager.cpp:303</div></div>
 <div class="ttc" id="aclass_misc_1_1_module_manager_html_a33fdcd54b7589562d547e912d30969c6"><div class="ttname"><a href="class_misc_1_1_module_manager.html#a33fdcd54b7589562d547e912d30969c6">Misc::ModuleManager::registerQmlTypes</a></div><div class="ttdeci">void registerQmlTypes()</div><div class="ttdef"><b>Definition:</b> ModuleManager.cpp:141</div></div>
 <div class="ttc" id="aclass_misc_1_1_module_manager_html_a39a0b1fcd86ddb8d7458c2595962299f"><div class="ttname"><a href="class_misc_1_1_module_manager.html#a39a0b1fcd86ddb8d7458c2595962299f">Misc::ModuleManager::setSplashScreenMessage</a></div><div class="ttdeci">void setSplashScreenMessage(const QString &amp;message)</div><div class="ttdef"><b>Definition:</b> ModuleManager.cpp:347</div></div>
