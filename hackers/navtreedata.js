@@ -51,8 +51,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accelerometer_8h_source.html",
-"class_j_s_o_n_1_1_generator.html#a39e651b3e29aac9bb3d64af5a3e995c8",
-"hierarchy.html"
+"class_j_s_o_n_1_1_frame.html#abec8c7bccdfc88cb4da137caae9f73d6",
+"functions_u.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

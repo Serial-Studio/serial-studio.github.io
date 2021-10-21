@@ -6,9 +6,10 @@ var searchData=
   ['receiveddatalength_3',['receivedDataLength',['../class_i_o_1_1_manager.html#a17e9d379372273e57bc632e5d2af4374',1,'IO::Manager']]],
   ['registerqmltypes_4',['registerQmlTypes',['../class_misc_1_1_module_manager.html#a33fdcd54b7589562d547e912d30969c6',1,'Misc::ModuleManager']]],
   ['relativeindex_5',['relativeIndex',['../class_u_i_1_1_dashboard.html#a30a012d2f5ad520db6d9d0d8da7c2b9e',1,'UI::Dashboard::relativeIndex()'],['../class_u_i_1_1_widget_loader.html#a902bb7fb2076e1b381c651c07b660e34',1,'UI::WidgetLoader::relativeIndex()']]],
-  ['removeconnection_6',['removeConnection',['../class_plugins_1_1_server.html#aa957533007966d06cab29185978a4bbb',1,'Plugins::Server']]],
-  ['renderingengine_7',['renderingEngine',['../class_misc_1_1_module_manager.html#aa483e8aef63531472fcaafb0533d9124',1,'Misc::ModuleManager']]],
-  ['renderingengines_8',['renderingEngines',['../class_misc_1_1_module_manager.html#a67697729612069b8dafe646cabf2bc72',1,'Misc::ModuleManager']]],
-  ['resizeevent_9',['resizeEvent',['../class_widgets_1_1_data_group.html#a5a2b097b067948cc6c5ee4679280ed7e',1,'Widgets::DataGroup::resizeEvent()'],['../class_widgets_1_1_g_p_s.html#aea43f9718db7da0059bbb986a83f192c',1,'Widgets::GPS::resizeEvent()']]],
-  ['revealfile_10',['revealFile',['../class_misc_1_1_utilities.html#aef6ec749abdff3bd48e82a8f8a2aeb0d',1,'Misc::Utilities']]]
+  ['remoteaddress_6',['remoteAddress',['../class_i_o_1_1_data_sources_1_1_network.html#a6ca2f33eab51399da479102a7122e297',1,'IO::DataSources::Network']]],
+  ['removeconnection_7',['removeConnection',['../class_plugins_1_1_server.html#aa957533007966d06cab29185978a4bbb',1,'Plugins::Server']]],
+  ['renderingengine_8',['renderingEngine',['../class_misc_1_1_module_manager.html#aa483e8aef63531472fcaafb0533d9124',1,'Misc::ModuleManager']]],
+  ['renderingengines_9',['renderingEngines',['../class_misc_1_1_module_manager.html#a67697729612069b8dafe646cabf2bc72',1,'Misc::ModuleManager']]],
+  ['resizeevent_10',['resizeEvent',['../class_widgets_1_1_data_group.html#a5a2b097b067948cc6c5ee4679280ed7e',1,'Widgets::DataGroup::resizeEvent()'],['../class_widgets_1_1_g_p_s.html#aea43f9718db7da0059bbb986a83f192c',1,'Widgets::GPS::resizeEvent()']]],
+  ['revealfile_11',['revealFile',['../class_misc_1_1_utilities.html#aef6ec749abdff3bd48e82a8f8a2aeb0d',1,'Misc::Utilities']]]
 ];
