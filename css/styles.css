@@ -11598,3 +11598,10 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+a[type='button'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
