@@ -4,6 +4,7 @@ var hierarchy =
     [ "Widgets::FormattedText", "class_widgets_1_1_formatted_text.html", null ],
     [ "JSON::Frame", "class_j_s_o_n_1_1_frame.html", null ],
     [ "JFI_Object", "struct_j_f_i___object.html", null ],
+    [ "KLedPrivate", "class_k_led_private.html", null ],
     [ "QObject", null, [
       [ "CSV::Export", "class_c_s_v_1_1_export.html", null ],
       [ "CSV::Player", "class_c_s_v_1_1_player.html", null ],
@@ -30,6 +31,7 @@ var hierarchy =
       [ "Widgets::Terminal", "class_widgets_1_1_terminal.html", null ]
     ] ],
     [ "QWidget", null, [
+      [ "KLed", "class_k_led.html", null ],
       [ "Widgets::BaseWidget", "class_widgets_1_1_base_widget.html", [
         [ "Widgets::Accelerometer", "class_widgets_1_1_accelerometer.html", null ],
         [ "Widgets::Bar", "class_widgets_1_1_bar.html", null ],
@@ -40,6 +42,7 @@ var hierarchy =
       [ "Widgets::DataGroup", "class_widgets_1_1_data_group.html", null ],
       [ "Widgets::FFTPlot", "class_widgets_1_1_f_f_t_plot.html", null ],
       [ "Widgets::GPS", "class_widgets_1_1_g_p_s.html", null ],
+      [ "Widgets::LEDPanel", "class_widgets_1_1_l_e_d_panel.html", null ],
       [ "Widgets::MultiPlot", "class_widgets_1_1_multi_plot.html", null ],
       [ "Widgets::Plot", "class_widgets_1_1_plot.html", null ]
     ] ],

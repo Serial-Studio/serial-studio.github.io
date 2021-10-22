@@ -145,6 +145,8 @@ Public Slots</h2></td></tr>
 <tr class="separator:a3aaf812a2ae867e7c62e9f6decc19101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a41f3df873a8434d7522e1c772f2a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#a4a41f3df873a8434d7522e1c772f2a37">setDatasetIndex</a> (const int group, const int dataset, const int frameIndex)</td></tr>
 <tr class="separator:a4a41f3df873a8434d7522e1c772f2a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af9cadd1219ca17b6b846a076e5e896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#a7af9cadd1219ca17b6b846a076e5e896">setDatasetLED</a> (const int group, const int dataset, const bool generateLED)</td></tr>
+<tr class="separator:a7af9cadd1219ca17b6b846a076e5e896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c95e9596348220c2c0d4c181dfc311d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#a3c95e9596348220c2c0d4c181dfc311d">setDatasetGraph</a> (const int group, const int dataset, const bool generateGraph)</td></tr>
 <tr class="separator:a3c95e9596348220c2c0d4c181dfc311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44e94ac99a81c94cd67a705445c31ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#ae44e94ac99a81c94cd67a705445c31ea">setDatasetFftPlot</a> (const int group, const int dataset, const bool generateFft)</td></tr>
@@ -239,6 +241,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aba289b682f6f709705b8fadaa02cc57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3da85f7658d420e448fe74599231b38"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#ac3da85f7658d420e448fe74599231b38">datasetIndex</a> (const int group, const int dataset)</td></tr>
 <tr class="separator:ac3da85f7658d420e448fe74599231b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85daff021bdc1b9e12be8579789ea8dc"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#a85daff021bdc1b9e12be8579789ea8dc">datasetLED</a> (const int group, const int dataset)</td></tr>
+<tr class="separator:a85daff021bdc1b9e12be8579789ea8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bcd01679bf2d75698ad3d415130d56"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#ab8bcd01679bf2d75698ad3d415130d56">datasetGraph</a> (const int group, const int dataset)</td></tr>
 <tr class="separator:ab8bcd01679bf2d75698ad3d415130d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ebd576bf2baaae8f4778dcc4d8ed6c"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_o_n_1_1_editor.html#a97ebd576bf2baaae8f4778dcc4d8ed6c">datasetFftPlot</a> (const int group, const int dataset)</td></tr>
@@ -561,6 +565,42 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>jsonFileName</b></
       </table>
 </div><div class="memdoc">
 <p >Returns the position in the frame that holds the value for the given <em>dataset</em> (which is contained by the specified <em>group</em>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>index of the group in which the dataset belongs </td></tr>
+    <tr><td class="paramname">dataset</td><td>index of the dataset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85daff021bdc1b9e12be8579789ea8dc" name="a85daff021bdc1b9e12be8579789ea8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85daff021bdc1b9e12be8579789ea8dc">&#9670;&nbsp;</a></span>datasetLED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Editor::datasetLED </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dataset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns <code>true</code> if Serial Studio should generate a LED with the given <em>dataset</em> (which is contained by the specified <em>group</em>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>index of the group in which the dataset belongs </td></tr>
@@ -1546,6 +1586,56 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>jsonFileName</b></
 </table>
 </div><div class="memdoc">
 <p >Updates the <em>frameIndex</em> of the given <em>dataset</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>index of the group in which the dataset belongs </td></tr>
+    <tr><td class="paramname">dataset</td><td>index of the dataset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7af9cadd1219ca17b6b846a076e5e896" name="a7af9cadd1219ca17b6b846a076e5e896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af9cadd1219ca17b6b846a076e5e896">&#9670;&nbsp;</a></span>setDatasetLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Editor::setDatasetLED </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dataset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>generateLED</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Updates the <em>generateLED</em> flag of the given <em>dataset</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>index of the group in which the dataset belongs </td></tr>

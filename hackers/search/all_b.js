@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['macextras_0',['MacExtras',['../class_misc_1_1_mac_extras.html',1,'Misc']]],
-  ['manager_1',['Manager',['../class_i_o_1_1_manager.html',1,'IO']]],
-  ['max_2',['max',['../class_j_s_o_n_1_1_dataset.html#a04842c738078d2a71c3134045635f005',1,'JSON::Dataset']]],
-  ['maxbuffersize_3',['maxBufferSize',['../class_i_o_1_1_manager.html#a299689bc838fbaea6e6c453d0c03789f',1,'IO::Manager']]],
-  ['maximumblockcount_4',['maximumBlockCount',['../class_widgets_1_1_terminal.html#a0f51dfc3a5611c72323e962e4664a25a',1,'Widgets::Terminal']]],
-  ['min_5',['min',['../class_j_s_o_n_1_1_dataset.html#a7bf6935ba87385d5d76f671c417a0058',1,'JSON::Dataset']]],
-  ['modified_6',['modified',['../class_j_s_o_n_1_1_editor.html#a91e0db8f08a771de48e6fd7ff3c0b398',1,'JSON::Editor']]],
-  ['modulemanager_7',['ModuleManager',['../class_misc_1_1_module_manager.html',1,'Misc::ModuleManager'],['../class_misc_1_1_module_manager.html#ad81c8ebd0b6ba54d98571306a709f267',1,'Misc::ModuleManager::ModuleManager()']]],
-  ['movegroupdown_8',['moveGroupDown',['../class_j_s_o_n_1_1_editor.html#a37179210741a47b71850c9aeddb15b8a',1,'JSON::Editor']]],
-  ['movegroupup_9',['moveGroupUp',['../class_j_s_o_n_1_1_editor.html#a30fe9a73622b04fdd03f1e41a0796c57',1,'JSON::Editor']]],
-  ['mqttversion_10',['mqttVersion',['../class_m_q_t_t_1_1_client.html#a376ed1cb7966ea8682f4a4eb6e09a7d7',1,'MQTT::Client']]],
-  ['mqttversions_11',['mqttVersions',['../class_m_q_t_t_1_1_client.html#a029bbcadafcfca856ae262ba6776f55e',1,'MQTT::Client']]],
-  ['multiplot_12',['MultiPlot',['../class_widgets_1_1_multi_plot.html#a769662d3a2ee8434afcab617a8fdf7ec',1,'Widgets::MultiPlot::MultiPlot()'],['../class_widgets_1_1_multi_plot.html',1,'Widgets::MultiPlot']]]
+  ['language_0',['language',['../class_misc_1_1_translator.html#ae53ffc07f0ff9e2f6eb7402049718ee6',1,'Misc::Translator']]],
+  ['leaveevent_1',['leaveEvent',['../class_widgets_1_1_g_p_s.html#aae3ef1d5eeca5e636d96f7431344ebae',1,'Widgets::GPS']]],
+  ['led_2',['led',['../class_j_s_o_n_1_1_dataset.html#a2d004394e7a9b8da828e0a94162e5103',1,'JSON::Dataset']]],
+  ['ledpanel_3',['LEDPanel',['../class_widgets_1_1_l_e_d_panel.html#a110be281b2ff755294b9df3a1b29ef63',1,'Widgets::LEDPanel::LEDPanel()'],['../class_widgets_1_1_l_e_d_panel.html',1,'Widgets::LEDPanel']]],
+  ['lineending_4',['lineEnding',['../class_i_o_1_1_console.html#ab5fc85d62123ead1addaf4e0bfc2cf2d',1,'IO::Console']]],
+  ['lineendings_5',['lineEndings',['../class_i_o_1_1_console.html#a04c7fa4bf0b384e77a3cf734ca519c7c',1,'IO::Console']]],
+  ['loadjson_6',['loadJSON',['../class_j_s_o_n_1_1_generator.html#a8bc2ff9b2b6423793ec0f4e3ce780342',1,'JSON::Generator']]],
+  ['loadjsonmap_7',['loadJsonMap',['../class_j_s_o_n_1_1_generator.html#a5ca4d4ff8378b642e33e619d43cab8c6',1,'JSON::Generator::loadJsonMap()'],['../class_j_s_o_n_1_1_generator.html#a8a1e9a7f6c2243a278980a4837e2cddc',1,'JSON::Generator::loadJsonMap(const QString &amp;path)']]],
+  ['log_8',['log',['../class_j_s_o_n_1_1_dataset.html#a0b0d3a9659a712698c3811f3e68dddf0',1,'JSON::Dataset']]],
+  ['look_9',['look',['../class_k_led.html#aacac2a9499fb67091a9acfbf87c6f728',1,'KLed']]],
+  ['look_10',['Look',['../class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6',1,'KLed']]],
+  ['lookup_11',['lookup',['../class_i_o_1_1_data_sources_1_1_network.html#aa3f0bc9d82cdc63fe65d2389e249db46',1,'IO::DataSources::Network::lookup()'],['../class_m_q_t_t_1_1_client.html#ae703808fdef93b884858963e3be1a58f',1,'MQTT::Client::lookup()']]],
+  ['lookupactive_12',['lookupActive',['../class_i_o_1_1_data_sources_1_1_network.html#a7fe79cf9bdb76786a7d3eaafc57ed68e',1,'IO::DataSources::Network::lookupActive()'],['../class_m_q_t_t_1_1_client.html#a8f416744c1f04ad980a4687abefd63d6',1,'MQTT::Client::lookupActive()']]]
 ];

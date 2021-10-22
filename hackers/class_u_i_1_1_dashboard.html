@@ -123,6 +123,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<b>Accelerometer</b>
 , <b>GPS</b>
+, <b>LED</b>
 , <b>Unknown</b>
 <br />
  }</td></tr>
@@ -142,6 +143,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setFFTVisible</b> (co
 <tr class="memitem:a4d83c4c008e6ff5bb8c607b5840cb7d0"><td class="memItemLeft" align="right" valign="top"><a id="a4d83c4c008e6ff5bb8c607b5840cb7d0" name="a4d83c4c008e6ff5bb8c607b5840cb7d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setGpsVisible</b> (const int index, const bool visible)</td></tr>
 <tr class="separator:a4d83c4c008e6ff5bb8c607b5840cb7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba04c5ab434ff149948db3346c98a86"><td class="memItemLeft" align="right" valign="top"><a id="a4ba04c5ab434ff149948db3346c98a86" name="a4ba04c5ab434ff149948db3346c98a86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLedVisible</b> (const int index, const bool visible)</td></tr>
+<tr class="separator:a4ba04c5ab434ff149948db3346c98a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20d9fa4d0c0982222589816481d21b34"><td class="memItemLeft" align="right" valign="top"><a id="a20d9fa4d0c0982222589816481d21b34" name="a20d9fa4d0c0982222589816481d21b34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlotVisible</b> (const int index, const bool visible)</td></tr>
 <tr class="separator:a20d9fa4d0c0982222589816481d21b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +194,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a110a76f034f6729c920c77b21e6e8c46"><td class="memItemLeft" align="right" valign="top"><a id="a110a76f034f6729c920c77b21e6e8c46" name="a110a76f034f6729c920c77b21e6e8c46"></a>
 QFont&#160;</td><td class="memItemRight" valign="bottom"><b>monoFont</b> () const</td></tr>
 <tr class="separator:a110a76f034f6729c920c77b21e6e8c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b1a8a951e9b395dddc5fd3c4317cf6"><td class="memItemLeft" align="right" valign="top"><a id="a20b1a8a951e9b395dddc5fd3c4317cf6" name="a20b1a8a951e9b395dddc5fd3c4317cf6"></a>
+<a class="el" href="class_j_s_o_n_1_1_group.html">JSON::Group</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLED</b> (const int index)</td></tr>
+<tr class="separator:a20b1a8a951e9b395dddc5fd3c4317cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d303282a67bf536e37b8613667d1b6f"><td class="memItemLeft" align="right" valign="top"><a id="a9d303282a67bf536e37b8613667d1b6f" name="a9d303282a67bf536e37b8613667d1b6f"></a>
 <a class="el" href="class_j_s_o_n_1_1_group.html">JSON::Group</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getGPS</b> (const int index)</td></tr>
 <tr class="separator:a9d303282a67bf536e37b8613667d1b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +240,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>available</b> ()</td>
 <tr class="memitem:ae960a532d0b9700711ca1d2f566194b8"><td class="memItemLeft" align="right" valign="top"><a id="ae960a532d0b9700711ca1d2f566194b8" name="ae960a532d0b9700711ca1d2f566194b8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>gpsCount</b> () const</td></tr>
 <tr class="separator:ae960a532d0b9700711ca1d2f566194b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12255ecb7af75f077c52ab06955f5a51"><td class="memItemLeft" align="right" valign="top"><a id="a12255ecb7af75f077c52ab06955f5a51" name="a12255ecb7af75f077c52ab06955f5a51"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ledCount</b> () const</td></tr>
+<tr class="separator:a12255ecb7af75f077c52ab06955f5a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad965ddd3c37b231cc5628df0f11ab6eb"><td class="memItemLeft" align="right" valign="top"><a id="ad965ddd3c37b231cc5628df0f11ab6eb" name="ad965ddd3c37b231cc5628df0f11ab6eb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>fftCount</b> () const</td></tr>
 <tr class="separator:ad965ddd3c37b231cc5628df0f11ab6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,6 +291,9 @@ Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>fftVisibl
 <tr class="memitem:a5a4481170cf398069f89088d2746c240"><td class="memItemLeft" align="right" valign="top"><a id="a5a4481170cf398069f89088d2746c240" name="a5a4481170cf398069f89088d2746c240"></a>
 Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>gpsVisible</b> (const int index) const</td></tr>
 <tr class="separator:a5a4481170cf398069f89088d2746c240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf442e4328414804e7452358948866ed"><td class="memItemLeft" align="right" valign="top"><a id="adf442e4328414804e7452358948866ed" name="adf442e4328414804e7452358948866ed"></a>
+Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>ledVisible</b> (const int index) const</td></tr>
+<tr class="separator:adf442e4328414804e7452358948866ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2196b6e8e6d6da68a8db7c9292e75816"><td class="memItemLeft" align="right" valign="top"><a id="a2196b6e8e6d6da68a8db7c9292e75816" name="a2196b6e8e6d6da68a8db7c9292e75816"></a>
 Q_INVOKABLE bool&#160;</td><td class="memItemRight" valign="bottom"><b>plotVisible</b> (const int index) const</td></tr>
 <tr class="separator:a2196b6e8e6d6da68a8db7c9292e75816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +324,9 @@ QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>f
 <tr class="memitem:aa0dd8aea78cbf1a4cf26c62df82fe1ec"><td class="memItemLeft" align="right" valign="top"><a id="aa0dd8aea78cbf1a4cf26c62df82fe1ec" name="aa0dd8aea78cbf1a4cf26c62df82fe1ec"></a>
 QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gpsTitles</b> () const</td></tr>
 <tr class="separator:aa0dd8aea78cbf1a4cf26c62df82fe1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae402e43be7ca19b5c294aa6e8019c848"><td class="memItemLeft" align="right" valign="top"><a id="ae402e43be7ca19b5c294aa6e8019c848" name="ae402e43be7ca19b5c294aa6e8019c848"></a>
+QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ledTitles</b> () const</td></tr>
+<tr class="separator:ae402e43be7ca19b5c294aa6e8019c848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12dc488e23b1e3bdfb095bfbd8fb6bf8"><td class="memItemLeft" align="right" valign="top"><a id="a12dc488e23b1e3bdfb095bfbd8fb6bf8" name="a12dc488e23b1e3bdfb095bfbd8fb6bf8"></a>
 QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>plotTitles</b> () const</td></tr>
 <tr class="separator:a12dc488e23b1e3bdfb095bfbd8fb6bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,6 +378,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>totalWidgetCount</b></
 <tr class="memitem:ad697a428acc354bff7445a6b8bac119a"><td class="memItemLeft" align="right" valign="top"><a id="ad697a428acc354bff7445a6b8bac119a" name="ad697a428acc354bff7445a6b8bac119a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>gpsCount</b></td></tr>
 <tr class="separator:ad697a428acc354bff7445a6b8bac119a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cd71145e9e7ff7748717cbeb9ea189"><td class="memItemLeft" align="right" valign="top"><a id="a58cd71145e9e7ff7748717cbeb9ea189" name="a58cd71145e9e7ff7748717cbeb9ea189"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ledCount</b></td></tr>
+<tr class="separator:a58cd71145e9e7ff7748717cbeb9ea189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb5c42fffe421781960a56d2c863fb1f"><td class="memItemLeft" align="right" valign="top"><a id="adb5c42fffe421781960a56d2c863fb1f" name="adb5c42fffe421781960a56d2c863fb1f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>barCount</b></td></tr>
 <tr class="separator:adb5c42fffe421781960a56d2c863fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,6 +411,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>accelerometerCount</b>
 <tr class="memitem:a55f86b1c4cfcd1ebe072cf299cdb7e97"><td class="memItemLeft" align="right" valign="top"><a id="a55f86b1c4cfcd1ebe072cf299cdb7e97" name="a55f86b1c4cfcd1ebe072cf299cdb7e97"></a>
 QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gpsTitles</b></td></tr>
 <tr class="separator:a55f86b1c4cfcd1ebe072cf299cdb7e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e6f3cd5be66b6ca3853721ccd6d921"><td class="memItemLeft" align="right" valign="top"><a id="a20e6f3cd5be66b6ca3853721ccd6d921" name="a20e6f3cd5be66b6ca3853721ccd6d921"></a>
+QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ledTitles</b></td></tr>
+<tr class="separator:a20e6f3cd5be66b6ca3853721ccd6d921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac560c72554262bcfc47db25b1de47de7"><td class="memItemLeft" align="right" valign="top"><a id="ac560c72554262bcfc47db25b1de47de7" name="ac560c72554262bcfc47db25b1de47de7"></a>
 QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>barTitles</b></td></tr>
 <tr class="separator:ac560c72554262bcfc47db25b1de47de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -619,7 +641,8 @@ QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>a
 <li><code>WidgetType::Compass</code> </li>
 <li><code>WidgetType::Gyroscope</code> </li>
 <li><code>WidgetType::Accelerometer</code> </li>
-<li><code>WidgetType::Map</code> </li>
+<li><code>WidgetType::GPS</code> </li>
+<li><code>WidgetType::LED</code> </li>
 </ul>
 <p >To simplify operations and user interface generation in QML, this class represents the widgets in two manners:</p>
 <ul>

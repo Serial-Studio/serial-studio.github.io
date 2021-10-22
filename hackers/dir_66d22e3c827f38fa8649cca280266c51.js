@@ -9,6 +9,7 @@ var dir_66d22e3c827f38fa8649cca280266c51 =
     [ "Gauge.h", "_gauge_8h_source.html", null ],
     [ "GPS.h", "_g_p_s_8h_source.html", null ],
     [ "Gyroscope.h", "_gyroscope_8h_source.html", null ],
+    [ "LEDPanel.h", "_l_e_d_panel_8h_source.html", null ],
     [ "MultiPlot.h", "_multi_plot_8h_source.html", null ],
     [ "Plot.h", "_plot_8h_source.html", null ],
     [ "Terminal.h", "_terminal_8h_source.html", null ]

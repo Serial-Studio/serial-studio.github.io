@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_0',['Network',['../class_i_o_1_1_data_sources_1_1_network.html',1,'IO::DataSources']]]
+  ['ledpanel_0',['LEDPanel',['../class_widgets_1_1_l_e_d_panel.html',1,'Widgets']]]
 ];

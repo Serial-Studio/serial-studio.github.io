@@ -51,9 +51,12 @@ var annotated_dup =
       [ "Gauge", "class_widgets_1_1_gauge.html", "class_widgets_1_1_gauge" ],
       [ "GPS", "class_widgets_1_1_g_p_s.html", "class_widgets_1_1_g_p_s" ],
       [ "Gyroscope", "class_widgets_1_1_gyroscope.html", "class_widgets_1_1_gyroscope" ],
+      [ "LEDPanel", "class_widgets_1_1_l_e_d_panel.html", "class_widgets_1_1_l_e_d_panel" ],
       [ "MultiPlot", "class_widgets_1_1_multi_plot.html", "class_widgets_1_1_multi_plot" ],
       [ "Plot", "class_widgets_1_1_plot.html", "class_widgets_1_1_plot" ],
       [ "Terminal", "class_widgets_1_1_terminal.html", "class_widgets_1_1_terminal" ]
     ] ],
-    [ "JFI_Object", "struct_j_f_i___object.html", null ]
+    [ "JFI_Object", "struct_j_f_i___object.html", null ],
+    [ "KLed", "class_k_led.html", "class_k_led" ],
+    [ "KLedPrivate", "class_k_led_private.html", null ]
 ];
