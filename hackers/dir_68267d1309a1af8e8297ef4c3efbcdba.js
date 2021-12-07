@@ -8,5 +8,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Plugins", "dir_022e325a8f259b9b8d324d8b04589350.html", "dir_022e325a8f259b9b8d324d8b04589350" ],
     [ "UI", "dir_7ad25bca70c4d3d9103f75d82f41ef94.html", "dir_7ad25bca70c4d3d9103f75d82f41ef94" ],
     [ "Widgets", "dir_66d22e3c827f38fa8649cca280266c51.html", "dir_66d22e3c827f38fa8649cca280266c51" ],
-    [ "AppInfo.h", "_app_info_8h_source.html", null ]
+    [ "AppInfo.h", "_app_info_8h_source.html", null ],
+    [ "DataTypes.h", "_data_types_8h_source.html", null ]
 ];

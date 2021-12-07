@@ -1,4 +1,4 @@
 var class_widgets_1_1_compass =
 [
-    [ "Compass", "class_widgets_1_1_compass.html#abf8e029022dacf16f35e87c34fceb561", null ]
+    [ "Compass", "class_widgets_1_1_compass.html#a4f0cb626389d206f4aeb5e4515f87690", null ]
 ];

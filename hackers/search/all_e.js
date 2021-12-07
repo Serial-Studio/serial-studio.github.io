@@ -2,10 +2,11 @@ var searchData=
 [
   ['off_0',['off',['../class_k_led.html#aa789f647307cdfdb95a91811ad82afde',1,'KLed']]],
   ['on_1',['on',['../class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa',1,'KLed']]],
-  ['opencurrentcsv_2',['openCurrentCsv',['../class_c_s_v_1_1_export.html#a0b71a5ae3ede0920e5dbf2edaed28d8c',1,'CSV::Export']]],
-  ['openfile_3',['openFile',['../class_c_s_v_1_1_player.html#af30fce68bee9db133171876d978b9cab',1,'CSV::Player::openFile()'],['../class_c_s_v_1_1_player.html#a235b867f9160f6bf5a926c81810ee8ed',1,'CSV::Player::openFile(const QString &amp;filePath)']]],
-  ['openjsonfile_4',['openJsonFile',['../class_j_s_o_n_1_1_editor.html#acff788295953717e8388214e76316f53',1,'JSON::Editor::openJsonFile()'],['../class_j_s_o_n_1_1_editor.html#a42a81783558544ac9a4fce5c095f03d4',1,'JSON::Editor::openJsonFile(const QString &amp;path)']]],
-  ['opennetworkport_5',['openNetworkPort',['../class_i_o_1_1_data_sources_1_1_network.html#a1eb644b0729e7227a0af256ef4b21e5c',1,'IO::DataSources::Network']]],
-  ['openserialport_6',['openSerialPort',['../class_i_o_1_1_data_sources_1_1_serial.html#a1351d2fea9d80ea959973b04940adbec',1,'IO::DataSources::Serial']]],
-  ['operationmode_7',['operationMode',['../class_j_s_o_n_1_1_generator.html#ae09a59f44d5f4fd60e710b628fee6613',1,'JSON::Generator']]]
+  ['onquit_2',['onQuit',['../class_misc_1_1_module_manager.html#a1832f52dba27743a19287d34b71d5bb9',1,'Misc::ModuleManager']]],
+  ['opencurrentcsv_3',['openCurrentCsv',['../class_c_s_v_1_1_export.html#a09a2734d4097a35378e2d051ccd9e616',1,'CSV::Export']]],
+  ['openfile_4',['openFile',['../class_c_s_v_1_1_player.html#a10f81447edf9ae31e23bc7403ed5dec5',1,'CSV::Player::openFile()'],['../class_c_s_v_1_1_player.html#a88868d94835c14f2e4ca23ab01addd09',1,'CSV::Player::openFile(const QString &amp;filePath)']]],
+  ['openjsonfile_5',['openJsonFile',['../class_j_s_o_n_1_1_editor.html#a315f5db40faf2990b6d8b7d52d1d80bb',1,'JSON::Editor::openJsonFile()'],['../class_j_s_o_n_1_1_editor.html#a64cd572dc314f19da64265b244a3661a',1,'JSON::Editor::openJsonFile(const QString &amp;path)']]],
+  ['opennetworkport_6',['openNetworkPort',['../class_i_o_1_1_data_sources_1_1_network.html#abf01b070be70ed08498756749ce09136',1,'IO::DataSources::Network']]],
+  ['openserialport_7',['openSerialPort',['../class_i_o_1_1_data_sources_1_1_serial.html#aac9daf15d0235eafe1e2782794906b81',1,'IO::DataSources::Serial']]],
+  ['operationmode_8',['operationMode',['../class_j_s_o_n_1_1_generator.html#a169120a8e69d8618abc59d1f8123a60e',1,'JSON::Generator']]]
 ];

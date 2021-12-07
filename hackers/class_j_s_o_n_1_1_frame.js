@@ -1,11 +1,11 @@
 var class_j_s_o_n_1_1_frame =
 [
-    [ "Frame", "class_j_s_o_n_1_1_frame.html#ad2e5946cf41d4817e750500acf05d02b", null ],
-    [ "~Frame", "class_j_s_o_n_1_1_frame.html#abec8c7bccdfc88cb4da137caae9f73d6", null ],
-    [ "clear", "class_j_s_o_n_1_1_frame.html#a5262e9b3dab1dd34777b19cfe7db6196", null ],
-    [ "getGroup", "class_j_s_o_n_1_1_frame.html#abdb4c9c187ba97b4b5bb0f00c36df33d", null ],
-    [ "groupCount", "class_j_s_o_n_1_1_frame.html#aa70cd17c5546ecd0b8c034fd89a9e290", null ],
-    [ "groups", "class_j_s_o_n_1_1_frame.html#a32b54c021982cf520a04f10e44df7f24", null ],
-    [ "read", "class_j_s_o_n_1_1_frame.html#a47579ef3d0c8bdf0a8b19ae2f4102034", null ],
-    [ "title", "class_j_s_o_n_1_1_frame.html#ac9b7e68f48d1b47d97ff4ffd055deb64", null ]
+    [ "Frame", "class_j_s_o_n_1_1_frame.html#af7f7aee680ee4a65e2f6415a0dfdefa1", null ],
+    [ "~Frame", "class_j_s_o_n_1_1_frame.html#ac81d155aa19bef19f2432e9342b41900", null ],
+    [ "clear", "class_j_s_o_n_1_1_frame.html#a0b78b09affd739928bd32e674890eae5", null ],
+    [ "getGroup", "class_j_s_o_n_1_1_frame.html#ac4e23e4d62594377e2b080ac5b259527", null ],
+    [ "groupCount", "class_j_s_o_n_1_1_frame.html#a129a6527ecf528e5820f71354fb605b5", null ],
+    [ "groups", "class_j_s_o_n_1_1_frame.html#af246f413fc5dc58ed442636452165113", null ],
+    [ "read", "class_j_s_o_n_1_1_frame.html#ac4bf9f5fbb48dcff9e1e6e5ebac9018e", null ],
+    [ "title", "class_j_s_o_n_1_1_frame.html#ac1d4d3d625d04b69abb1d53543cfc0e6", null ]
 ];

@@ -5,6 +5,9 @@ var hierarchy =
     [ "JSON::Frame", "class_j_s_o_n_1_1_frame.html", null ],
     [ "JFI_Object", "struct_j_f_i___object.html", null ],
     [ "KLedPrivate", "class_k_led_private.html", null ],
+    [ "QLabel", null, [
+      [ "Widgets::ElidedLabel", "class_widgets_1_1_elided_label.html", null ]
+    ] ],
     [ "QObject", null, [
       [ "CSV::Export", "class_c_s_v_1_1_export.html", null ],
       [ "CSV::Player", "class_c_s_v_1_1_player.html", null ],
@@ -16,6 +19,7 @@ var hierarchy =
       [ "JSON::Editor", "class_j_s_o_n_1_1_editor.html", null ],
       [ "JSON::Generator", "class_j_s_o_n_1_1_generator.html", null ],
       [ "JSON::Group", "class_j_s_o_n_1_1_group.html", null ],
+      [ "JSON::JSONWorker", "class_j_s_o_n_1_1_j_s_o_n_worker.html", null ],
       [ "MQTT::Client", "class_m_q_t_t_1_1_client.html", null ],
       [ "Misc::MacExtras", "class_misc_1_1_mac_extras.html", null ],
       [ "Misc::ModuleManager", "class_misc_1_1_module_manager.html", null ],
@@ -49,5 +53,6 @@ var hierarchy =
     [ "QwtDial", null, [
       [ "Widgets::AnalogGauge", "class_widgets_1_1_analog_gauge.html", null ],
       [ "Widgets::AttitudeIndicator", "class_widgets_1_1_attitude_indicator.html", null ]
-    ] ]
+    ] ],
+    [ "CSV::RawFrame", "struct_c_s_v_1_1_raw_frame.html", null ]
 ];

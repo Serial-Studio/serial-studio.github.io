@@ -2,7 +2,8 @@ var annotated_dup =
 [
     [ "CSV", null, [
       [ "Export", "class_c_s_v_1_1_export.html", "class_c_s_v_1_1_export" ],
-      [ "Player", "class_c_s_v_1_1_player.html", "class_c_s_v_1_1_player" ]
+      [ "Player", "class_c_s_v_1_1_player.html", "class_c_s_v_1_1_player" ],
+      [ "RawFrame", "struct_c_s_v_1_1_raw_frame.html", null ]
     ] ],
     [ "IO", null, [
       [ "DataSources", null, [
@@ -17,7 +18,8 @@ var annotated_dup =
       [ "Editor", "class_j_s_o_n_1_1_editor.html", "class_j_s_o_n_1_1_editor" ],
       [ "Frame", "class_j_s_o_n_1_1_frame.html", "class_j_s_o_n_1_1_frame" ],
       [ "Generator", "class_j_s_o_n_1_1_generator.html", "class_j_s_o_n_1_1_generator" ],
-      [ "Group", "class_j_s_o_n_1_1_group.html", "class_j_s_o_n_1_1_group" ]
+      [ "Group", "class_j_s_o_n_1_1_group.html", "class_j_s_o_n_1_1_group" ],
+      [ "JSONWorker", "class_j_s_o_n_1_1_j_s_o_n_worker.html", "class_j_s_o_n_1_1_j_s_o_n_worker" ]
     ] ],
     [ "Misc", null, [
       [ "MacExtras", "class_misc_1_1_mac_extras.html", null ],
@@ -39,13 +41,14 @@ var annotated_dup =
     ] ],
     [ "Widgets", null, [
       [ "Accelerometer", "class_widgets_1_1_accelerometer.html", "class_widgets_1_1_accelerometer" ],
-      [ "AnalogGauge", "class_widgets_1_1_analog_gauge.html", "class_widgets_1_1_analog_gauge" ],
+      [ "AnalogGauge", "class_widgets_1_1_analog_gauge.html", null ],
       [ "AnsiEscapeCodeHandler", "class_widgets_1_1_ansi_escape_code_handler.html", null ],
       [ "AttitudeIndicator", "class_widgets_1_1_attitude_indicator.html", null ],
       [ "Bar", "class_widgets_1_1_bar.html", "class_widgets_1_1_bar" ],
       [ "BaseWidget", "class_widgets_1_1_base_widget.html", null ],
       [ "Compass", "class_widgets_1_1_compass.html", "class_widgets_1_1_compass" ],
       [ "DataGroup", "class_widgets_1_1_data_group.html", "class_widgets_1_1_data_group" ],
+      [ "ElidedLabel", "class_widgets_1_1_elided_label.html", null ],
       [ "FFTPlot", "class_widgets_1_1_f_f_t_plot.html", "class_widgets_1_1_f_f_t_plot" ],
       [ "FormattedText", "class_widgets_1_1_formatted_text.html", null ],
       [ "Gauge", "class_widgets_1_1_gauge.html", "class_widgets_1_1_gauge" ],

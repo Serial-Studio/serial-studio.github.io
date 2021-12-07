@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.4</span>
    </div>
    <div id="projectbrief">A dashboard software for your embedded projects</div>
   </td>
@@ -110,157 +110,221 @@ $(document).ready(function(){initNavTree('_client_8h_source.html',''); initResiz
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * THE SOFTWARE.</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef MQTT_CLIENT_H</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define MQTT_CLIENT_H</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;QHostInfo&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;QHostAddress&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;QHostInfo&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QHostAddress&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;QSslConfiguration&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;qmqtt.h&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>MQTT</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">enum</span> MQTTClientMode</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ClientPublisher = 0,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ClientSubscriber = 1</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_m_q_t_t_1_1_client.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    Q_OBJECT</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    Q_PROPERTY(quint16 port</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>               READ port</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a555b3ae83d08effbed0e3f0f1827411a">setPort</a></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>               NOTIFY portChanged)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    Q_PROPERTY(QString host</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>               READ host</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#ad98cb8552a79ab28d7a38fb3dbd3328f">setHost</a></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>               NOTIFY hostChanged)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    Q_PROPERTY(QString topic</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>               READ topic</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#af54f9919c8b50be7c242dc2782996de6">setTopic</a></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>               NOTIFY topicChanged)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    Q_PROPERTY(<span class="keywordtype">int</span> mqttVersion</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>               READ mqttVersion</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7e2da351bbf60bbfcb33108c7e2b154c">setMqttVersion</a></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>               NOTIFY mqttVersionChanged)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    Q_PROPERTY(<span class="keywordtype">int</span> clientMode</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>               READ clientMode</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7332b4f55b9b8ebc364e738096740303">setClientMode</a></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>               NOTIFY clientModeChanged)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    Q_PROPERTY(QString username</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>               READ username</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#abd313c6193f2193c431bbf4363aff390">setUsername</a></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>               NOTIFY usernameChanged)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    Q_PROPERTY(QString password</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>               READ password</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a63ad6f1554907a6aacb815b9176cda46">setPassword</a></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>               NOTIFY passwordChanged)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    Q_PROPERTY(<span class="keywordtype">bool</span> isConnectedToHost</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>               READ isConnectedToHost</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>               NOTIFY connectedChanged)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    Q_PROPERTY(<span class="keywordtype">bool</span> lookupActive</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>               READ lookupActive</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>               NOTIFY lookupActiveChanged)</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    Q_PROPERTY(QVector&lt;QString&gt; mqttVersions</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>               READ mqttVersions</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>               CONSTANT)</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    Q_PROPERTY(QVector&lt;QString&gt; clientModes</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>               READ clientModes</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               CONSTANT)</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    Q_PROPERTY(quint16 defaultPort</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>               READ defaultPort</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>               CONSTANT)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    Q_PROPERTY(QString defaultHost</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               READ defaultHost</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               CONSTANT)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>signals:</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">void</span> portChanged();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">void</span> hostChanged();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">void</span> topicChanged();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> usernameChanged();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> passwordChanged();</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> connectedChanged();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> clientModeChanged();</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> mqttVersionChanged();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> lookupActiveChanged();</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a> *<a class="code hl_function" href="class_m_q_t_t_1_1_client.html#ae60032c9d89d51ffa76963e4cd773f76">getInstance</a>();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    quint16 port() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    QString host() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    QString topic() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">int</span> clientMode() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">int</span> mqttVersion() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    QString username() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    QString password() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">bool</span> lookupActive() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_m_q_t_t_1_1_client.html#af96d4e778e18000d07657c614a3acf83">isSubscribed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">bool</span> isConnectedToHost() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    QVector&lt;QString&gt; clientModes() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    QVector&lt;QString&gt; mqttVersions() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    quint16 defaultPort()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 1883; }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    QString defaultHost()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;127.0.0.1&quot;</span>; }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;DataTypes.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>MQTT</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">enum</span> MQTTClientMode</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ClientPublisher = 0,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ClientSubscriber = 1</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_m_q_t_t_1_1_client.html">   60</a></span><span class="keyword">class </span><a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    Q_OBJECT</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    Q_PROPERTY(quint16 port</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>               READ port</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a9d25b58dc15a586b763846a32fb010ba">setPort</a></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>               NOTIFY portChanged)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    Q_PROPERTY(quint8 qos</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>               READ qos</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a1192a1b2d45f9456a684f7930b9430b6">setQos</a></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>               NOTIFY qosChanged)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Q_PROPERTY(QString host</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>               READ host</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#afceb7a48488e3db08f543695f9511a61">setHost</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>               NOTIFY hostChanged)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    Q_PROPERTY(<span class="keywordtype">bool</span> retain</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               READ retain</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7424c8ab1e2e68f3a67043970fb71299">setRetain</a></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>               NOTIFY retainChanged)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    Q_PROPERTY(quint16 keepAlive</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>               READ keepAlive</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a88232b108e05ba9a5311ff2ca1d4e9f7">setKeepAlive</a></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>               NOTIFY keepAliveChanged)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    Q_PROPERTY(QString topic</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>               READ topic</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#adc27c50b17509087cb95deaf5a617b40">setTopic</a></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>               NOTIFY topicChanged)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    Q_PROPERTY(<span class="keywordtype">int</span> mqttVersion</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>               READ mqttVersion</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a816de04543c5ab7fadf3cec725aae21d">setMqttVersion</a></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>               NOTIFY mqttVersionChanged)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    Q_PROPERTY(<span class="keywordtype">int</span> clientMode</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>               READ clientMode</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#aba51ea3fa2514a26c0f2833c23b3da6e">setClientMode</a></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>               NOTIFY clientModeChanged)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    Q_PROPERTY(QString username</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>               READ username</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a032bbf6b806c9442c23422fc62e597e2">setUsername</a></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>               NOTIFY usernameChanged)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    Q_PROPERTY(QString password</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>               READ password</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a0e860bd53b31dc2814929e036b229274">setPassword</a></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>               NOTIFY passwordChanged)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    Q_PROPERTY(<span class="keywordtype">bool</span> sslEnabled</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>               READ sslEnabled</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#abd818d8011a195a000446f4f0d37d812">setSslEnabled</a></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               NOTIFY sslEnabledChanged)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    Q_PROPERTY(<span class="keywordtype">int</span> sslProtocol</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>               READ sslProtocol</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>               WRITE <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#afb17aa5d03c68017a7a4fe627fc17a1c">setSslProtocol</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>               NOTIFY sslProtocolChanged)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    Q_PROPERTY(<span class="keywordtype">bool</span> isConnectedToHost</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>               READ isConnectedToHost</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>               NOTIFY connectedChanged)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    Q_PROPERTY(<span class="keywordtype">bool</span> lookupActive</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>               READ lookupActive</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>               NOTIFY lookupActiveChanged)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    Q_PROPERTY(StringList mqttVersions</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>               READ mqttVersions</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>               CONSTANT)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    Q_PROPERTY(StringList clientModes</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>               READ clientModes</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>               CONSTANT)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    Q_PROPERTY(StringList qosLevels</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>               READ qosLevels</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>               CONSTANT)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    Q_PROPERTY(StringList sslProtocols</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>               READ sslProtocols</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>               CONSTANT)</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    Q_PROPERTY(quint16 defaultPort</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>               READ defaultPort</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>               CONSTANT)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    Q_PROPERTY(QString defaultHost</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>               READ defaultHost</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>               CONSTANT)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    Q_PROPERTY(QString caFilePath</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>               READ caFilePath</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>               NOTIFY caFilePathChanged)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="comment">// clang-format on</span></div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#ad7dbcab8672504f6c8a1e59d83a898d4">connectToHost</a>();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#adf35db9d96d815462142170d8589a2c5">toggleConnection</a>();</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#acefa70c7d756d8b0dd0d7be3d02a981d">disconnectFromHost</a>();</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#ae703808fdef93b884858963e3be1a58f">lookup</a>(<span class="keyword">const</span> QString &amp;host);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a555b3ae83d08effbed0e3f0f1827411a">setPort</a>(<span class="keyword">const</span> quint16 port);</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#ad98cb8552a79ab28d7a38fb3dbd3328f">setHost</a>(<span class="keyword">const</span> QString &amp;host);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7332b4f55b9b8ebc364e738096740303">setClientMode</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mode);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#af54f9919c8b50be7c242dc2782996de6">setTopic</a>(<span class="keyword">const</span> QString &amp;topic);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#abd313c6193f2193c431bbf4363aff390">setUsername</a>(<span class="keyword">const</span> QString &amp;username);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a63ad6f1554907a6aacb815b9176cda46">setPassword</a>(<span class="keyword">const</span> QString &amp;password);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7e2da351bbf60bbfcb33108c7e2b154c">setMqttVersion</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> versionIndex);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a>();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">~Client</a>();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>signals:</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> qosChanged();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> portChanged();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> hostChanged();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">void</span> topicChanged();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> retainChanged();</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">void</span> usernameChanged();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordtype">void</span> passwordChanged();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">void</span> keepAliveChanged();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordtype">void</span> connectedChanged();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">void</span> caFilePathChanged();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">void</span> clientModeChanged();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">void</span> sslEnabledChanged();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">void</span> sslProtocolChanged();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">void</span> mqttVersionChanged();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">void</span> lookupActiveChanged();</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">void</span> sendData();</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">void</span> resetStatistics();</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">void</span> onConnectedChanged();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">void</span> lookupFinished(<span class="keyword">const</span> QHostInfo &amp;info);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordtype">void</span> onError(<span class="keyword">const</span> QMQTT::ClientError error);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">void</span> onFrameReceived(<span class="keyword">const</span> QByteArray &amp;frame);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">void</span> onMessageReceived(<span class="keyword">const</span> QMQTT::Message &amp;message);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    QString m_topic;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordtype">bool</span> m_lookupActive;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    QMQTT::Client m_client;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    quint16 m_sentMessages;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    QList&lt;QByteArray&gt; m_frames;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    MQTTClientMode m_clientMode;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>};</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a> *<a class="code hl_function" href="class_m_q_t_t_1_1_client.html#a447b8cb96005b110d7df7ea25ab1818c">getInstance</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    quint8 qos() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">bool</span> retain() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    quint16 port() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    QString host() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    QString topic() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">int</span> clientMode() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">int</span> sslProtocol() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">int</span> mqttVersion() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordtype">bool</span> sslEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    QString username() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    QString password() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    quint16 keepAlive() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordtype">bool</span> lookupActive() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_m_q_t_t_1_1_client.html#a36551166d092d1ffbfa3fdf7b5f2b319">isSubscribed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">bool</span> isConnectedToHost() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html">MQTT::Client</a></div><div class="ttdoc">The Client class.</div><div class="ttdef"><b>Definition:</b> Client.h:60</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a555b3ae83d08effbed0e3f0f1827411a"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a555b3ae83d08effbed0e3f0f1827411a">MQTT::Client::setPort</a></div><div class="ttdeci">void setPort(const quint16 port)</div><div class="ttdef"><b>Definition:</b> Client.cpp:237</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a63ad6f1554907a6aacb815b9176cda46"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a63ad6f1554907a6aacb815b9176cda46">MQTT::Client::setPassword</a></div><div class="ttdeci">void setPassword(const QString &amp;password)</div><div class="ttdef"><b>Definition:</b> Client.cpp:284</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a7332b4f55b9b8ebc364e738096740303"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a7332b4f55b9b8ebc364e738096740303">MQTT::Client::setClientMode</a></div><div class="ttdeci">void setClientMode(const int mode)</div><div class="ttdef"><b>Definition:</b> Client.cpp:257</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a7e2da351bbf60bbfcb33108c7e2b154c"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a7e2da351bbf60bbfcb33108c7e2b154c">MQTT::Client::setMqttVersion</a></div><div class="ttdeci">void setMqttVersion(const int versionIndex)</div><div class="ttdef"><b>Definition:</b> Client.cpp:293</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_abd313c6193f2193c431bbf4363aff390"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#abd313c6193f2193c431bbf4363aff390">MQTT::Client::setUsername</a></div><div class="ttdeci">void setUsername(const QString &amp;username)</div><div class="ttdef"><b>Definition:</b> Client.cpp:275</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_acefa70c7d756d8b0dd0d7be3d02a981d"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#acefa70c7d756d8b0dd0d7be3d02a981d">MQTT::Client::disconnectFromHost</a></div><div class="ttdeci">void disconnectFromHost()</div><div class="ttdef"><b>Definition:</b> Client.cpp:219</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_ad7dbcab8672504f6c8a1e59d83a898d4"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#ad7dbcab8672504f6c8a1e59d83a898d4">MQTT::Client::connectToHost</a></div><div class="ttdeci">void connectToHost()</div><div class="ttdef"><b>Definition:</b> Client.cpp:199</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_ad98cb8552a79ab28d7a38fb3dbd3328f"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#ad98cb8552a79ab28d7a38fb3dbd3328f">MQTT::Client::setHost</a></div><div class="ttdeci">void setHost(const QString &amp;host)</div><div class="ttdef"><b>Definition:</b> Client.cpp:246</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_adf35db9d96d815462142170d8589a2c5"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#adf35db9d96d815462142170d8589a2c5">MQTT::Client::toggleConnection</a></div><div class="ttdeci">void toggleConnection()</div><div class="ttdef"><b>Definition:</b> Client.cpp:208</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_ae60032c9d89d51ffa76963e4cd773f76"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#ae60032c9d89d51ffa76963e4cd773f76">MQTT::Client::getInstance</a></div><div class="ttdeci">static Client * getInstance()</div><div class="ttdef"><b>Definition:</b> Client.cpp:76</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_ae703808fdef93b884858963e3be1a58f"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#ae703808fdef93b884858963e3be1a58f">MQTT::Client::lookup</a></div><div class="ttdeci">void lookup(const QString &amp;host)</div><div class="ttdef"><b>Definition:</b> Client.cpp:227</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_af54f9919c8b50be7c242dc2782996de6"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#af54f9919c8b50be7c242dc2782996de6">MQTT::Client::setTopic</a></div><div class="ttdeci">void setTopic(const QString &amp;topic)</div><div class="ttdef"><b>Definition:</b> Client.cpp:266</div></div>
-<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_af96d4e778e18000d07657c614a3acf83"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#af96d4e778e18000d07657c614a3acf83">MQTT::Client::isSubscribed</a></div><div class="ttdeci">bool isSubscribed() const</div><div class="ttdef"><b>Definition:</b> Client.cpp:167</div></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    StringList qosLevels() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    StringList clientModes() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    StringList mqttVersions() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    StringList sslProtocols() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    QString caFilePath() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    quint16 defaultPort()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 1883; }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    QString defaultHost()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;127.0.0.1&quot;</span>; }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a981cee3346738658d4a8c8058b599052">loadCaFile</a>();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#ad227ad69165ad630453ed3df27fee712">connectToHost</a>();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#aee3817acf9a51f7e03c18bfe1b475e8f">toggleConnection</a>();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a147379b5cfce93ac6a42bc0208c7e022">disconnectFromHost</a>();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a1192a1b2d45f9456a684f7930b9430b6">setQos</a>(<span class="keyword">const</span> quint8 qos);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#aece146a39115d6cbeb3d258186dc54dd">lookup</a>(<span class="keyword">const</span> QString &amp;host);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a9d25b58dc15a586b763846a32fb010ba">setPort</a>(<span class="keyword">const</span> quint16 port);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#afceb7a48488e3db08f543695f9511a61">setHost</a>(<span class="keyword">const</span> QString &amp;host);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a7424c8ab1e2e68f3a67043970fb71299">setRetain</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> retain);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#aba51ea3fa2514a26c0f2833c23b3da6e">setClientMode</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mode);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#adc27c50b17509087cb95deaf5a617b40">setTopic</a>(<span class="keyword">const</span> QString &amp;topic);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a981cee3346738658d4a8c8058b599052">loadCaFile</a>(<span class="keyword">const</span> QString &amp;path);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#afb17aa5d03c68017a7a4fe627fc17a1c">setSslProtocol</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#abd818d8011a195a000446f4f0d37d812">setSslEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a032bbf6b806c9442c23422fc62e597e2">setUsername</a>(<span class="keyword">const</span> QString &amp;username);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a0e860bd53b31dc2814929e036b229274">setPassword</a>(<span class="keyword">const</span> QString &amp;password);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a88232b108e05ba9a5311ff2ca1d4e9f7">setKeepAlive</a>(<span class="keyword">const</span> quint16 keepAlive);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_m_q_t_t_1_1_client.html#a816de04543c5ab7fadf3cec725aae21d">setMqttVersion</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> versionIndex);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">Client</a>();</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_class" href="class_m_q_t_t_1_1_client.html">~Client</a>();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">void</span> sendData();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordtype">void</span> resetStatistics();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordtype">void</span> onConnectedChanged();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordtype">void</span> lookupFinished(<span class="keyword">const</span> QHostInfo &amp;info);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordtype">void</span> onError(<span class="keyword">const</span> QMQTT::ClientError error);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordtype">void</span> onFrameReceived(<span class="keyword">const</span> QByteArray &amp;frame);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">void</span> onSslErrors(<span class="keyword">const</span> QList&lt;QSslError&gt; &amp;errors);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordtype">void</span> onMessageReceived(<span class="keyword">const</span> QMQTT::Message &amp;message);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordtype">void</span> regenerateClient();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    QString m_topic;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordtype">bool</span> m_sslEnabled;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordtype">int</span> m_sslProtocol;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordtype">bool</span> m_lookupActive;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    QString m_caFilePath;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    quint16 m_sentMessages;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    QMQTT::Client *m_client;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    QVector&lt;QByteArray&gt; m_frames;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    MQTTClientMode m_clientMode;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    QSslConfiguration m_sslConfiguration;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>};</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html">MQTT::Client</a></div><div class="ttdoc">The Client class.</div><div class="ttdef"><b>Definition:</b> Client.h:61</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a032bbf6b806c9442c23422fc62e597e2"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a032bbf6b806c9442c23422fc62e597e2">MQTT::Client::setUsername</a></div><div class="ttdeci">void setUsername(const QString &amp;username)</div><div class="ttdef"><b>Definition:</b> Client.cpp:478</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a0e860bd53b31dc2814929e036b229274"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a0e860bd53b31dc2814929e036b229274">MQTT::Client::setPassword</a></div><div class="ttdeci">void setPassword(const QString &amp;password)</div><div class="ttdef"><b>Definition:</b> Client.cpp:488</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a1192a1b2d45f9456a684f7930b9430b6"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a1192a1b2d45f9456a684f7930b9430b6">MQTT::Client::setQos</a></div><div class="ttdeci">void setQos(const quint8 qos)</div><div class="ttdef"><b>Definition:</b> Client.cpp:322</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a147379b5cfce93ac6a42bc0208c7e022"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a147379b5cfce93ac6a42bc0208c7e022">MQTT::Client::disconnectFromHost</a></div><div class="ttdeci">void disconnectFromHost()</div><div class="ttdef"><b>Definition:</b> Client.cpp:313</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a36551166d092d1ffbfa3fdf7b5f2b319"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a36551166d092d1ffbfa3fdf7b5f2b319">MQTT::Client::isSubscribed</a></div><div class="ttdeci">bool isSubscribed() const</div><div class="ttdef"><b>Definition:</b> Client.cpp:212</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a447b8cb96005b110d7df7ea25ab1818c"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a447b8cb96005b110d7df7ea25ab1818c">MQTT::Client::getInstance</a></div><div class="ttdeci">static Client * getInstance()</div><div class="ttdef"><b>Definition:</b> Client.cpp:69</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a7424c8ab1e2e68f3a67043970fb71299"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a7424c8ab1e2e68f3a67043970fb71299">MQTT::Client::setRetain</a></div><div class="ttdeci">void setRetain(const bool retain)</div><div class="ttdef"><b>Definition:</b> Client.cpp:363</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a816de04543c5ab7fadf3cec725aae21d"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a816de04543c5ab7fadf3cec725aae21d">MQTT::Client::setMqttVersion</a></div><div class="ttdeci">void setMqttVersion(const int versionIndex)</div><div class="ttdef"><b>Definition:</b> Client.cpp:510</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a88232b108e05ba9a5311ff2ca1d4e9f7"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a88232b108e05ba9a5311ff2ca1d4e9f7">MQTT::Client::setKeepAlive</a></div><div class="ttdeci">void setKeepAlive(const quint16 keepAlive)</div><div class="ttdef"><b>Definition:</b> Client.cpp:500</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a981cee3346738658d4a8c8058b599052"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a981cee3346738658d4a8c8058b599052">MQTT::Client::loadCaFile</a></div><div class="ttdeci">void loadCaFile()</div><div class="ttdef"><b>Definition:</b> Client.cpp:279</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_a9d25b58dc15a586b763846a32fb010ba"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#a9d25b58dc15a586b763846a32fb010ba">MQTT::Client::setPort</a></div><div class="ttdeci">void setPort(const quint16 port)</div><div class="ttdef"><b>Definition:</b> Client.cpp:342</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_aba51ea3fa2514a26c0f2833c23b3da6e"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#aba51ea3fa2514a26c0f2833c23b3da6e">MQTT::Client::setClientMode</a></div><div class="ttdeci">void setClientMode(const int mode)</div><div class="ttdef"><b>Definition:</b> Client.cpp:375</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_abd818d8011a195a000446f4f0d37d812"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#abd818d8011a195a000446f4f0d37d812">MQTT::Client::setSslEnabled</a></div><div class="ttdeci">void setSslEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Client.cpp:468</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_ad227ad69165ad630453ed3df27fee712"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#ad227ad69165ad630453ed3df27fee712">MQTT::Client::connectToHost</a></div><div class="ttdeci">void connectToHost()</div><div class="ttdef"><b>Definition:</b> Client.cpp:292</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_adc27c50b17509087cb95deaf5a617b40"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#adc27c50b17509087cb95deaf5a617b40">MQTT::Client::setTopic</a></div><div class="ttdeci">void setTopic(const QString &amp;topic)</div><div class="ttdef"><b>Definition:</b> Client.cpp:384</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_aece146a39115d6cbeb3d258186dc54dd"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#aece146a39115d6cbeb3d258186dc54dd">MQTT::Client::lookup</a></div><div class="ttdeci">void lookup(const QString &amp;host)</div><div class="ttdef"><b>Definition:</b> Client.cpp:332</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_aee3817acf9a51f7e03c18bfe1b475e8f"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#aee3817acf9a51f7e03c18bfe1b475e8f">MQTT::Client::toggleConnection</a></div><div class="ttdeci">void toggleConnection()</div><div class="ttdef"><b>Definition:</b> Client.cpp:302</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_afb17aa5d03c68017a7a4fe627fc17a1c"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#afb17aa5d03c68017a7a4fe627fc17a1c">MQTT::Client::setSslProtocol</a></div><div class="ttdeci">void setSslProtocol(const int index)</div><div class="ttdef"><b>Definition:</b> Client.cpp:429</div></div>
+<div class="ttc" id="aclass_m_q_t_t_1_1_client_html_afceb7a48488e3db08f543695f9511a61"><div class="ttname"><a href="class_m_q_t_t_1_1_client.html#afceb7a48488e3db08f543695f9511a61">MQTT::Client::setHost</a></div><div class="ttdeci">void setHost(const QString &amp;host)</div><div class="ttdef"><b>Definition:</b> Client.cpp:352</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

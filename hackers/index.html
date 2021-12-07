@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.4</span>
    </div>
    <div id="projectbrief">A dashboard software for your embedded projects</div>
   </td>
@@ -104,7 +104,7 @@ Source code organization</h2>
 <p >Since there are over 30 source files that compromise this project (not including any libraries or the <a href="https://github.com/Serial-Studio/Serial-Studio/tree/master/assets/qml">UI/QML</a> part), it is important to keep the files organized in subdirectories corresponding to the their respective high-level functionalities.</p>
 <p >Here is a breakdown of each subdirectory of the source code:</p>
 <ul>
-<li>The <b>CSV</b> directory contains the <code><a class="el" href="class_c_s_v_1_1_export.html" title="The Export class.">CSV::Export</a></code> module and the <code><a class="el" href="class_c_s_v_1_1_player.html" title="The Player class.">CSV::Player</a></code> functionality.</li>
+<li>The <b>CSV</b> directory contains the <code><a class="el" href="class_c_s_v_1_1_export.html">CSV::Export</a></code> module and the <code><a class="el" href="class_c_s_v_1_1_player.html" title="The Player class.">CSV::Player</a></code> functionality.</li>
 <li>The <b>IO</b> folder contains the <code><a class="el" href="class_i_o_1_1_manager.html" title="The Manager class.">IO::Manager</a></code>, handlers for device data sources <code><a class="el" href="class_i_o_1_1_data_sources_1_1_serial.html" title="The Network class.">IO::DataSources::Serial</a></code>, <code><a class="el" href="class_i_o_1_1_data_sources_1_1_network.html" title="The Network class.">IO::DataSources::Network</a></code> &amp; <code><a class="el" href="class_i_o_1_1_console.html" title="The Console class.">IO::Console</a></code> data handler.<ul>
 <li>The I/O manager &amp; console are implemented as <a href="https://en.wikipedia.org/wiki/Singleton_pattern">singleton classes</a>.</li>
 </ul>

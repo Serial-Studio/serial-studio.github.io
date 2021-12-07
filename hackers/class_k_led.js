@@ -13,9 +13,9 @@ var class_k_led =
       [ "Off", "class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c", null ],
       [ "On", "class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca6d00e86716c2d0bc30d59d3698b4deea", null ]
     ] ],
-    [ "KLed", "class_k_led.html#aa2ccb1a85872ca0ec3392d56719dc73b", null ],
-    [ "KLed", "class_k_led.html#ac4fc4d50f642cf220938f49b0fb335c5", null ],
-    [ "KLed", "class_k_led.html#ab33afc1b7fb81b83977aee3bac3de28e", null ],
+    [ "KLed", "class_k_led.html#aba3ec87bc54550121297547c02240ac8", null ],
+    [ "KLed", "class_k_led.html#a12edf78d8180786338d4c4758be3403a", null ],
+    [ "KLed", "class_k_led.html#a6258443e10532bd283a4cc5667ef81ab", null ],
     [ "~KLed", "class_k_led.html#a4c61887fcc135c0c7c5649df10287dcc", null ],
     [ "color", "class_k_led.html#a103ee7f7b3d326fce6473f33fdbba85e", null ],
     [ "darkFactor", "class_k_led.html#ad8d44131436da738f3af59a85c57142c", null ],

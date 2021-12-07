@@ -1,10 +1,10 @@
 var class_j_s_o_n_1_1_group =
 [
-    [ "~Group", "class_j_s_o_n_1_1_group.html#aed00a22ff227ee2657ae44a5cbcedf7c", null ],
-    [ "datasetCount", "class_j_s_o_n_1_1_group.html#a71e7e63e9979c3f1de37e3b733941605", null ],
-    [ "getDataset", "class_j_s_o_n_1_1_group.html#a8f23b022cf051671720cb7e68b1001da", null ],
-    [ "read", "class_j_s_o_n_1_1_group.html#aa88aa337edce4e4297ef09718aee03f9", null ],
-    [ "title", "class_j_s_o_n_1_1_group.html#ad8a6cc38c3d361ad585958fe9637c5d3", null ],
-    [ "widget", "class_j_s_o_n_1_1_group.html#af2615d440f1aa7dfd8147e59d8e74b2d", null ],
-    [ "datasets", "class_j_s_o_n_1_1_group.html#a9860710effc6d306a727a4b5956e0b34", null ]
+    [ "~Group", "class_j_s_o_n_1_1_group.html#ae442efedfbb24af8083413fd699b418e", null ],
+    [ "datasetCount", "class_j_s_o_n_1_1_group.html#aa607f9e768b48368acb805948e2ab950", null ],
+    [ "datasets", "class_j_s_o_n_1_1_group.html#a88af3fd9bc6369ef70feecdb2b31bece", null ],
+    [ "getDataset", "class_j_s_o_n_1_1_group.html#a838eecdafb2c3640adc61996f025ba3b", null ],
+    [ "read", "class_j_s_o_n_1_1_group.html#a2c29472107bc2f3b636081d50f1acd5c", null ],
+    [ "title", "class_j_s_o_n_1_1_group.html#a93e0b0cd029e23cfb821e41c69f7a240", null ],
+    [ "widget", "class_j_s_o_n_1_1_group.html#a6390981ca8da7e8c0b0e9b1d60a201ea", null ]
 ];

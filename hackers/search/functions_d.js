@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['newjsonfile_0',['newJsonFile',['../class_j_s_o_n_1_1_editor.html#ac3267385565c92e2823942c29b03c0c6',1,'JSON::Editor']]],
-  ['nextframe_1',['nextFrame',['../class_c_s_v_1_1_player.html#a70ab254302ee141b776c9bbd2e6750c0',1,'CSV::Player']]]
+  ['newjsonfile_0',['newJsonFile',['../class_j_s_o_n_1_1_editor.html#af44c2522f351ab6b41e2350151a2c9ab',1,'JSON::Editor']]],
+  ['nextframe_1',['nextFrame',['../class_c_s_v_1_1_player.html#aa8921a441cfcc552eddb3b64cea49d48',1,'CSV::Player']]]
 ];

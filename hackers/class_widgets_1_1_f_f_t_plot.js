@@ -1,5 +1,5 @@
 var class_widgets_1_1_f_f_t_plot =
 [
-    [ "FFTPlot", "class_widgets_1_1_f_f_t_plot.html#a1bad156e61c80fa1dce79393a5dc59bf", null ],
-    [ "~FFTPlot", "class_widgets_1_1_f_f_t_plot.html#aa8687dc9e6318382de8ce747e1d44572", null ]
+    [ "FFTPlot", "class_widgets_1_1_f_f_t_plot.html#a80c9c686f6b181c2b4edf3caf6ced4d5", null ],
+    [ "~FFTPlot", "class_widgets_1_1_f_f_t_plot.html#a04f91ea6bda47bcb312bcf0b35c70e7e", null ]
 ];

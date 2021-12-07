@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kled_0',['KLed',['../class_k_led.html#aa2ccb1a85872ca0ec3392d56719dc73b',1,'KLed::KLed(QWidget *parent=nullptr)'],['../class_k_led.html#ac4fc4d50f642cf220938f49b0fb335c5',1,'KLed::KLed(const QColor &amp;color, QWidget *parent=nullptr)'],['../class_k_led.html#ab33afc1b7fb81b83977aee3bac3de28e',1,'KLed::KLed(const QColor &amp;color, KLed::State state, KLed::Look look, KLed::Shape shape, QWidget *parent=nullptr)']]]
+  ['keepalive_0',['keepAlive',['../class_m_q_t_t_1_1_client.html#a21c3496a70d7a2d8951b980a32ae09f6',1,'MQTT::Client']]],
+  ['kled_1',['KLed',['../class_k_led.html#aba3ec87bc54550121297547c02240ac8',1,'KLed::KLed(QWidget *parent=Q_NULLPTR)'],['../class_k_led.html#a12edf78d8180786338d4c4758be3403a',1,'KLed::KLed(const QColor &amp;color, QWidget *parent=Q_NULLPTR)'],['../class_k_led.html#a6258443e10532bd283a4cc5667ef81ab',1,'KLed::KLed(const QColor &amp;color, KLed::State state, KLed::Look look, KLed::Shape shape, QWidget *parent=Q_NULLPTR)']]]
 ];

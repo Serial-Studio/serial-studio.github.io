@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Serial Studio<span id="projectnumber">&#160;1.1.4</span>
    </div>
    <div id="projectbrief">A dashboard software for your embedded projects</div>
   </td>
@@ -110,234 +110,231 @@ $(document).ready(function(){initNavTree('_terminal_8h_source.html',''); initRes
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * THE SOFTWARE.</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef WIDGETS_TERMINAL_H</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define WIDGETS_TERMINAL_H</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;QPainter&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;QPlainTextEdit&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QQuickPaintedItem&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span>Widgets</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_widgets_1_1_formatted_text.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a> &amp;other) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>(<span class="keyword">const</span> QString &amp;txt, <span class="keyword">const</span> QTextCharFormat &amp;fmt = QTextCharFormat())</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        : text(txt)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        , format(fmt)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    QString text;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QTextCharFormat format;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_widgets_1_1_ansi_escape_code_handler.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_ansi_escape_code_handler.html">AnsiEscapeCodeHandler</a></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    QList&lt;FormattedText&gt; parseText(<span class="keyword">const</span> <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a> &amp;input);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> setTextEdit(QPlainTextEdit *widget);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> endFormatScope();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> setFormatScope(<span class="keyword">const</span> QTextCharFormat &amp;charFormat);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QString m_pendingText;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QPlainTextEdit *textEdit;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    QString m_alternateTerminator;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    QTextCharFormat m_previousFormat;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> m_previousFormatClosed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> m_waitingForTerminator = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_widgets_1_1_terminal.html">   65</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_terminal.html">Terminal</a> : <span class="keyword">public</span> QQuickPaintedItem</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    Q_OBJECT</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    QML_ELEMENT</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    Q_PROPERTY(QFont font</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>               READ font</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a73ef8a624e89166d33bbcd14b4277b25">setFont</a></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>               NOTIFY fontChanged)</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    Q_PROPERTY(QString text</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>               READ text</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abe73b31cf5b9adb31110a35fc0343fb8">setText</a></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               NOTIFY textChanged)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    Q_PROPERTY(<span class="keywordtype">bool</span> autoscroll</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>               READ autoscroll</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#aa9e65bee32a4b51f574c597d926147c6">setAutoscroll</a></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>               NOTIFY autoscrollChanged)</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    Q_PROPERTY(QString placeholderText</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>               READ placeholderText</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a8d9dfeb883b1becd06540866782ca1d7">setPlaceholderText</a></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>               NOTIFY placeholderTextChanged)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    Q_PROPERTY(<span class="keywordtype">bool</span> undoRedoEnabled</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>               READ undoRedoEnabled</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ae9cd69178b0b546becaf8d1cd0f4407d">setUndoRedoEnabled</a></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>               NOTIFY undoRedoEnabledChanged)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    Q_PROPERTY(<span class="keywordtype">int</span> wordWrapMode</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>               READ wordWrapMode</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a29da89f031e82005793129102d2d1f10">setWordWrapMode</a></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>               NOTIFY wordWrapModeChanged)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    Q_PROPERTY(<span class="keywordtype">bool</span> readOnly</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>               READ readOnly</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a38a17a4bdb482657aba6521d88be0438">setReadOnly</a></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>               NOTIFY readOnlyChanged)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    Q_PROPERTY(<span class="keywordtype">bool</span> centerOnScroll</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>               READ centerOnScroll</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ad2f8b71bdc1bd1232d84466e1cd8359f">setCenterOnScroll</a></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>               NOTIFY centerOnScrollChanged)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    Q_PROPERTY(<span class="keywordtype">bool</span> widgetEnabled</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>               READ widgetEnabled</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3237bb6ab14e333eaa56bf57d730affa">setWidgetEnabled</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>               NOTIFY widgetEnabledChanged)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    Q_PROPERTY(QPalette palette</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               READ palette</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abf569ffecaa50d509572175935b9eee4">setPalette</a></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>               NOTIFY colorPaletteChanged)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Q_PROPERTY(<span class="keywordtype">int</span> maximumBlockCount</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>               READ maximumBlockCount</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a545f0f064b1e8a7a7a1f5d92bd22092a">setMaximumBlockCount</a></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>               NOTIFY maximumBlockCountChanged)</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    Q_PROPERTY(<span class="keywordtype">bool</span> copyAvailable</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>               READ copyAvailable</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>               NOTIFY copyAvailableChanged)</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    Q_PROPERTY(<span class="keywordtype">bool</span> empty</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>               READ empty</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>               NOTIFY textChanged)</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    Q_PROPERTY(<span class="keywordtype">int</span> scrollbarWidth</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>               READ scrollbarWidth</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a870c80ba87643c5bfde1bad264c6c635">setScrollbarWidth</a></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>               NOTIFY scrollbarWidthChanged)</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    Q_PROPERTY(<span class="keywordtype">bool</span> vt100emulation</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>               READ vt100emulation</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a84437f3b5988c73efdc1f88f5fa089c0">setVt100Emulation</a></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>               NOTIFY vt100EmulationChanged)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>signals:</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> textChanged();</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> fontChanged();</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> readOnlyChanged();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> autoscrollChanged();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> colorPaletteChanged();</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> wordWrapModeChanged();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordtype">void</span> copyAvailableChanged();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordtype">void</span> widgetEnabledChanged();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> scrollbarWidthChanged();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> centerOnScrollChanged();</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">void</span> vt100EmulationChanged();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> placeholderTextChanged();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> undoRedoEnabledChanged();</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> maximumBlockCountChanged();</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_function" href="class_widgets_1_1_terminal.html#a08a89f4e5f539ca93c117e2c1aa2f891">Terminal</a>(QQuickItem *parent = 0);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_function" href="class_widgets_1_1_terminal.html#add5a7d4dd45b68af9a0afb1cc845af2f">~Terminal</a>();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">event</a>(QEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">event</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a6a922baee78274419c56ea308ea57946">paint</a>(QPainter *painter) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a95bddbf25910e47dce3657bcae4154d5">eventFilter</a>(QObject *watched, QEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">event</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    QFont font() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    QString text() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordtype">bool</span> empty() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordtype">bool</span> readOnly() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">bool</span> autoscroll() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    QPalette palette() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">int</span> wordWrapMode() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">int</span> scrollbarWidth() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordtype">bool</span> copyAvailable() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">bool</span> widgetEnabled() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">bool</span> centerOnScroll() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">bool</span> vt100emulation() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">bool</span> undoRedoEnabled() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">int</span> maximumBlockCount() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    QString placeholderText() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    QTextDocument *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a87af9a683320c27a8374b539b9983ad3">document</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    QPlainTextEdit *<a class="code hl_function" href="class_widgets_1_1_terminal.html#ad61474a2832dc94b93d0378575c822a2">textEdit</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a2b8bd51f33de5fb4d3b9f1295a1d15f9">copy</a>();</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a4be741767b27739eec98901477e1c3d4">clear</a>();</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a257fa7247865f0d1666a862c01795d59">selectAll</a>();</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ae50f3321e7ee85ab038bf122aafcbd36">clearSelection</a>();</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a38a17a4bdb482657aba6521d88be0438">setReadOnly</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> ro);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a73ef8a624e89166d33bbcd14b4277b25">setFont</a>(<span class="keyword">const</span> QFont &amp;font);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#adf638c3c8566a2bee83c63d640ad0bc5">append</a>(<span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abe73b31cf5b9adb31110a35fc0343fb8">setText</a>(<span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a5fa96682214be5c8c4134c65cd62576b">insertText</a>(<span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a29da89f031e82005793129102d2d1f10">setWordWrapMode</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mode);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#aa9e65bee32a4b51f574c597d926147c6">setAutoscroll</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a870c80ba87643c5bfde1bad264c6c635">setScrollbarWidth</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> width);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abf569ffecaa50d509572175935b9eee4">setPalette</a>(<span class="keyword">const</span> QPalette &amp;palette);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3237bb6ab14e333eaa56bf57d730affa">setWidgetEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ad2f8b71bdc1bd1232d84466e1cd8359f">setCenterOnScroll</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a84437f3b5988c73efdc1f88f5fa089c0">setVt100Emulation</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ae9cd69178b0b546becaf8d1cd0f4407d">setUndoRedoEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a8d9dfeb883b1becd06540866782ca1d7">setPlaceholderText</a>(<span class="keyword">const</span> QString &amp;text);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ac74d08cd74e5a880fd5084b957b072c9">scrollToBottom</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> repaint = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a545f0f064b1e8a7a7a1f5d92bd22092a">setMaximumBlockCount</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> maxBlockCount);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">void</span> updateWidgetSize();</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordtype">void</span> updateScrollbarVisibility();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordtype">void</span> setCopyAvailable(<span class="keyword">const</span> <span class="keywordtype">bool</span> yes);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordtype">void</span> addText(<span class="keyword">const</span> QString &amp;text, <span class="keyword">const</span> <span class="keywordtype">bool</span> enableVt100);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a9b431759095a97622a59801010ad19c1">processMouseEvents</a>(QMouseEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">event</a>);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#ae0265505bf27806fe2eef816c65f62a7">processWheelEvents</a>(QWheelEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">event</a>);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    QString vt100Processing(<span class="keyword">const</span> QString &amp;data);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordtype">bool</span> m_autoscroll;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">bool</span> m_emulateVt100;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordtype">bool</span> m_copyAvailable;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    QPlainTextEdit *m_textEdit;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <a class="code hl_class" href="class_widgets_1_1_ansi_escape_code_handler.html">AnsiEscapeCodeHandler</a> m_escapeCodeHandler;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>};</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_widgets_1_1_ansi_escape_code_handler_html"><div class="ttname"><a href="class_widgets_1_1_ansi_escape_code_handler.html">Widgets::AnsiEscapeCodeHandler</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:48</div></div>
-<div class="ttc" id="aclass_widgets_1_1_formatted_text_html"><div class="ttname"><a href="class_widgets_1_1_formatted_text.html">Widgets::FormattedText</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:33</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html"><div class="ttname"><a href="class_widgets_1_1_terminal.html">Widgets::Terminal</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:66</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a08a89f4e5f539ca93c117e2c1aa2f891"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a08a89f4e5f539ca93c117e2c1aa2f891">Widgets::Terminal::Terminal</a></div><div class="ttdeci">Terminal(QQuickItem *parent=0)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:52</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a257fa7247865f0d1666a862c01795d59"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a257fa7247865f0d1666a862c01795d59">Widgets::Terminal::selectAll</a></div><div class="ttdeci">void selectAll()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:351</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a29da89f031e82005793129102d2d1f10"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a29da89f031e82005793129102d2d1f10">Widgets::Terminal::setWordWrapMode</a></div><div class="ttdeci">void setWordWrapMode(const int mode)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:501</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a2b8bd51f33de5fb4d3b9f1295a1d15f9"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a2b8bd51f33de5fb4d3b9f1295a1d15f9">Widgets::Terminal::copy</a></div><div class="ttdeci">void copy()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:331</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a3237bb6ab14e333eaa56bf57d730affa"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a3237bb6ab14e333eaa56bf57d730affa">Widgets::Terminal::setWidgetEnabled</a></div><div class="ttdeci">void setWidgetEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:457</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a38a17a4bdb482657aba6521d88be0438"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a38a17a4bdb482657aba6521d88be0438">Widgets::Terminal::setReadOnly</a></div><div class="ttdeci">void setReadOnly(const bool ro)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:375</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a4be741767b27739eec98901477e1c3d4"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a4be741767b27739eec98901477e1c3d4">Widgets::Terminal::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:339</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a545f0f064b1e8a7a7a1f5d92bd22092a"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a545f0f064b1e8a7a7a1f5d92bd22092a">Widgets::Terminal::setMaximumBlockCount</a></div><div class="ttdeci">void setMaximumBlockCount(const int maxBlockCount)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:595</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a5fa96682214be5c8c4134c65cd62576b"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a5fa96682214be5c8c4134c65cd62576b">Widgets::Terminal::insertText</a></div><div class="ttdeci">void insertText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:491</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a6a922baee78274419c56ea308ea57946"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a6a922baee78274419c56ea308ea57946">Widgets::Terminal::paint</a></div><div class="ttdeci">virtual void paint(QPainter *painter) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:144</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a73ef8a624e89166d33bbcd14b4277b25"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a73ef8a624e89166d33bbcd14b4277b25">Widgets::Terminal::setFont</a></div><div class="ttdeci">void setFont(const QFont &amp;font)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:386</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a84437f3b5988c73efdc1f88f5fa089c0"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a84437f3b5988c73efdc1f88f5fa089c0">Widgets::Terminal::setVt100Emulation</a></div><div class="ttdeci">void setVt100Emulation(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:529</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a870c80ba87643c5bfde1bad264c6c635"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a870c80ba87643c5bfde1bad264c6c635">Widgets::Terminal::setScrollbarWidth</a></div><div class="ttdeci">void setScrollbarWidth(const int width)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:434</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a87af9a683320c27a8374b539b9983ad3"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a87af9a683320c27a8374b539b9983ad3">Widgets::Terminal::document</a></div><div class="ttdeci">QTextDocument * document() const</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:315</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a8d9dfeb883b1becd06540866782ca1d7"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a8d9dfeb883b1becd06540866782ca1d7">Widgets::Terminal::setPlaceholderText</a></div><div class="ttdeci">void setPlaceholderText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:550</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a90626915029d76b62afcc3d3f6e2db8f"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a90626915029d76b62afcc3d3f6e2db8f">Widgets::Terminal::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:115</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a95bddbf25910e47dce3657bcae4154d5"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a95bddbf25910e47dce3657bcae4154d5">Widgets::Terminal::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:153</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_a9b431759095a97622a59801010ad19c1"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a9b431759095a97622a59801010ad19c1">Widgets::Terminal::processMouseEvents</a></div><div class="ttdeci">void processMouseEvents(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:672</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_aa9e65bee32a4b51f574c597d926147c6"><div class="ttname"><a href="class_widgets_1_1_terminal.html#aa9e65bee32a4b51f574c597d926147c6">Widgets::Terminal::setAutoscroll</a></div><div class="ttdeci">void setAutoscroll(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:470</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_abe73b31cf5b9adb31110a35fc0343fb8"><div class="ttname"><a href="class_widgets_1_1_terminal.html#abe73b31cf5b9adb31110a35fc0343fb8">Widgets::Terminal::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:419</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_abf569ffecaa50d509572175935b9eee4"><div class="ttname"><a href="class_widgets_1_1_terminal.html#abf569ffecaa50d509572175935b9eee4">Widgets::Terminal::setPalette</a></div><div class="ttdeci">void setPalette(const QPalette &amp;palette)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:446</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ac74d08cd74e5a880fd5084b957b072c9"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ac74d08cd74e5a880fd5084b957b072c9">Widgets::Terminal::scrollToBottom</a></div><div class="ttdeci">void scrollToBottom(const bool repaint=false)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:561</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ad2f8b71bdc1bd1232d84466e1cd8359f"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ad2f8b71bdc1bd1232d84466e1cd8359f">Widgets::Terminal::setCenterOnScroll</a></div><div class="ttdeci">void setCenterOnScroll(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:516</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ad61474a2832dc94b93d0378575c822a2"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ad61474a2832dc94b93d0378575c822a2">Widgets::Terminal::textEdit</a></div><div class="ttdeci">QPlainTextEdit * textEdit() const</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:323</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_add5a7d4dd45b68af9a0afb1cc845af2f"><div class="ttname"><a href="class_widgets_1_1_terminal.html#add5a7d4dd45b68af9a0afb1cc845af2f">Widgets::Terminal::~Terminal</a></div><div class="ttdeci">~Terminal()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:107</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_adf638c3c8566a2bee83c63d640ad0bc5"><div class="ttname"><a href="class_widgets_1_1_terminal.html#adf638c3c8566a2bee83c63d640ad0bc5">Widgets::Terminal::append</a></div><div class="ttdeci">void append(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:401</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ae0265505bf27806fe2eef816c65f62a7"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ae0265505bf27806fe2eef816c65f62a7">Widgets::Terminal::processWheelEvents</a></div><div class="ttdeci">void processWheelEvents(QWheelEvent *event)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:708</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ae50f3321e7ee85ab038bf122aafcbd36"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ae50f3321e7ee85ab038bf122aafcbd36">Widgets::Terminal::clearSelection</a></div><div class="ttdeci">void clearSelection()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:360</div></div>
-<div class="ttc" id="aclass_widgets_1_1_terminal_html_ae9cd69178b0b546becaf8d1cd0f4407d"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ae9cd69178b0b546becaf8d1cd0f4407d">Widgets::Terminal::setUndoRedoEnabled</a></div><div class="ttdeci">void setUndoRedoEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:538</div></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;QPlainTextEdit&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;QQuickPaintedItem&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>Widgets</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_widgets_1_1_formatted_text.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a> &amp;other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a>(<span class="keyword">const</span> QString &amp;txt, <span class="keyword">const</span> QTextCharFormat &amp;fmt = QTextCharFormat())</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        : text(txt)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        , format(fmt)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    QString text;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    QTextCharFormat format;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_widgets_1_1_ansi_escape_code_handler.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_ansi_escape_code_handler.html">AnsiEscapeCodeHandler</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    QVector&lt;FormattedText&gt; parseText(<span class="keyword">const</span> <a class="code hl_class" href="class_widgets_1_1_formatted_text.html">FormattedText</a> &amp;input);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> setTextEdit(QPlainTextEdit *widget);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> endFormatScope();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> setFormatScope(<span class="keyword">const</span> QTextCharFormat &amp;charFormat);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QString m_pendingText;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QPlainTextEdit *textEdit;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QString m_alternateTerminator;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    QTextCharFormat m_previousFormat;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">bool</span> m_previousFormatClosed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> m_waitingForTerminator = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_widgets_1_1_terminal.html">   64</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_terminal.html">Terminal</a> : <span class="keyword">public</span> QQuickPaintedItem</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    Q_OBJECT</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    QML_ELEMENT</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    Q_PROPERTY(QFont font</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>               READ font</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a5e4868e14561e434c019eed54b38fd30">setFont</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>               NOTIFY fontChanged)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    Q_PROPERTY(QString text</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>               READ text</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ac18834723b7151cb4ad3f7269fabd848">setText</a></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>               NOTIFY textChanged)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    Q_PROPERTY(<span class="keywordtype">bool</span> autoscroll</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>               READ autoscroll</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ac6f807f9eb572a4546d5233a52b64661">setAutoscroll</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>               NOTIFY autoscrollChanged)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    Q_PROPERTY(QString placeholderText</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>               READ placeholderText</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a6418bb2fda1c809f26ef9a1686599dfd">setPlaceholderText</a></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>               NOTIFY placeholderTextChanged)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    Q_PROPERTY(<span class="keywordtype">bool</span> undoRedoEnabled</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>               READ undoRedoEnabled</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ad65c0c03b78fa19bbb2b4d22f8322cdc">setUndoRedoEnabled</a></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>               NOTIFY undoRedoEnabledChanged)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    Q_PROPERTY(<span class="keywordtype">int</span> wordWrapMode</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>               READ wordWrapMode</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a45dc10aec845ba4ff8f8d4c91dcf340f">setWordWrapMode</a></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>               NOTIFY wordWrapModeChanged)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    Q_PROPERTY(<span class="keywordtype">bool</span> readOnly</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>               READ readOnly</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a5e03ad6313271a7ddad478664ef121c2">setReadOnly</a></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>               NOTIFY readOnlyChanged)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    Q_PROPERTY(<span class="keywordtype">bool</span> centerOnScroll</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>               READ centerOnScroll</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3179916ff1488ccf78373c576915f5f3">setCenterOnScroll</a></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>               NOTIFY centerOnScrollChanged)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    Q_PROPERTY(<span class="keywordtype">bool</span> widgetEnabled</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               READ widgetEnabled</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abb15ba8fc03194f9696e9620eb488c06">setWidgetEnabled</a></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>               NOTIFY widgetEnabledChanged)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    Q_PROPERTY(QPalette palette</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>               READ palette</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a65d05a0be0814e93654291b37d7b5079">setPalette</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               NOTIFY colorPaletteChanged)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    Q_PROPERTY(<span class="keywordtype">int</span> maximumBlockCount</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>               READ maximumBlockCount</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a1f5fd09050a4baa1fcf40450228d714f">setMaximumBlockCount</a></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>               NOTIFY maximumBlockCountChanged)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    Q_PROPERTY(<span class="keywordtype">bool</span> copyAvailable</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>               READ copyAvailable</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>               NOTIFY copyAvailableChanged)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    Q_PROPERTY(<span class="keywordtype">bool</span> empty</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>               READ empty</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>               NOTIFY textChanged)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    Q_PROPERTY(<span class="keywordtype">int</span> scrollbarWidth</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>               READ scrollbarWidth</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3e47ae050b8b9242248ba134acd989c3">setScrollbarWidth</a></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>               NOTIFY scrollbarWidthChanged)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    Q_PROPERTY(<span class="keywordtype">bool</span> vt100emulation</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>               READ vt100emulation</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>               WRITE <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a8c74007a5e90c5d39cb4a59ce1fad267">setVt100Emulation</a></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>               NOTIFY vt100EmulationChanged)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>signals:</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> textChanged();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> fontChanged();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> readOnlyChanged();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> autoscrollChanged();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> colorPaletteChanged();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> wordWrapModeChanged();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> copyAvailableChanged();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordtype">void</span> widgetEnabledChanged();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordtype">void</span> scrollbarWidthChanged();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> centerOnScrollChanged();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> vt100EmulationChanged();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">void</span> placeholderTextChanged();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> undoRedoEnabledChanged();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> maximumBlockCountChanged();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_function" href="class_widgets_1_1_terminal.html#a456ceb278f42d2aa103d6a45cb782dfd">Terminal</a>(QQuickItem *parent = 0);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_function" href="class_widgets_1_1_terminal.html#a093b0fa9b2f3e7b16b135a9287d2fe2d">~Terminal</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">event</a>(QEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">event</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#ae6fc62a6694d57a9b86d427880fdd337">paint</a>(QPainter *painter) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#aab017d51f49b867bf8a6f5ed6397e121">eventFilter</a>(QObject *watched, QEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">event</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    QFont font() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    QString text() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">bool</span> empty() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordtype">bool</span> readOnly() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordtype">bool</span> autoscroll() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    QPalette palette() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">int</span> wordWrapMode() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">int</span> scrollbarWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">bool</span> copyAvailable() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordtype">bool</span> widgetEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">bool</span> centerOnScroll() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">bool</span> vt100emulation() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">bool</span> undoRedoEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">int</span> maximumBlockCount() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    QString placeholderText() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    QTextDocument *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a3e30d6c681813aae035c20b7a75ac547">document</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    QPlainTextEdit *<a class="code hl_function" href="class_widgets_1_1_terminal.html#a377b18131fb099da03914e1371a77dc3">textEdit</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#af9d6f895a2f28388ea2c0ac43a28e20c">copy</a>();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#aea297cd864ca05b7f8b7aea6f6f2366d">clear</a>();</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a13c2d981866dd7dcd017734a3e961d75">selectAll</a>();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a133a43b5d5d008ae2b831adf7ed74b7b">clearSelection</a>();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a5e03ad6313271a7ddad478664ef121c2">setReadOnly</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> ro);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a5e4868e14561e434c019eed54b38fd30">setFont</a>(<span class="keyword">const</span> QFont &amp;font);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a14058e98b283b45d987ed65f9749ee2c">append</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ac18834723b7151cb4ad3f7269fabd848">setText</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a080332ee1e28321925202bf1b9bdbd30">insertText</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a45dc10aec845ba4ff8f8d4c91dcf340f">setWordWrapMode</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> mode);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ac6f807f9eb572a4546d5233a52b64661">setAutoscroll</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3e47ae050b8b9242248ba134acd989c3">setScrollbarWidth</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> width);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a65d05a0be0814e93654291b37d7b5079">setPalette</a>(<span class="keyword">const</span> QPalette &amp;palette);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#abb15ba8fc03194f9696e9620eb488c06">setWidgetEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a3179916ff1488ccf78373c576915f5f3">setCenterOnScroll</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a8c74007a5e90c5d39cb4a59ce1fad267">setVt100Emulation</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#ad65c0c03b78fa19bbb2b4d22f8322cdc">setUndoRedoEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a6418bb2fda1c809f26ef9a1686599dfd">setPlaceholderText</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a0c38456b85f84f23939104a0f6e8b1f2">scrollToBottom</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> repaint = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_terminal.html#a1f5fd09050a4baa1fcf40450228d714f">setMaximumBlockCount</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> maxBlockCount);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordtype">void</span> updateWidgetSize();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">void</span> updateScrollbarVisibility();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordtype">void</span> setCopyAvailable(<span class="keyword">const</span> <span class="keywordtype">bool</span> yes);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordtype">void</span> addText(<span class="keyword">const</span> QString &amp;text, <span class="keyword">const</span> <span class="keywordtype">bool</span> enableVt100);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a0ffddf7254f4114ce7e3fcd37e3814f7">processMouseEvents</a>(QMouseEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">event</a>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_terminal.html#a6da0f0426da812f98f3b12abe185969d">processWheelEvents</a>(QWheelEvent *<a class="code hl_function" href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">event</a>);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    QString vt100Processing(<span class="keyword">const</span> QString &amp;data);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordtype">bool</span> m_autoscroll;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordtype">bool</span> m_emulateVt100;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">bool</span> m_copyAvailable;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    QPlainTextEdit *m_textEdit;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_class" href="class_widgets_1_1_ansi_escape_code_handler.html">AnsiEscapeCodeHandler</a> m_escapeCodeHandler;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>};</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
+<div class="ttc" id="aclass_widgets_1_1_ansi_escape_code_handler_html"><div class="ttname"><a href="class_widgets_1_1_ansi_escape_code_handler.html">Widgets::AnsiEscapeCodeHandler</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:47</div></div>
+<div class="ttc" id="aclass_widgets_1_1_formatted_text_html"><div class="ttname"><a href="class_widgets_1_1_formatted_text.html">Widgets::FormattedText</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:32</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html"><div class="ttname"><a href="class_widgets_1_1_terminal.html">Widgets::Terminal</a></div><div class="ttdef"><b>Definition:</b> Terminal.h:65</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a080332ee1e28321925202bf1b9bdbd30"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a080332ee1e28321925202bf1b9bdbd30">Widgets::Terminal::insertText</a></div><div class="ttdeci">void insertText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:502</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a093b0fa9b2f3e7b16b135a9287d2fe2d"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a093b0fa9b2f3e7b16b135a9287d2fe2d">Widgets::Terminal::~Terminal</a></div><div class="ttdeci">~Terminal()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:118</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a0c38456b85f84f23939104a0f6e8b1f2"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a0c38456b85f84f23939104a0f6e8b1f2">Widgets::Terminal::scrollToBottom</a></div><div class="ttdeci">void scrollToBottom(const bool repaint=false)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:573</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a0ffddf7254f4114ce7e3fcd37e3814f7"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a0ffddf7254f4114ce7e3fcd37e3814f7">Widgets::Terminal::processMouseEvents</a></div><div class="ttdeci">void processMouseEvents(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:684</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a133a43b5d5d008ae2b831adf7ed74b7b"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a133a43b5d5d008ae2b831adf7ed74b7b">Widgets::Terminal::clearSelection</a></div><div class="ttdeci">void clearSelection()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:371</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a13c2d981866dd7dcd017734a3e961d75"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a13c2d981866dd7dcd017734a3e961d75">Widgets::Terminal::selectAll</a></div><div class="ttdeci">void selectAll()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:362</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a14058e98b283b45d987ed65f9749ee2c"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a14058e98b283b45d987ed65f9749ee2c">Widgets::Terminal::append</a></div><div class="ttdeci">void append(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:412</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a1f5fd09050a4baa1fcf40450228d714f"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a1f5fd09050a4baa1fcf40450228d714f">Widgets::Terminal::setMaximumBlockCount</a></div><div class="ttdeci">void setMaximumBlockCount(const int maxBlockCount)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:607</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a3179916ff1488ccf78373c576915f5f3"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a3179916ff1488ccf78373c576915f5f3">Widgets::Terminal::setCenterOnScroll</a></div><div class="ttdeci">void setCenterOnScroll(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:528</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a377b18131fb099da03914e1371a77dc3"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a377b18131fb099da03914e1371a77dc3">Widgets::Terminal::textEdit</a></div><div class="ttdeci">QPlainTextEdit * textEdit() const</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:334</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a3e30d6c681813aae035c20b7a75ac547"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a3e30d6c681813aae035c20b7a75ac547">Widgets::Terminal::document</a></div><div class="ttdeci">QTextDocument * document() const</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:326</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a3e47ae050b8b9242248ba134acd989c3"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a3e47ae050b8b9242248ba134acd989c3">Widgets::Terminal::setScrollbarWidth</a></div><div class="ttdeci">void setScrollbarWidth(const int width)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:445</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a456ceb278f42d2aa103d6a45cb782dfd"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a456ceb278f42d2aa103d6a45cb782dfd">Widgets::Terminal::Terminal</a></div><div class="ttdeci">Terminal(QQuickItem *parent=0)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:53</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a45dc10aec845ba4ff8f8d4c91dcf340f"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a45dc10aec845ba4ff8f8d4c91dcf340f">Widgets::Terminal::setWordWrapMode</a></div><div class="ttdeci">void setWordWrapMode(const int mode)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:513</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a5e03ad6313271a7ddad478664ef121c2"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a5e03ad6313271a7ddad478664ef121c2">Widgets::Terminal::setReadOnly</a></div><div class="ttdeci">void setReadOnly(const bool ro)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:386</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a5e4868e14561e434c019eed54b38fd30"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a5e4868e14561e434c019eed54b38fd30">Widgets::Terminal::setFont</a></div><div class="ttdeci">void setFont(const QFont &amp;font)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:397</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a6418bb2fda1c809f26ef9a1686599dfd"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a6418bb2fda1c809f26ef9a1686599dfd">Widgets::Terminal::setPlaceholderText</a></div><div class="ttdeci">void setPlaceholderText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:562</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a65d05a0be0814e93654291b37d7b5079"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a65d05a0be0814e93654291b37d7b5079">Widgets::Terminal::setPalette</a></div><div class="ttdeci">void setPalette(const QPalette &amp;palette)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:457</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a6da0f0426da812f98f3b12abe185969d"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a6da0f0426da812f98f3b12abe185969d">Widgets::Terminal::processWheelEvents</a></div><div class="ttdeci">void processWheelEvents(QWheelEvent *event)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:720</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_a8c74007a5e90c5d39cb4a59ce1fad267"><div class="ttname"><a href="class_widgets_1_1_terminal.html#a8c74007a5e90c5d39cb4a59ce1fad267">Widgets::Terminal::setVt100Emulation</a></div><div class="ttdeci">void setVt100Emulation(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:541</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_aab017d51f49b867bf8a6f5ed6397e121"><div class="ttname"><a href="class_widgets_1_1_terminal.html#aab017d51f49b867bf8a6f5ed6397e121">Widgets::Terminal::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:164</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_abb15ba8fc03194f9696e9620eb488c06"><div class="ttname"><a href="class_widgets_1_1_terminal.html#abb15ba8fc03194f9696e9620eb488c06">Widgets::Terminal::setWidgetEnabled</a></div><div class="ttdeci">void setWidgetEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:468</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_ac18834723b7151cb4ad3f7269fabd848"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ac18834723b7151cb4ad3f7269fabd848">Widgets::Terminal::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:430</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_ac6f807f9eb572a4546d5233a52b64661"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ac6f807f9eb572a4546d5233a52b64661">Widgets::Terminal::setAutoscroll</a></div><div class="ttdeci">void setAutoscroll(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:481</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_acb637275620914dc13773b62ac8bb7c9"><div class="ttname"><a href="class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9">Widgets::Terminal::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:126</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_ad65c0c03b78fa19bbb2b4d22f8322cdc"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ad65c0c03b78fa19bbb2b4d22f8322cdc">Widgets::Terminal::setUndoRedoEnabled</a></div><div class="ttdeci">void setUndoRedoEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:550</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_ae6fc62a6694d57a9b86d427880fdd337"><div class="ttname"><a href="class_widgets_1_1_terminal.html#ae6fc62a6694d57a9b86d427880fdd337">Widgets::Terminal::paint</a></div><div class="ttdeci">virtual void paint(QPainter *painter) override</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:155</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_aea297cd864ca05b7f8b7aea6f6f2366d"><div class="ttname"><a href="class_widgets_1_1_terminal.html#aea297cd864ca05b7f8b7aea6f6f2366d">Widgets::Terminal::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:350</div></div>
+<div class="ttc" id="aclass_widgets_1_1_terminal_html_af9d6f895a2f28388ea2c0ac43a28e20c"><div class="ttname"><a href="class_widgets_1_1_terminal.html#af9d6f895a2f28388ea2c0ac43a28e20c">Widgets::Terminal::copy</a></div><div class="ttdeci">void copy()</div><div class="ttdef"><b>Definition:</b> Terminal.cpp:342</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

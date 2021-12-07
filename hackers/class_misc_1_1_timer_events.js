@@ -1,7 +1,7 @@
 var class_misc_1_1_timer_events =
 [
-    [ "highFreqTimeoutHz", "class_misc_1_1_timer_events.html#a594b5bd97a2d6ad53fcbf7ba23b4b8c4", null ],
-    [ "setHighFreqTimeout", "class_misc_1_1_timer_events.html#ad25a36b74f70bc7ed22d6541de338f83", null ],
-    [ "startTimers", "class_misc_1_1_timer_events.html#afbccf1a3eff65fcc904b5641ad2e92ff", null ],
-    [ "stopTimers", "class_misc_1_1_timer_events.html#a2d4bf2d4f8917a3d049f3e2f503087d4", null ]
+    [ "highFreqTimeoutHz", "class_misc_1_1_timer_events.html#a7b936a397dff168a102fc9790e8ef680", null ],
+    [ "setHighFreqTimeout", "class_misc_1_1_timer_events.html#a6ca967abe9d80c012b34596effde1bff", null ],
+    [ "startTimers", "class_misc_1_1_timer_events.html#abf7216d9b8d08c7c8bdba53e7caac8b0", null ],
+    [ "stopTimers", "class_misc_1_1_timer_events.html#a2804c418553a94544a8053791181ad19", null ]
 ];
