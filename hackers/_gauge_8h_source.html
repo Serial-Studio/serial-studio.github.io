@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_gauge_8h_source.html',''); initResiza
   <div class="headertitle"><div class="title">Gauge.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_gauge_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020-2021 Alex Spataru &lt;https://github.com/alex-spataru&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -112,10 +112,10 @@ $(document).ready(function(){initNavTree('_gauge_8h_source.html',''); initResiza
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;Common/BaseWidget.h&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;Common/AnalogGauge.h&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="_base_widget_8h.html">Common/BaseWidget.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="_analog_gauge_8h.html">Common/AnalogGauge.h</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span>Widgets</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_widgets.html">Widgets</a></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_widgets_1_1_gauge.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_gauge.html">Gauge</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_widgets_1_1_base_widget.html">BaseWidget</a></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
@@ -125,23 +125,29 @@ $(document).ready(function(){initNavTree('_gauge_8h_source.html',''); initResiza
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="class_widgets_1_1_gauge.html#af51b713fbca7f267d380a0be83d6f02d">Gauge</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index = -1);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> updateData();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_gauge.html#acfde4afc3a5d92a4c0bfdb124a09a2b9">updateData</a>();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_widgets_1_1_analog_gauge.html">AnalogGauge</a> m_gauge;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_widgets_1_1_gauge.html#ac2de4359c85e66fee73ec1517b120b34">   41</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_widgets_1_1_gauge.html#ac2de4359c85e66fee73ec1517b120b34">m_index</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_widgets_1_1_gauge.html#a1bee69f53e1a278434f02333e3db03d9">   42</a></span>    <a class="code hl_class" href="class_widgets_1_1_analog_gauge.html">AnalogGauge</a> <a class="code hl_variable" href="class_widgets_1_1_gauge.html#a1bee69f53e1a278434f02333e3db03d9">m_gauge</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="a_analog_gauge_8h_html"><div class="ttname"><a href="_analog_gauge_8h.html">AnalogGauge.h</a></div></div>
+<div class="ttc" id="a_base_widget_8h_html"><div class="ttname"><a href="_base_widget_8h.html">BaseWidget.h</a></div></div>
 <div class="ttc" id="aclass_widgets_1_1_analog_gauge_html"><div class="ttname"><a href="class_widgets_1_1_analog_gauge.html">Widgets::AnalogGauge</a></div><div class="ttdef"><b>Definition:</b> AnalogGauge.h:31</div></div>
 <div class="ttc" id="aclass_widgets_1_1_base_widget_html"><div class="ttname"><a href="class_widgets_1_1_base_widget.html">Widgets::BaseWidget</a></div><div class="ttdef"><b>Definition:</b> BaseWidget.h:32</div></div>
 <div class="ttc" id="aclass_widgets_1_1_gauge_html"><div class="ttname"><a href="class_widgets_1_1_gauge.html">Widgets::Gauge</a></div><div class="ttdef"><b>Definition:</b> Gauge.h:31</div></div>
+<div class="ttc" id="aclass_widgets_1_1_gauge_html_a1bee69f53e1a278434f02333e3db03d9"><div class="ttname"><a href="class_widgets_1_1_gauge.html#a1bee69f53e1a278434f02333e3db03d9">Widgets::Gauge::m_gauge</a></div><div class="ttdeci">AnalogGauge m_gauge</div><div class="ttdef"><b>Definition:</b> Gauge.h:42</div></div>
+<div class="ttc" id="aclass_widgets_1_1_gauge_html_ac2de4359c85e66fee73ec1517b120b34"><div class="ttname"><a href="class_widgets_1_1_gauge.html#ac2de4359c85e66fee73ec1517b120b34">Widgets::Gauge::m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>Definition:</b> Gauge.h:41</div></div>
+<div class="ttc" id="aclass_widgets_1_1_gauge_html_acfde4afc3a5d92a4c0bfdb124a09a2b9"><div class="ttname"><a href="class_widgets_1_1_gauge.html#acfde4afc3a5d92a4c0bfdb124a09a2b9">Widgets::Gauge::updateData</a></div><div class="ttdeci">void updateData()</div><div class="ttdef"><b>Definition:</b> Gauge.cpp:86</div></div>
 <div class="ttc" id="aclass_widgets_1_1_gauge_html_af51b713fbca7f267d380a0be83d6f02d"><div class="ttname"><a href="class_widgets_1_1_gauge.html#af51b713fbca7f267d380a0be83d6f02d">Widgets::Gauge::Gauge</a></div><div class="ttdeci">Gauge(const int index=-1)</div><div class="ttdef"><b>Definition:</b> Gauge.cpp:33</div></div>
+<div class="ttc" id="anamespace_widgets_html"><div class="ttname"><a href="namespace_widgets.html">Widgets</a></div><div class="ttdef"><b>Definition:</b> Accelerometer.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><b>Gauge.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><a class="el" href="_gauge_8h.html">Gauge.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

@@ -1,0 +1,4 @@
+<map id="KLed" name="KLed">
+<area shape="rect" id="node1" title="An LED widget." alt="" coords="16,80,68,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,79,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="UI::Dashboard::getGauge" name="UI::Dashboard::getGauge">
+<area shape="rect" id="node1" title=" " alt="" coords="455,5,625,32"/>
+<area shape="rect" id="node2" href="$class_widgets_1_1_gauge.html#acfde4afc3a5d92a4c0bfdb124a09a2b9" title=" " alt="" coords="216,5,407,32"/>
+<area shape="rect" id="node3" href="$class_widgets_1_1_gauge.html#af51b713fbca7f267d380a0be83d6f02d" title=" " alt="" coords="5,5,168,32"/>
+</map>

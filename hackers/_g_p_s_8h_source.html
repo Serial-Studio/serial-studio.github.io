@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_g_p_s_8h_source.html',''); initResiza
   <div class="headertitle"><div class="title">GPS.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_g_p_s_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020-2021 Alex Spataru &lt;https://github.com/alex-spataru&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_g_p_s_8h_source.html',''); initResiza
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">class </span>QNetworkReply;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span>Widgets</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_widgets.html">Widgets</a></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_g_p_s.html">GPS</a> : <span class="keyword">public</span> QWidget</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
@@ -133,37 +133,50 @@ $(document).ready(function(){initNavTree('_g_p_s_8h_source.html',''); initResiza
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="class_widgets_1_1_g_p_s.html#a6a35186de21b6cbf7694e5090bd304fe">~GPS</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> updateData();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_g_p_s.html#ab1fde1f6e15f92656f281b881113aaec">updateData</a>();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_g_p_s.html#a0b5f6420e879bba802384182beb871ab">resizeEvent</a>(QResizeEvent *event);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_widgets_1_1_g_p_s.html#acb6ab6e3f44196b6ce01d0a0c0967aa9">mousePressEvent</a>(QMouseEvent *event);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    qreal m_lat;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    qreal m_lon;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    qreal m_alt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QLabel *m_label;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QVBoxLayout m_layout;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    QPushButton *m_zoomIn;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    QPushButton *m_zoomOut;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    QWidget m_titleWidget;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    QHBoxLayout m_titleLayout;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    qmapcontrol::MapControl m_mapControl;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#aa2cb9f177e0515e77d50f302c83cde8a">   53</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#aa2cb9f177e0515e77d50f302c83cde8a">m_index</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#ae230f8723c040cfe6bb1d8d2ac9511d7">   54</a></span>    qreal <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#ae230f8723c040cfe6bb1d8d2ac9511d7">m_lat</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a746fba64dcee87a552d27fe082176fb7">   55</a></span>    qreal <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a746fba64dcee87a552d27fe082176fb7">m_lon</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a006a4451535e84a1fc356d1db474a5a3">   56</a></span>    qreal <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a006a4451535e84a1fc356d1db474a5a3">m_alt</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a1d08fa1da048e0bc46f55b4a7fb7b81c">   57</a></span>    QLabel *<a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a1d08fa1da048e0bc46f55b4a7fb7b81c">m_label</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a37c2586b99bdedca08728bf26b95bfb4">   58</a></span>    QVBoxLayout <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a37c2586b99bdedca08728bf26b95bfb4">m_layout</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a4b2e3d0ef5753c19dae661382e019666">   59</a></span>    QPushButton *<a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a4b2e3d0ef5753c19dae661382e019666">m_zoomIn</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#afe12852bb7e47202838ab06680a7688c">   60</a></span>    QPushButton *<a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#afe12852bb7e47202838ab06680a7688c">m_zoomOut</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#aca98ffbe32bfacfbe5016802aaf1144f">   61</a></span>    QWidget <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#aca98ffbe32bfacfbe5016802aaf1144f">m_titleWidget</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#a306fd4824c5c3cc3adb405360ee6cec6">   62</a></span>    QHBoxLayout <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#a306fd4824c5c3cc3adb405360ee6cec6">m_titleLayout</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_widgets_1_1_g_p_s.html#afc9f2798d39d5475b8da916e763b1cf7">   63</a></span>    qmapcontrol::MapControl <a class="code hl_variable" href="class_widgets_1_1_g_p_s.html#afc9f2798d39d5475b8da916e763b1cf7">m_mapControl</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 <div class="ttc" id="aclass_widgets_1_1_g_p_s_html"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html">Widgets::GPS</a></div><div class="ttdef"><b>Definition:</b> GPS.h:38</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a006a4451535e84a1fc356d1db474a5a3"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a006a4451535e84a1fc356d1db474a5a3">Widgets::GPS::m_alt</a></div><div class="ttdeci">qreal m_alt</div><div class="ttdef"><b>Definition:</b> GPS.h:56</div></div>
 <div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a0b5f6420e879bba802384182beb871ab"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a0b5f6420e879bba802384182beb871ab">Widgets::GPS::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> GPS.cpp:167</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a1d08fa1da048e0bc46f55b4a7fb7b81c"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a1d08fa1da048e0bc46f55b4a7fb7b81c">Widgets::GPS::m_label</a></div><div class="ttdeci">QLabel * m_label</div><div class="ttdef"><b>Definition:</b> GPS.h:57</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a306fd4824c5c3cc3adb405360ee6cec6"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a306fd4824c5c3cc3adb405360ee6cec6">Widgets::GPS::m_titleLayout</a></div><div class="ttdeci">QHBoxLayout m_titleLayout</div><div class="ttdef"><b>Definition:</b> GPS.h:62</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a37c2586b99bdedca08728bf26b95bfb4"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a37c2586b99bdedca08728bf26b95bfb4">Widgets::GPS::m_layout</a></div><div class="ttdeci">QVBoxLayout m_layout</div><div class="ttdef"><b>Definition:</b> GPS.h:58</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a4b2e3d0ef5753c19dae661382e019666"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a4b2e3d0ef5753c19dae661382e019666">Widgets::GPS::m_zoomIn</a></div><div class="ttdeci">QPushButton * m_zoomIn</div><div class="ttdef"><b>Definition:</b> GPS.h:59</div></div>
 <div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a6a35186de21b6cbf7694e5090bd304fe"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a6a35186de21b6cbf7694e5090bd304fe">Widgets::GPS::~GPS</a></div><div class="ttdeci">~GPS()</div><div class="ttdef"><b>Definition:</b> GPS.cpp:111</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a746fba64dcee87a552d27fe082176fb7"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a746fba64dcee87a552d27fe082176fb7">Widgets::GPS::m_lon</a></div><div class="ttdeci">qreal m_lon</div><div class="ttdef"><b>Definition:</b> GPS.h:55</div></div>
 <div class="ttc" id="aclass_widgets_1_1_g_p_s_html_a7da76a696d718d2ff5f887416cdfbe04"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#a7da76a696d718d2ff5f887416cdfbe04">Widgets::GPS::GPS</a></div><div class="ttdeci">GPS(const int index=-1)</div><div class="ttdef"><b>Definition:</b> GPS.cpp:35</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_aa2cb9f177e0515e77d50f302c83cde8a"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#aa2cb9f177e0515e77d50f302c83cde8a">Widgets::GPS::m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>Definition:</b> GPS.h:53</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_ab1fde1f6e15f92656f281b881113aaec"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#ab1fde1f6e15f92656f281b881113aaec">Widgets::GPS::updateData</a></div><div class="ttdeci">void updateData()</div><div class="ttdef"><b>Definition:</b> GPS.cpp:120</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_aca98ffbe32bfacfbe5016802aaf1144f"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#aca98ffbe32bfacfbe5016802aaf1144f">Widgets::GPS::m_titleWidget</a></div><div class="ttdeci">QWidget m_titleWidget</div><div class="ttdef"><b>Definition:</b> GPS.h:61</div></div>
 <div class="ttc" id="aclass_widgets_1_1_g_p_s_html_acb6ab6e3f44196b6ce01d0a0c0967aa9"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#acb6ab6e3f44196b6ce01d0a0c0967aa9">Widgets::GPS::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> GPS.cpp:178</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_ae230f8723c040cfe6bb1d8d2ac9511d7"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#ae230f8723c040cfe6bb1d8d2ac9511d7">Widgets::GPS::m_lat</a></div><div class="ttdeci">qreal m_lat</div><div class="ttdef"><b>Definition:</b> GPS.h:54</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_afc9f2798d39d5475b8da916e763b1cf7"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#afc9f2798d39d5475b8da916e763b1cf7">Widgets::GPS::m_mapControl</a></div><div class="ttdeci">qmapcontrol::MapControl m_mapControl</div><div class="ttdef"><b>Definition:</b> GPS.h:63</div></div>
+<div class="ttc" id="aclass_widgets_1_1_g_p_s_html_afe12852bb7e47202838ab06680a7688c"><div class="ttname"><a href="class_widgets_1_1_g_p_s.html#afe12852bb7e47202838ab06680a7688c">Widgets::GPS::m_zoomOut</a></div><div class="ttdeci">QPushButton * m_zoomOut</div><div class="ttdef"><b>Definition:</b> GPS.h:60</div></div>
+<div class="ttc" id="anamespace_widgets_html"><div class="ttname"><a href="namespace_widgets.html">Widgets</a></div><div class="ttdef"><b>Definition:</b> Accelerometer.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><b>GPS.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><a class="el" href="_g_p_s_8h.html">GPS.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

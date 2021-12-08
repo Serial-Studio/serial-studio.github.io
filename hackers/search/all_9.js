@@ -1,12 +1,22 @@
 var searchData=
 [
-  ['jfi_5fobject_0',['JFI_Object',['../struct_j_f_i___object.html',1,'']]],
-  ['jsondata_1',['jsonData',['../class_j_s_o_n_1_1_dataset.html#a39b3014256e8df76d3232dbfcba2352d',1,'JSON::Dataset']]],
-  ['jsonfilename_2',['jsonFileName',['../class_j_s_o_n_1_1_editor.html#af148ed0cf7b5f84dcc895f1ade428757',1,'JSON::Editor']]],
-  ['jsonfilepath_3',['jsonFilePath',['../class_j_s_o_n_1_1_editor.html#a8ddb29ebd0af9b37e49777fded1bbc22',1,'JSON::Editor']]],
-  ['jsonmapdata_4',['jsonMapData',['../class_j_s_o_n_1_1_generator.html#a39d19b22c92d224ed377ad9267e5d49b',1,'JSON::Generator']]],
-  ['jsonmapfilename_5',['jsonMapFilename',['../class_j_s_o_n_1_1_generator.html#a7faf4935505966b7a8dcd958e790549c',1,'JSON::Generator']]],
-  ['jsonmapfilepath_6',['jsonMapFilepath',['../class_j_s_o_n_1_1_generator.html#a131cca61e2effcce4fc8ea076ccd8443',1,'JSON::Generator']]],
-  ['jsonprojectspath_7',['jsonProjectsPath',['../class_j_s_o_n_1_1_editor.html#a4690398c7a974f585e9435a3bf074871',1,'JSON::Editor']]],
-  ['jsonworker_8',['JSONWorker',['../class_j_s_o_n_1_1_j_s_o_n_worker.html',1,'JSON::JSONWorker'],['../class_j_s_o_n_1_1_j_s_o_n_worker.html#aeff3cf4e3c6ea706ee444a847a3e91c8',1,'JSON::JSONWorker::JSONWorker()']]]
+  ['jfi_5fcreatenew_0',['JFI_CreateNew',['../_frame_info_8h.html#a6fa7d15207463e1544c7abc8e95feaae',1,'JFI_CreateNew(const quint64 n, const QDateTime &amp;t, const QJsonDocument &amp;d):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#a6fa7d15207463e1544c7abc8e95feaae',1,'JFI_CreateNew(const quint64 n, const QDateTime &amp;t, const QJsonDocument &amp;d):&#160;FrameInfo.cpp']]],
+  ['jfi_5fempty_1',['JFI_Empty',['../_frame_info_8h.html#ac82c406910e021a7cd2e93cc02e54ddc',1,'JFI_Empty(const quint64 n=0):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#a5b5c2b41495a78489dea2fc9951dabb7',1,'JFI_Empty(const quint64 n):&#160;FrameInfo.cpp']]],
+  ['jfi_5fobject_2',['JFI_Object',['../struct_j_f_i___object.html',1,'']]],
+  ['jfi_5fsortlist_3',['JFI_SortList',['../_frame_info_8h.html#a8a07dc7a6e8cd7550e9c6892471b22ff',1,'JFI_SortList(QVector&lt; JFI_Object &gt; *list):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#a8a07dc7a6e8cd7550e9c6892471b22ff',1,'JFI_SortList(QVector&lt; JFI_Object &gt; *list):&#160;FrameInfo.cpp']]],
+  ['jfi_5fvalue_4',['JFI_Value',['../_frame_info_8h.html#a8c0d68fac5f5579d42254dbac421f91c',1,'JFI_Value(const QJsonObject &amp;obj, const QString &amp;a, const QString &amp;b):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#a6476171a350a0fd6783ef2fa96aaeecd',1,'JFI_Value(const QJsonObject &amp;obj, const QString &amp;key):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#aa8b2bbcf34dddb229e489c45ccb2be6f',1,'JFI_Value(const QJsonObject &amp;obj, const QStringList &amp;keys):&#160;FrameInfo.cpp'],['../_frame_info_8cpp.html#a8c0d68fac5f5579d42254dbac421f91c',1,'JFI_Value(const QJsonObject &amp;obj, const QString &amp;a, const QString &amp;b):&#160;FrameInfo.cpp'],['../_frame_info_8h.html#a6476171a350a0fd6783ef2fa96aaeecd',1,'JFI_Value(const QJsonObject &amp;obj, const QString &amp;key):&#160;FrameInfo.cpp'],['../_frame_info_8h.html#ad9fcbc72bbff282a33a11cec29ce0706',1,'JFI_Value(const QJsonObject &amp;obj, const StringList &amp;keys):&#160;FrameInfo.h']]],
+  ['json_5',['JSON',['../namespace_j_s_o_n.html',1,'']]],
+  ['jsonchanged_6',['jsonChanged',['../class_j_s_o_n_1_1_generator.html#a76bfda8ce1b3e8c898c36efab25904c3',1,'JSON::Generator']]],
+  ['jsondata_7',['jsonData',['../class_j_s_o_n_1_1_dataset.html#a39b3014256e8df76d3232dbfcba2352d',1,'JSON::Dataset']]],
+  ['jsondocument_8',['jsonDocument',['../struct_j_f_i___object.html#a2ed9ce19d54d5f8d6acc28926a3c5e27',1,'JFI_Object']]],
+  ['jsonfilechanged_9',['jsonFileChanged',['../class_j_s_o_n_1_1_editor.html#a4c725ed5039c947a19cc7ea1b2d82147',1,'JSON::Editor']]],
+  ['jsonfilemapchanged_10',['jsonFileMapChanged',['../class_j_s_o_n_1_1_generator.html#ac5a8f15341af2345871ffd54b83bd19b',1,'JSON::Generator']]],
+  ['jsonfilename_11',['jsonFileName',['../class_j_s_o_n_1_1_editor.html#a2db962b1983149b389fd7461ddb87fc7',1,'JSON::Editor::jsonFileName()'],['../class_j_s_o_n_1_1_editor.html#af148ed0cf7b5f84dcc895f1ade428757',1,'JSON::Editor::jsonFileName() const']]],
+  ['jsonfilepath_12',['jsonFilePath',['../class_j_s_o_n_1_1_editor.html#ab986a20779c2330b1440e85ca4509ad6',1,'JSON::Editor::jsonFilePath()'],['../class_j_s_o_n_1_1_editor.html#a8ddb29ebd0af9b37e49777fded1bbc22',1,'JSON::Editor::jsonFilePath() const']]],
+  ['jsonmapdata_13',['jsonMapData',['../class_j_s_o_n_1_1_generator.html#a39d19b22c92d224ed377ad9267e5d49b',1,'JSON::Generator']]],
+  ['jsonmapfilename_14',['jsonMapFilename',['../class_j_s_o_n_1_1_generator.html#a2393c720013e3d22b5d92efdbeaf98ea',1,'JSON::Generator::jsonMapFilename()'],['../class_j_s_o_n_1_1_generator.html#a7faf4935505966b7a8dcd958e790549c',1,'JSON::Generator::jsonMapFilename() const']]],
+  ['jsonmapfilepath_15',['jsonMapFilepath',['../class_j_s_o_n_1_1_generator.html#a10cb3cb8cdf615d8a7baf08660b42988',1,'JSON::Generator::jsonMapFilepath()'],['../class_j_s_o_n_1_1_generator.html#a131cca61e2effcce4fc8ea076ccd8443',1,'JSON::Generator::jsonMapFilepath() const']]],
+  ['jsonprojectspath_16',['jsonProjectsPath',['../class_j_s_o_n_1_1_editor.html#a4690398c7a974f585e9435a3bf074871',1,'JSON::Editor']]],
+  ['jsonready_17',['jsonReady',['../class_j_s_o_n_1_1_j_s_o_n_worker.html#a00bae9b2275db62efcf87ef14cb91063',1,'JSON::JSONWorker']]],
+  ['jsonworker_18',['JSONWorker',['../class_j_s_o_n_1_1_j_s_o_n_worker.html',1,'JSON::JSONWorker'],['../class_j_s_o_n_1_1_j_s_o_n_worker.html#aeff3cf4e3c6ea706ee444a847a3e91c8',1,'JSON::JSONWorker::JSONWorker()']]]
 ];

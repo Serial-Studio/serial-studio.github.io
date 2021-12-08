@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_group_8h_source.html',''); initResiza
   <div class="headertitle"><div class="title">Group.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_group_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020-2021 Alex Spataru &lt;https://github.com/alex-spataru&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -118,19 +118,19 @@ $(document).ready(function(){initNavTree('_group_8h_source.html',''); initResiza
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QJsonArray&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;Dataset.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="_dataset_8h.html">Dataset.h</a>&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>UI</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespace_u_i.html">   33</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_u_i.html">UI</a></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">class </span>Dashboard;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">class </span><a class="code hl_class" href="class_u_i_1_1_dashboard.html">Dashboard</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span>JSON</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_j_s_o_n.html">JSON</a></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html">   60</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_o_n_1_1_group.html">Group</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_class" href="class_j_s_o_n_1_1_group.html">Group</a>(QObject *parent = Q_NULLPTR);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="class_j_s_o_n_1_1_group.html#aedd5928d670ca61c55f6096229b0c5d9">Group</a>(QObject *parent = Q_NULLPTR);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="class_j_s_o_n_1_1_group.html#ae442efedfbb24af8083413fd699b418e">~Group</a>();</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QString <a class="code hl_function" href="class_j_s_o_n_1_1_group.html#a93e0b0cd029e23cfb821e41c69f7a240">title</a>() <span class="keyword">const</span>;</div>
@@ -142,31 +142,38 @@ $(document).ready(function(){initNavTree('_group_8h_source.html',''); initResiza
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Q_INVOKABLE <a class="code hl_class" href="class_j_s_o_n_1_1_dataset.html">JSON::Dataset</a> *<a class="code hl_function" href="class_j_s_o_n_1_1_group.html#a838eecdafb2c3640adc61996f025ba3b">getDataset</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> index);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    QString m_title;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    QString m_widget;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    QVector&lt;Dataset *&gt; m_datasets;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html#ac7589f3e1e5c5eaf971d437df3aeeaba">   75</a></span>    QString <a class="code hl_variable" href="class_j_s_o_n_1_1_group.html#ac7589f3e1e5c5eaf971d437df3aeeaba">m_title</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html#a03e9d23fbc52e9cdfd50e5f8a2e29809">   76</a></span>    QString <a class="code hl_variable" href="class_j_s_o_n_1_1_group.html#a03e9d23fbc52e9cdfd50e5f8a2e29809">m_widget</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html#af5a3d096c8cc5f8b06545bb570abb820">   77</a></span>    QVector&lt;Dataset *&gt; <a class="code hl_variable" href="class_j_s_o_n_1_1_group.html#af5a3d096c8cc5f8b06545bb570abb820">m_datasets</a>;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_j_s_o_n_1_1_editor.html">Editor</a>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_u_i_1_1_dashboard.html">UI::Dashboard</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html#ae8a991e13e07be28086d82e28524e64f">   79</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_j_s_o_n_1_1_editor.html">Editor</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_j_s_o_n_1_1_group.html#a04bd39535a887ca2dc35e9c24ff3fa12">   80</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_u_i_1_1_dashboard.html">UI::Dashboard</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="ttc" id="a_dataset_8h_html"><div class="ttname"><a href="_dataset_8h.html">Dataset.h</a></div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_dataset_html"><div class="ttname"><a href="class_j_s_o_n_1_1_dataset.html">JSON::Dataset</a></div><div class="ttdoc">The Dataset class.</div><div class="ttdef"><b>Definition:</b> Dataset.h:66</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_editor_html"><div class="ttname"><a href="class_j_s_o_n_1_1_editor.html">JSON::Editor</a></div><div class="ttdoc">The Editor class.</div><div class="ttdef"><b>Definition:</b> Editor.h:43</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html">JSON::Group</a></div><div class="ttdoc">The Group class.</div><div class="ttdef"><b>Definition:</b> Group.h:61</div></div>
+<div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a03e9d23fbc52e9cdfd50e5f8a2e29809"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a03e9d23fbc52e9cdfd50e5f8a2e29809">JSON::Group::m_widget</a></div><div class="ttdeci">QString m_widget</div><div class="ttdef"><b>Definition:</b> Group.h:76</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a2c29472107bc2f3b636081d50f1acd5c"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a2c29472107bc2f3b636081d50f1acd5c">JSON::Group::read</a></div><div class="ttdeci">bool read(const QJsonObject &amp;object)</div><div class="ttdef"><b>Definition:</b> Group.cpp:97</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a6390981ca8da7e8c0b0e9b1d60a201ea"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a6390981ca8da7e8c0b0e9b1d60a201ea">JSON::Group::widget</a></div><div class="ttdeci">QString widget() const</div><div class="ttdef"><b>Definition:</b> Group.cpp:59</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a838eecdafb2c3640adc61996f025ba3b"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a838eecdafb2c3640adc61996f025ba3b">JSON::Group::getDataset</a></div><div class="ttdeci">Q_INVOKABLE JSON::Dataset * getDataset(const int index)</div><div class="ttdef"><b>Definition:</b> Group.cpp:83</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a88af3fd9bc6369ef70feecdb2b31bece"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a88af3fd9bc6369ef70feecdb2b31bece">JSON::Group::datasets</a></div><div class="ttdeci">QVector&lt; Dataset * &gt; &amp; datasets()</div><div class="ttdef"><b>Definition:</b> Group.cpp:75</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_a93e0b0cd029e23cfb821e41c69f7a240"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#a93e0b0cd029e23cfb821e41c69f7a240">JSON::Group::title</a></div><div class="ttdeci">QString title() const</div><div class="ttdef"><b>Definition:</b> Group.cpp:51</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_aa607f9e768b48368acb805948e2ab950"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#aa607f9e768b48368acb805948e2ab950">JSON::Group::datasetCount</a></div><div class="ttdeci">int datasetCount() const</div><div class="ttdef"><b>Definition:</b> Group.cpp:67</div></div>
+<div class="ttc" id="aclass_j_s_o_n_1_1_group_html_ac7589f3e1e5c5eaf971d437df3aeeaba"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#ac7589f3e1e5c5eaf971d437df3aeeaba">JSON::Group::m_title</a></div><div class="ttdeci">QString m_title</div><div class="ttdef"><b>Definition:</b> Group.h:75</div></div>
 <div class="ttc" id="aclass_j_s_o_n_1_1_group_html_ae442efedfbb24af8083413fd699b418e"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#ae442efedfbb24af8083413fd699b418e">JSON::Group::~Group</a></div><div class="ttdeci">~Group()</div><div class="ttdef"><b>Definition:</b> Group.cpp:40</div></div>
+<div class="ttc" id="aclass_j_s_o_n_1_1_group_html_aedd5928d670ca61c55f6096229b0c5d9"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#aedd5928d670ca61c55f6096229b0c5d9">JSON::Group::Group</a></div><div class="ttdeci">Group(QObject *parent=Q_NULLPTR)</div><div class="ttdef"><b>Definition:</b> Group.cpp:30</div></div>
+<div class="ttc" id="aclass_j_s_o_n_1_1_group_html_af5a3d096c8cc5f8b06545bb570abb820"><div class="ttname"><a href="class_j_s_o_n_1_1_group.html#af5a3d096c8cc5f8b06545bb570abb820">JSON::Group::m_datasets</a></div><div class="ttdeci">QVector&lt; Dataset * &gt; m_datasets</div><div class="ttdef"><b>Definition:</b> Group.h:77</div></div>
 <div class="ttc" id="aclass_u_i_1_1_dashboard_html"><div class="ttname"><a href="class_u_i_1_1_dashboard.html">UI::Dashboard</a></div><div class="ttdoc">The Dashboard class.</div><div class="ttdef"><b>Definition:</b> Dashboard.h:60</div></div>
+<div class="ttc" id="anamespace_j_s_o_n_html"><div class="ttname"><a href="namespace_j_s_o_n.html">JSON</a></div><div class="ttdef"><b>Definition:</b> Dataset.cpp:28</div></div>
+<div class="ttc" id="anamespace_u_i_html"><div class="ttname"><a href="namespace_u_i.html">UI</a></div><div class="ttdef"><b>Definition:</b> Group.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43b434e0b5e782b45ea982bd4827fa1f.html">JSON</a></li><li class="navelem"><b>Group.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43b434e0b5e782b45ea982bd4827fa1f.html">JSON</a></li><li class="navelem"><a class="el" href="_group_8h.html">Group.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

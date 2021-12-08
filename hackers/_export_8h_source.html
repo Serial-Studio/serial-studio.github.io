@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_export_8h_source.html',''); initResiz
   <div class="headertitle"><div class="title">Export.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_export_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020-2021 Alex Spataru &lt;https://github.com/alex-spataru&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -118,40 +118,40 @@ $(document).ready(function(){initNavTree('_export_8h_source.html',''); initResiz
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>CSV</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_c_s_v.html">CSV</a></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_c_s_v_1_1_raw_frame.html">   44</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    QByteArray data;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    QDateTime rxDateTime;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_c_s_v_1_1_raw_frame.html#a52eec4e2d2c7cd0c276f1afc93fb49bd">   46</a></span>    QByteArray <a class="code hl_variable" href="struct_c_s_v_1_1_raw_frame.html#a52eec4e2d2c7cd0c276f1afc93fb49bd">data</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#ab391539628074dcac37849523ea4b462">   47</a></span>    QDateTime rxDateTime;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <a class="code hl_struct" href="struct_c_s_v_1_1_raw_frame.html">RawFrame</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html">   50</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_s_v_1_1_export.html">Export</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// clang-format off</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Q_OBJECT</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    Q_PROPERTY(<span class="keywordtype">bool</span> isOpen</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>               READ isOpen</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>               NOTIFY openChanged)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Q_PROPERTY(<span class="keywordtype">bool</span> exportEnabled</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>               READ exportEnabled</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    Q_PROPERTY(<span class="keywordtype">bool</span> <a class="code hl_property" href="class_c_s_v_1_1_export.html#a33024ad5be44fd1e9f6c478e02b4289e">isOpen</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>               READ <a class="code hl_property" href="class_c_s_v_1_1_export.html#a33024ad5be44fd1e9f6c478e02b4289e">isOpen</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>               NOTIFY <a class="code hl_signal" href="class_c_s_v_1_1_export.html#abc8c8452c4a0e5f76f0c8c38e34c7c95">openChanged</a>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Q_PROPERTY(<span class="keywordtype">bool</span> <a class="code hl_property" href="class_c_s_v_1_1_export.html#ab391539628074dcac37849523ea4b462">exportEnabled</a></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>               READ <a class="code hl_property" href="class_c_s_v_1_1_export.html#ab391539628074dcac37849523ea4b462">exportEnabled</a></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>               WRITE <a class="code hl_slot" href="class_c_s_v_1_1_export.html#a6bc87255afbcdb63c63b368180d0b04e">setExportEnabled</a></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>               NOTIFY enabledChanged)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>               NOTIFY <a class="code hl_signal" href="class_c_s_v_1_1_export.html#a08a8da6112f63e2ec07734af9b0dfc8a">enabledChanged</a>)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// clang-format on</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>signals:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> openChanged();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> enabledChanged();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#abc8c8452c4a0e5f76f0c8c38e34c7c95">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_c_s_v_1_1_export.html#abc8c8452c4a0e5f76f0c8c38e34c7c95">openChanged</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#a08a8da6112f63e2ec07734af9b0dfc8a">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_c_s_v_1_1_export.html#a08a8da6112f63e2ec07734af9b0dfc8a">enabledChanged</a>();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_c_s_v_1_1_export.html">Export</a> *<a class="code hl_function" href="class_c_s_v_1_1_export.html#af27608a17752a61ec40f5c747a3346ea">getInstance</a>();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> isOpen() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">bool</span> exportEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> <a class="code hl_property" href="class_c_s_v_1_1_export.html#a33024ad5be44fd1e9f6c478e02b4289e">isOpen</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">bool</span> <a class="code hl_property" href="class_c_s_v_1_1_export.html#ab391539628074dcac37849523ea4b462">exportEnabled</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_class" href="class_c_s_v_1_1_export.html">Export</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="class_c_s_v_1_1_export.html">~Export</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="class_c_s_v_1_1_export.html#a24c12afd3775efb730d95ddee08cdc26">Export</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="class_c_s_v_1_1_export.html#abd75b7340567c9c9748d6096871c809e">~Export</a>();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span> slots:</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_c_s_v_1_1_export.html#ad7ebb02acff92640f5be3bd91572e730">closeFile</a>();</div>
@@ -159,29 +159,44 @@ $(document).ready(function(){initNavTree('_export_8h_source.html',''); initResiz
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_c_s_v_1_1_export.html#a6bc87255afbcdb63c63b368180d0b04e">setExportEnabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> writeValues();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> createCsvFile(<span class="keyword">const</span> <a class="code hl_struct" href="struct_c_s_v_1_1_raw_frame.html">RawFrame</a> &amp;frame);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> registerFrame(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_c_s_v_1_1_export.html#a3efda8a92a4cb590d0f285750d7e1b30">writeValues</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_c_s_v_1_1_export.html#a373e9e03b28b356af36479356fdf42f4">createCsvFile</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_c_s_v_1_1_raw_frame.html">RawFrame</a> &amp;frame);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_c_s_v_1_1_export.html#a620f9226c65ce7cb0f5cd8d62402726c">registerFrame</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    QFile m_csvFile;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> m_exportEnabled;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QTextStream m_textStream;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    QVector&lt;RawFrame&gt; m_frames;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#a47362f7885324054491a0c21cda14cfb">   88</a></span>    QFile <a class="code hl_variable" href="class_c_s_v_1_1_export.html#a47362f7885324054491a0c21cda14cfb">m_csvFile</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#a2e6fbcf1b88aa8960ed411b285732b8a">   89</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_c_s_v_1_1_export.html#a2e6fbcf1b88aa8960ed411b285732b8a">m_exportEnabled</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#af0c2a07104d70da8b24b67d003353571">   90</a></span>    QTextStream <a class="code hl_variable" href="class_c_s_v_1_1_export.html#af0c2a07104d70da8b24b67d003353571">m_textStream</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_c_s_v_1_1_export.html#abfe001d6de363a40cfecafbbdcd8faf7">   91</a></span>    QVector&lt;RawFrame&gt; <a class="code hl_variable" href="class_c_s_v_1_1_export.html#abfe001d6de363a40cfecafbbdcd8faf7">m_frames</a>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 <div class="ttc" id="aclass_c_s_v_1_1_export_html"><div class="ttname"><a href="class_c_s_v_1_1_export.html">CSV::Export</a></div><div class="ttdef"><b>Definition:</b> Export.h:51</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a08a8da6112f63e2ec07734af9b0dfc8a"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a08a8da6112f63e2ec07734af9b0dfc8a">CSV::Export::enabledChanged</a></div><div class="ttdeci">void enabledChanged()</div></div>
 <div class="ttc" id="aclass_c_s_v_1_1_export_html_a09a2734d4097a35378e2d051ccd9e616"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a09a2734d4097a35378e2d051ccd9e616">CSV::Export::openCurrentCsv</a></div><div class="ttdeci">void openCurrentCsv()</div><div class="ttdef"><b>Definition:</b> Export.cpp:93</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a24c12afd3775efb730d95ddee08cdc26"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a24c12afd3775efb730d95ddee08cdc26">CSV::Export::Export</a></div><div class="ttdeci">Export()</div><div class="ttdef"><b>Definition:</b> Export.cpp:45</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a2e6fbcf1b88aa8960ed411b285732b8a"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a2e6fbcf1b88aa8960ed411b285732b8a">CSV::Export::m_exportEnabled</a></div><div class="ttdeci">bool m_exportEnabled</div><div class="ttdef"><b>Definition:</b> Export.h:89</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a33024ad5be44fd1e9f6c478e02b4289e"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a33024ad5be44fd1e9f6c478e02b4289e">CSV::Export::isOpen</a></div><div class="ttdeci">bool isOpen</div><div class="ttdef"><b>Definition:</b> Export.h:56</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a373e9e03b28b356af36479356fdf42f4"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a373e9e03b28b356af36479356fdf42f4">CSV::Export::createCsvFile</a></div><div class="ttdeci">void createCsvFile(const RawFrame &amp;frame)</div><div class="ttdef"><b>Definition:</b> Export.cpp:174</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a3efda8a92a4cb590d0f285750d7e1b30"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a3efda8a92a4cb590d0f285750d7e1b30">CSV::Export::writeValues</a></div><div class="ttdeci">void writeValues()</div><div class="ttdef"><b>Definition:</b> Export.cpp:138</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a47362f7885324054491a0c21cda14cfb"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a47362f7885324054491a0c21cda14cfb">CSV::Export::m_csvFile</a></div><div class="ttdeci">QFile m_csvFile</div><div class="ttdef"><b>Definition:</b> Export.h:88</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_a620f9226c65ce7cb0f5cd8d62402726c"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a620f9226c65ce7cb0f5cd8d62402726c">CSV::Export::registerFrame</a></div><div class="ttdeci">void registerFrame(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> Export.cpp:237</div></div>
 <div class="ttc" id="aclass_c_s_v_1_1_export_html_a6bc87255afbcdb63c63b368180d0b04e"><div class="ttname"><a href="class_c_s_v_1_1_export.html#a6bc87255afbcdb63c63b368180d0b04e">CSV::Export::setExportEnabled</a></div><div class="ttdeci">void setExportEnabled(const bool enabled)</div><div class="ttdef"><b>Definition:</b> Export.cpp:105</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_ab391539628074dcac37849523ea4b462"><div class="ttname"><a href="class_c_s_v_1_1_export.html#ab391539628074dcac37849523ea4b462">CSV::Export::exportEnabled</a></div><div class="ttdeci">bool exportEnabled</div><div class="ttdef"><b>Definition:</b> Export.h:60</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_abc8c8452c4a0e5f76f0c8c38e34c7c95"><div class="ttname"><a href="class_c_s_v_1_1_export.html#abc8c8452c4a0e5f76f0c8c38e34c7c95">CSV::Export::openChanged</a></div><div class="ttdeci">void openChanged()</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_abd75b7340567c9c9748d6096871c809e"><div class="ttname"><a href="class_c_s_v_1_1_export.html#abd75b7340567c9c9748d6096871c809e">CSV::Export::~Export</a></div><div class="ttdeci">~Export()</div><div class="ttdef"><b>Definition:</b> Export.cpp:58</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_abfe001d6de363a40cfecafbbdcd8faf7"><div class="ttname"><a href="class_c_s_v_1_1_export.html#abfe001d6de363a40cfecafbbdcd8faf7">CSV::Export::m_frames</a></div><div class="ttdeci">QVector&lt; RawFrame &gt; m_frames</div><div class="ttdef"><b>Definition:</b> Export.h:91</div></div>
 <div class="ttc" id="aclass_c_s_v_1_1_export_html_ad7ebb02acff92640f5be3bd91572e730"><div class="ttname"><a href="class_c_s_v_1_1_export.html#ad7ebb02acff92640f5be3bd91572e730">CSV::Export::closeFile</a></div><div class="ttdeci">void closeFile()</div><div class="ttdef"><b>Definition:</b> Export.cpp:120</div></div>
+<div class="ttc" id="aclass_c_s_v_1_1_export_html_af0c2a07104d70da8b24b67d003353571"><div class="ttname"><a href="class_c_s_v_1_1_export.html#af0c2a07104d70da8b24b67d003353571">CSV::Export::m_textStream</a></div><div class="ttdeci">QTextStream m_textStream</div><div class="ttdef"><b>Definition:</b> Export.h:90</div></div>
 <div class="ttc" id="aclass_c_s_v_1_1_export_html_af27608a17752a61ec40f5c747a3346ea"><div class="ttname"><a href="class_c_s_v_1_1_export.html#af27608a17752a61ec40f5c747a3346ea">CSV::Export::getInstance</a></div><div class="ttdeci">static Export * getInstance()</div><div class="ttdef"><b>Definition:</b> Export.cpp:66</div></div>
+<div class="ttc" id="anamespace_c_s_v_html"><div class="ttname"><a href="namespace_c_s_v.html">CSV</a></div><div class="ttdef"><b>Definition:</b> Export.cpp:38</div></div>
 <div class="ttc" id="astruct_c_s_v_1_1_raw_frame_html"><div class="ttname"><a href="struct_c_s_v_1_1_raw_frame.html">CSV::RawFrame</a></div><div class="ttdoc">The Export class.</div><div class="ttdef"><b>Definition:</b> Export.h:45</div></div>
+<div class="ttc" id="astruct_c_s_v_1_1_raw_frame_html_a52eec4e2d2c7cd0c276f1afc93fb49bd"><div class="ttname"><a href="struct_c_s_v_1_1_raw_frame.html#a52eec4e2d2c7cd0c276f1afc93fb49bd">CSV::RawFrame::data</a></div><div class="ttdeci">QByteArray data</div><div class="ttdef"><b>Definition:</b> Export.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1ca63ed94d2b015cb1b23dce7b0ea95d.html">CSV</a></li><li class="navelem"><b>Export.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1ca63ed94d2b015cb1b23dce7b0ea95d.html">CSV</a></li><li class="navelem"><a class="el" href="_export_8h.html">Export.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

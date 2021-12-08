@@ -1,0 +1,44 @@
+<map id="Widgets::Terminal::textEdit" name="Widgets::Terminal::textEdit">
+<area shape="rect" id="node1" title=" " alt="" coords="792,1112,927,1154"/>
+<area shape="rect" id="node2" href="$class_widgets_1_1_terminal.html#a9d2e621f4b52ab2a62f7998162c3babc" title=" " alt="" coords="389,228,524,270"/>
+<area shape="rect" id="node4" href="$class_widgets_1_1_terminal.html#a456ceb278f42d2aa103d6a45cb782dfd" title=" " alt="" coords="5,163,140,204"/>
+<area shape="rect" id="node5" href="$class_widgets_1_1_terminal.html#a14058e98b283b45d987ed65f9749ee2c" title=" " alt="" coords="389,359,524,400"/>
+<area shape="rect" id="node6" href="$class_widgets_1_1_terminal.html#a5f1ecbee16873c4244240528a4b4e3a0" title=" " alt="" coords="594,995,729,1036"/>
+<area shape="rect" id="node7" href="$class_widgets_1_1_terminal.html#aea297cd864ca05b7f8b7aea6f6f2366d" title=" " alt="" coords="389,555,524,596"/>
+<area shape="rect" id="node8" href="$class_widgets_1_1_terminal.html#a133a43b5d5d008ae2b831adf7ed74b7b" title=" " alt="" coords="389,163,524,204"/>
+<area shape="rect" id="node9" href="$class_widgets_1_1_terminal.html#af9d6f895a2f28388ea2c0ac43a28e20c" title=" " alt="" coords="580,1061,743,1088"/>
+<area shape="rect" id="node10" href="$class_widgets_1_1_terminal.html#a3e30d6c681813aae035c20b7a75ac547" title=" " alt="" coords="594,199,729,240"/>
+<area shape="rect" id="node11" href="$class_widgets_1_1_terminal.html#a4c8ff0c2dfe0d0f9147e03321682f8c0" title=" " alt="" coords="594,1112,729,1154"/>
+<area shape="rect" id="node12" href="$class_widgets_1_1_terminal.html#acb637275620914dc13773b62ac8bb7c9" title=" " alt="" coords="594,878,729,919"/>
+<area shape="rect" id="node13" href="$class_widgets_1_1_terminal.html#aab017d51f49b867bf8a6f5ed6397e121" title=" " alt="" coords="389,803,524,844"/>
+<area shape="rect" id="node14" href="$class_widgets_1_1_terminal.html#a0ffddf7254f4114ce7e3fcd37e3814f7" title=" " alt="" coords="383,944,531,986"/>
+<area shape="rect" id="node15" href="$class_widgets_1_1_terminal.html#a6da0f0426da812f98f3b12abe185969d" title=" " alt="" coords="188,808,335,850"/>
+<area shape="rect" id="node16" href="$class_widgets_1_1_terminal.html#adf6fc5d42bbd5e6de3b8d452f13c6e69" title=" " alt="" coords="583,1178,740,1205"/>
+<area shape="rect" id="node17" href="$class_widgets_1_1_terminal.html#a48339be12b70f659d1169db4561ec0fd" title=" " alt="" coords="588,1230,735,1271"/>
+<area shape="rect" id="node18" href="$class_widgets_1_1_terminal.html#ae6fc62a6694d57a9b86d427880fdd337" title=" " alt="" coords="594,1295,729,1336"/>
+<area shape="rect" id="node19" href="$class_widgets_1_1_terminal.html#aee2ed01be41c6604cec54a1cec79704c" title=" " alt="" coords="594,1360,729,1402"/>
+<area shape="rect" id="node20" href="$class_widgets_1_1_terminal.html#a0e0754065525ac1557481c3d33888603" title=" " alt="" coords="594,1426,729,1467"/>
+<area shape="rect" id="node21" href="$class_widgets_1_1_terminal.html#a0849c35fd2b92625e6cf245de8d15df3" title=" " alt="" coords="594,1491,729,1532"/>
+<area shape="rect" id="node22" href="$class_widgets_1_1_terminal.html#a38c3c4d161226a49742849c502918ce8" title=" " alt="" coords="594,1556,729,1598"/>
+<area shape="rect" id="node23" href="$class_widgets_1_1_terminal.html#a0c38456b85f84f23939104a0f6e8b1f2" title=" " alt="" coords="594,418,729,459"/>
+<area shape="rect" id="node25" href="$class_widgets_1_1_terminal.html#ac18834723b7151cb4ad3f7269fabd848" title=" " alt="" coords="389,490,524,531"/>
+<area shape="rect" id="node26" href="$class_widgets_1_1_terminal.html#a13c2d981866dd7dcd017734a3e961d75" title=" " alt="" coords="594,1622,729,1663"/>
+<area shape="rect" id="node27" href="$class_widgets_1_1_terminal.html#a3179916ff1488ccf78373c576915f5f3" title=" " alt="" coords="594,1687,729,1728"/>
+<area shape="rect" id="node28" href="$class_widgets_1_1_terminal.html#a5e4868e14561e434c019eed54b38fd30" title=" " alt="" coords="389,620,524,662"/>
+<area shape="rect" id="node29" href="$class_widgets_1_1_terminal.html#a1f5fd09050a4baa1fcf40450228d714f" title=" " alt="" coords="579,1752,744,1794"/>
+<area shape="rect" id="node30" href="$class_widgets_1_1_terminal.html#a65d05a0be0814e93654291b37d7b5079" title=" " alt="" coords="594,1818,729,1859"/>
+<area shape="rect" id="node31" href="$class_widgets_1_1_terminal.html#a6418bb2fda1c809f26ef9a1686599dfd" title=" " alt="" coords="594,1883,729,1924"/>
+<area shape="rect" id="node32" href="$class_widgets_1_1_terminal.html#a5e03ad6313271a7ddad478664ef121c2" title=" " alt="" coords="594,1948,729,1990"/>
+<area shape="rect" id="node33" href="$class_widgets_1_1_terminal.html#a3e47ae050b8b9242248ba134acd989c3" title=" " alt="" coords="194,130,329,171"/>
+<area shape="rect" id="node34" href="$class_widgets_1_1_terminal.html#ad65c0c03b78fa19bbb2b4d22f8322cdc" title=" " alt="" coords="587,2014,736,2055"/>
+<area shape="rect" id="node35" href="$class_widgets_1_1_terminal.html#abb15ba8fc03194f9696e9620eb488c06" title=" " alt="" coords="594,2079,729,2120"/>
+<area shape="rect" id="node36" href="$class_widgets_1_1_terminal.html#a45dc10aec845ba4ff8f8d4c91dcf340f" title=" " alt="" coords="389,686,524,727"/>
+<area shape="rect" id="node37" href="$class_widgets_1_1_terminal.html#a2109e7e8dc270c092171c4685a9ea4a1" title=" " alt="" coords="583,2145,740,2172"/>
+<area shape="rect" id="node38" href="$class_widgets_1_1_terminal.html#a60f0e0d68341fe6a34f28e4a92c7705a" title=" " alt="" coords="594,2196,729,2238"/>
+<area shape="rect" id="node39" href="$class_widgets_1_1_terminal.html#ac61c37772e709ad1865b6743d0c93710" title=" " alt="" coords="581,483,742,524"/>
+<area shape="rect" id="node40" href="$class_widgets_1_1_terminal.html#a2ca072993006bba550e05585a831d4a0" title=" " alt="" coords="389,294,524,335"/>
+<area shape="rect" id="node41" href="$class_widgets_1_1_terminal.html#a8a9d37453486d0c28b4b2b8725ec2c36" title=" " alt="" coords="594,2262,729,2303"/>
+<area shape="rect" id="node42" href="$class_widgets_1_1_terminal.html#aef388cc3bf04d5d22710c674cd6425bd" title=" " alt="" coords="594,2327,729,2368"/>
+<area shape="rect" id="node3" href="$class_widgets_1_1_terminal.html#a080332ee1e28321925202bf1b9bdbd30" title=" " alt="" coords="194,212,329,254"/>
+<area shape="rect" id="node24" href="$class_widgets_1_1_terminal.html#ac6f807f9eb572a4546d5233a52b64661" title=" " alt="" coords="389,424,524,466"/>
+</map>

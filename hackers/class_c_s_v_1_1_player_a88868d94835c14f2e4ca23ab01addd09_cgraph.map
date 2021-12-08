@@ -1,0 +1,52 @@
+<map id="CSV::Player::openFile" name="CSV::Player::openFile">
+<area shape="rect" id="node1" title=" " alt="" coords="5,195,156,221"/>
+<area shape="rect" id="node2" href="$class_c_s_v_1_1_player.html#aac420e9603b996175e2505ad01c3a590" title=" " alt="" coords="434,144,589,171"/>
+<area shape="rect" id="node3" href="$class_c_s_v_1_1_player.html#a26facdc3534172e2e8b084350a604369" title=" " alt="" coords="656,164,827,191"/>
+<area shape="rect" id="node4" href="$class_i_o_1_1_manager.html#a45ad7cd75ba3b934c1c41dee37cf649e" title=" " alt="" coords="894,468,1065,495"/>
+<area shape="rect" id="node33" href="$class_misc_1_1_utilities.html#a008e39cbad2c5263eafc56283f544331" title=" " alt="" coords="2027,148,2244,175"/>
+<area shape="rect" id="node42" href="$class_c_s_v_1_1_player.html#aa8921a441cfcc552eddb3b64cea49d48" title=" " alt="" coords="209,296,373,323"/>
+<area shape="rect" id="node44" href="$class_c_s_v_1_1_player.html#a31eefc9b046409c68fc3b1e2f5e4ba1f" title=" " alt="" coords="427,347,596,373"/>
+<area shape="rect" id="node50" href="$class_c_s_v_1_1_player.html#a712cc6f93a663b7cc418c4e0d887c9b3" title=" " alt="" coords="204,195,379,221"/>
+<area shape="rect" id="node5" href="$class_i_o_1_1_manager.html#a60a284d3eae0631a846e4df6e7c0dca0" title=" " alt="" coords="1120,489,1272,516"/>
+<area shape="rect" id="node6" href="$class_i_o_1_1_data_sources_1_1_network.html#aa960e062744ac8dbebe41504b8f536ca" title=" " alt="" coords="1321,379,1498,421"/>
+<area shape="rect" id="node14" href="$class_i_o_1_1_data_sources_1_1_serial.html#a858bbaf84113f0fd5216dcb12358363b" title=" " alt="" coords="2305,573,2467,614"/>
+<area shape="rect" id="node40" href="$class_i_o_1_1_manager.html#abcee97dc7d5038ce81f39403b365c575" title=" " alt="" coords="1547,639,1753,665"/>
+<area shape="rect" id="node41" href="$class_i_o_1_1_manager.html#a188004c9d89715db93dcab63842a547b" title=" " alt="" coords="1320,482,1499,523"/>
+<area shape="rect" id="node7" href="$class_i_o_1_1_data_sources_1_1_network.html#a76e1645815beb0d2df4790b71d57f461" title=" " alt="" coords="1561,341,1739,382"/>
+<area shape="rect" id="node8" href="$class_i_o_1_1_data_sources_1_1_network.html#a641f79806e237cb278a2dfa9837e1ced" title=" " alt="" coords="1801,145,1979,186"/>
+<area shape="rect" id="node34" href="$class_i_o_1_1_data_sources_1_1_network.html#ab72145830b8bdc98afd40e170728f271" title=" " alt="" coords="1801,210,1979,251"/>
+<area shape="rect" id="node36" href="$class_i_o_1_1_data_sources_1_1_network.html#ac4d29cc3a068d820102bb3f7b1b2a4e7" title=" " alt="" coords="1801,406,1979,447"/>
+<area shape="rect" id="node37" href="$class_i_o_1_1_data_sources_1_1_network.html#a3eae4c3d97368c9cd3bc960188cc4204" title=" " alt="" coords="1801,471,1979,513"/>
+<area shape="rect" id="node38" href="$class_i_o_1_1_data_sources_1_1_network.html#a5b55342240d1cad15dad14a294dbb612" title=" " alt="" coords="1801,275,1979,317"/>
+<area shape="rect" id="node39" href="$class_i_o_1_1_data_sources_1_1_network.html#aaf960d0c9262e7076ab25dfdddbaeab6" title=" " alt="" coords="1801,341,1979,382"/>
+<area shape="rect" id="node9" href="$class_i_o_1_1_manager.html#a1f00ec5024f7dc7662e948ee23ef6234" title=" " alt="" coords="2032,445,2239,472"/>
+<area shape="rect" id="node10" href="$class_i_o_1_1_manager.html#a9f87018065552de5fc3bff1a832ff368" title=" " alt="" coords="3195,207,3335,233"/>
+<area shape="rect" id="node11" href="$class_i_o_1_1_data_sources_1_1_serial.html#a1fe51779d987402c42cf54b02f3b168e" title=" " alt="" coords="2737,514,2899,555"/>
+<area shape="rect" id="node32" href="$class_i_o_1_1_manager.html#a06b6eb63d49e52d481f7ae28e8c7bcc4" title=" " alt="" coords="2292,639,2480,665"/>
+<area shape="rect" id="node12" href="$class_i_o_1_1_data_sources_1_1_serial.html#af9374f7fa7b3a0236e1d5908085efd18" title="Serial::handleError." alt="" coords="2961,455,3122,497"/>
+<area shape="rect" id="node13" href="$class_i_o_1_1_data_sources_1_1_serial.html#a11effd501a17c0e6f9985abf71e019ce" title=" " alt="" coords="2961,710,3122,751"/>
+<area shape="rect" id="node15" href="$class_i_o_1_1_data_sources_1_1_serial.html#a93ba16fb5d0e75ca5889369c7f6dc2ca" title=" " alt="" coords="2528,677,2689,718"/>
+<area shape="rect" id="node16" href="$class_misc_1_1_timer_events.html#a19f65c13b8247e0a6a17f50708b7808b" title=" " alt="" coords="2748,971,2888,1013"/>
+<area shape="rect" id="node18" href="$class_i_o_1_1_data_sources_1_1_serial.html#ac314ddf5503db5f56b86d6a51abc67cb" title=" " alt="" coords="2737,579,2899,621"/>
+<area shape="rect" id="node19" href="$class_i_o_1_1_data_sources_1_1_serial.html#ad48da195da71b74ee40aa70a0fa91a10" title=" " alt="" coords="2737,325,2899,366"/>
+<area shape="rect" id="node23" href="$class_i_o_1_1_data_sources_1_1_serial.html#a81e67f773215e5a136850ae72eca3bc1" title=" " alt="" coords="2737,710,2899,751"/>
+<area shape="rect" id="node24" href="$class_i_o_1_1_data_sources_1_1_serial.html#ab6fa57b3555db3266528a689b0c23ae7" title=" " alt="" coords="2737,906,2899,947"/>
+<area shape="rect" id="node26" href="$class_i_o_1_1_data_sources_1_1_serial.html#a7026b9eead852cc93441370500e60be4" title=" " alt="" coords="2737,645,2899,686"/>
+<area shape="rect" id="node28" href="$class_i_o_1_1_data_sources_1_1_serial.html#a1c7adafe6e0263c5e8c2cde262063f9a" title="Serial::setParity." alt="" coords="2737,775,2899,817"/>
+<area shape="rect" id="node30" href="$class_i_o_1_1_data_sources_1_1_serial.html#a4b1be9ae28e7c58da56d60963dbbd8fe" title=" " alt="" coords="2737,841,2899,882"/>
+<area shape="rect" id="node17" href="$class_misc_1_1_timer_events.html#a697ca691d1300e146eaf5f0cf167741a" title=" " alt="" coords="2971,971,3111,1013"/>
+<area shape="rect" id="node20" href="$class_i_o_1_1_manager.html#a68ec11b1d756a3aa95dcf8e453fb91fd" title=" " alt="" coords="2947,215,3136,241"/>
+<area shape="rect" id="node21" href="$class_i_o_1_1_data_sources_1_1_serial.html#a33ba253153944ddca93418526e400b6c" title=" " alt="" coords="2961,333,3122,374"/>
+<area shape="rect" id="node22" href="$class_i_o_1_1_data_sources_1_1_serial.html#a99f22d134820765164115c9e74621fb6" title=" " alt="" coords="3184,283,3345,325"/>
+<area shape="rect" id="node25" href="$class_i_o_1_1_data_sources_1_1_serial.html#a2be5eb448987d0df010f8b272442f14c" title=" " alt="" coords="2961,906,3122,947"/>
+<area shape="rect" id="node27" href="$class_i_o_1_1_data_sources_1_1_serial.html#a89f5d6a6bdfe7d4e07a08ee4bcb163a1" title=" " alt="" coords="2961,645,3122,686"/>
+<area shape="rect" id="node29" href="$class_i_o_1_1_data_sources_1_1_serial.html#a72640faeb47bb03a0fcf9e8261049edb" title=" " alt="" coords="2961,775,3122,817"/>
+<area shape="rect" id="node31" href="$class_i_o_1_1_data_sources_1_1_serial.html#a730e70efb76add234ad17861ad6ada99" title=" " alt="" coords="2961,841,3122,882"/>
+<area shape="rect" id="node35" href="$class_i_o_1_1_data_sources_1_1_network.html#a04d282302e15b9c04e459880b49be8b1" title=" " alt="" coords="2047,210,2224,251"/>
+<area shape="rect" id="node43" href="$class_c_s_v_1_1_player.html#a5c4acc9aeb2afc1e5d5a252757d1c9a4" title=" " alt="" coords="650,215,833,241"/>
+<area shape="rect" id="node45" href="$class_c_s_v_1_1_player.html#a1519ad48bc6e795ccbcea83671cc120e" title=" " alt="" coords="654,265,829,292"/>
+<area shape="rect" id="node46" href="$class_c_s_v_1_1_player.html#a2b02f8610d320b15251a6cedf7252c3f" title=" " alt="" coords="663,417,820,444"/>
+<area shape="rect" id="node47" href="$class_c_s_v_1_1_player.html#a1de4cc109ee77d3fade2a314bfe3d2a4" title=" " alt="" coords="673,367,810,393"/>
+<area shape="rect" id="node48" href="$class_i_o_1_1_manager.html#ae39bb4e1c5d9e2bbc424ec521d24323a" title=" " alt="" coords="644,316,839,343"/>
+<area shape="rect" id="node49" href="$class_i_o_1_1_manager.html#af9f30b7f579e104f13cebc585f56af68" title=" " alt="" coords="887,316,1072,343"/>
+</map>

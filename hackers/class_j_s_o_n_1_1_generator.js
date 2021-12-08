@@ -1,5 +1,13 @@
 var class_j_s_o_n_1_1_generator =
 [
+    [ "OperationMode", "class_j_s_o_n_1_1_generator.html#a99c50707fb443a88d9d87850862c2305", [
+      [ "kManual", "class_j_s_o_n_1_1_generator.html#a99c50707fb443a88d9d87850862c2305af518e3e3f8e97c1eeedb259bc25b208c", null ],
+      [ "kAutomatic", "class_j_s_o_n_1_1_generator.html#a99c50707fb443a88d9d87850862c2305aebff70219cd2f9fcaf7305a16ad261b8", null ]
+    ] ],
+    [ "Generator", "class_j_s_o_n_1_1_generator.html#a4c51bc3a887b7f4337025b0017290633", null ],
+    [ "getInstance", "class_j_s_o_n_1_1_generator.html#a6613b9e861dbc529f140c5685fc478c7", null ],
+    [ "jsonChanged", "class_j_s_o_n_1_1_generator.html#a76bfda8ce1b3e8c898c36efab25904c3", null ],
+    [ "jsonFileMapChanged", "class_j_s_o_n_1_1_generator.html#ac5a8f15341af2345871ffd54b83bd19b", null ],
     [ "jsonMapData", "class_j_s_o_n_1_1_generator.html#a39d19b22c92d224ed377ad9267e5d49b", null ],
     [ "jsonMapFilename", "class_j_s_o_n_1_1_generator.html#a7faf4935505966b7a8dcd958e790549c", null ],
     [ "jsonMapFilepath", "class_j_s_o_n_1_1_generator.html#a131cca61e2effcce4fc8ea076ccd8443", null ],
@@ -8,9 +16,24 @@ var class_j_s_o_n_1_1_generator =
     [ "loadJsonMap", "class_j_s_o_n_1_1_generator.html#a45b43b065bb5b5c90c17565f4b334bcd", null ],
     [ "loadJsonMap", "class_j_s_o_n_1_1_generator.html#a0afe08acdd7f85825f160f86a054d955", null ],
     [ "operationMode", "class_j_s_o_n_1_1_generator.html#a169120a8e69d8618abc59d1f8123a60e", null ],
+    [ "operationModeChanged", "class_j_s_o_n_1_1_generator.html#ad04379e577343be186b1a1f2705098dc", null ],
+    [ "processFrame", "class_j_s_o_n_1_1_generator.html#a3d55b5d599bbc9ad43fdcb0d027de4d6", null ],
     [ "processFramesInSeparateThread", "class_j_s_o_n_1_1_generator.html#a857d3b218d3e3e1bf7636fc5b04776e1", null ],
+    [ "processFramesInSeparateThreadChanged", "class_j_s_o_n_1_1_generator.html#aef48431326193d8af85a3a97c9d3a71a", null ],
+    [ "readData", "class_j_s_o_n_1_1_generator.html#a6418be80639381aafd56c45b3a0f0eea", null ],
     [ "readSettings", "class_j_s_o_n_1_1_generator.html#ace814743efb9c5416135926fed73511c", null ],
+    [ "reset", "class_j_s_o_n_1_1_generator.html#a409dc9142143783eb9fd9b9a55829d01", null ],
     [ "setOperationMode", "class_j_s_o_n_1_1_generator.html#aae9b2984a58ff7cfc2692d4e7f05f0ab", null ],
     [ "setProcessFramesInSeparateThread", "class_j_s_o_n_1_1_generator.html#afd758c483099e7dbc37d3dd61e277ddb", null ],
-    [ "writeSettings", "class_j_s_o_n_1_1_generator.html#a0022d2a8203b01a10f3c1befafc89bc6", null ]
+    [ "writeSettings", "class_j_s_o_n_1_1_generator.html#a0022d2a8203b01a10f3c1befafc89bc6", null ],
+    [ "m_frameCount", "class_j_s_o_n_1_1_generator.html#a4f3e5cd65fcdcaef2c80d776ed01a29c", null ],
+    [ "m_jsonMap", "class_j_s_o_n_1_1_generator.html#a7454848f188cad909ec8671d22d234d3", null ],
+    [ "m_jsonMapData", "class_j_s_o_n_1_1_generator.html#a260f4af24d0228ca758cb9187d730ef6", null ],
+    [ "m_opMode", "class_j_s_o_n_1_1_generator.html#aee1a35e2b232fd8994ba8bed0a76264e", null ],
+    [ "m_processInSeparateThread", "class_j_s_o_n_1_1_generator.html#a4d3d881efb438090d191fed8fdb8096e", null ],
+    [ "m_settings", "class_j_s_o_n_1_1_generator.html#aff033fa753491c24f7e2d4515d88ee57", null ],
+    [ "jsonMapFilename", "class_j_s_o_n_1_1_generator.html#a2393c720013e3d22b5d92efdbeaf98ea", null ],
+    [ "jsonMapFilepath", "class_j_s_o_n_1_1_generator.html#a10cb3cb8cdf615d8a7baf08660b42988", null ],
+    [ "operationMode", "class_j_s_o_n_1_1_generator.html#a2b4f221ffe1c3c119152f9cd427b1d17", null ],
+    [ "processFramesInSeparateThread", "class_j_s_o_n_1_1_generator.html#a1eff361ee3f53c9ba79ba924e8d1e0f0", null ]
 ];

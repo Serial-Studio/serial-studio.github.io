@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_f_f_t_plot_8h_source.html',''); initR
   <div class="headertitle"><div class="title">FFTPlot.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_f_f_t_plot_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020-2021 Alex Spataru &lt;https://github.com/alex-spataru&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('_f_f_t_plot_8h_source.html',''); initR
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;qfouriertransformer.h&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>Widgets</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_widgets.html">Widgets</a></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="class_widgets_1_1_f_f_t_plot.html">FFTPlot</a> : <span class="keyword">public</span> QWidget</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
@@ -131,29 +131,39 @@ $(document).ready(function(){initNavTree('_f_f_t_plot_8h_source.html',''); initR
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_widgets_1_1_f_f_t_plot.html#a04f91ea6bda47bcb312bcf0b35c70e7e">~FFTPlot</a>();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> updateData();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_widgets_1_1_f_f_t_plot.html#a87fdd0ad6d1c0a636f92530363788276">updateData</a>();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">float</span> *m_fft;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">float</span> *m_samples;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#aff04d2c416c43474667f09c2030a9f81">   47</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#aff04d2c416c43474667f09c2030a9f81">m_fft</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#a1e9e2358ad811257a8a1aa5d97ac057a">   48</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#a1e9e2358ad811257a8a1aa5d97ac057a">m_samples</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">int</span> m_size;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    QwtPlot m_plot;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    QwtPlotCurve m_curve;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QVBoxLayout m_layout;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QFourierTransformer m_transformer;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#a5f0d2fdd4b62a6e75fcc5fd4c6277f37">   50</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#a5f0d2fdd4b62a6e75fcc5fd4c6277f37">m_size</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#af3a076fe682a03c462022940de7a67f5">   51</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#af3a076fe682a03c462022940de7a67f5">m_index</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#ab74b491e0fd0982e9d7917be01623707">   52</a></span>    QwtPlot <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#ab74b491e0fd0982e9d7917be01623707">m_plot</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#a260a7f1d0b0d2908270b419f8fa1ae2e">   53</a></span>    QwtPlotCurve <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#a260a7f1d0b0d2908270b419f8fa1ae2e">m_curve</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#a3667327cf1531c5901b1cffab9443a91">   54</a></span>    QVBoxLayout <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#a3667327cf1531c5901b1cffab9443a91">m_layout</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_widgets_1_1_f_f_t_plot.html#a6b227d6641c7702d257cf16b85e68eea">   55</a></span>    QFourierTransformer <a class="code hl_variable" href="class_widgets_1_1_f_f_t_plot.html#a6b227d6641c7702d257cf16b85e68eea">m_transformer</a>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 <div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html">Widgets::FFTPlot</a></div><div class="ttdef"><b>Definition:</b> FFTPlot.h:36</div></div>
 <div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a04f91ea6bda47bcb312bcf0b35c70e7e"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a04f91ea6bda47bcb312bcf0b35c70e7e">Widgets::FFTPlot::~FFTPlot</a></div><div class="ttdeci">~FFTPlot()</div><div class="ttdef"><b>Definition:</b> FFTPlot.cpp:140</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a1e9e2358ad811257a8a1aa5d97ac057a"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a1e9e2358ad811257a8a1aa5d97ac057a">Widgets::FFTPlot::m_samples</a></div><div class="ttdeci">float * m_samples</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:48</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a260a7f1d0b0d2908270b419f8fa1ae2e"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a260a7f1d0b0d2908270b419f8fa1ae2e">Widgets::FFTPlot::m_curve</a></div><div class="ttdeci">QwtPlotCurve m_curve</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:53</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a3667327cf1531c5901b1cffab9443a91"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a3667327cf1531c5901b1cffab9443a91">Widgets::FFTPlot::m_layout</a></div><div class="ttdeci">QVBoxLayout m_layout</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:54</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a5f0d2fdd4b62a6e75fcc5fd4c6277f37"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a5f0d2fdd4b62a6e75fcc5fd4c6277f37">Widgets::FFTPlot::m_size</a></div><div class="ttdeci">int m_size</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:50</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a6b227d6641c7702d257cf16b85e68eea"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a6b227d6641c7702d257cf16b85e68eea">Widgets::FFTPlot::m_transformer</a></div><div class="ttdeci">QFourierTransformer m_transformer</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:55</div></div>
 <div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a80c9c686f6b181c2b4edf3caf6ced4d5"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a80c9c686f6b181c2b4edf3caf6ced4d5">Widgets::FFTPlot::FFTPlot</a></div><div class="ttdeci">FFTPlot(const int index=-1)</div><div class="ttdef"><b>Definition:</b> FFTPlot.cpp:33</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_a87fdd0ad6d1c0a636f92530363788276"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#a87fdd0ad6d1c0a636f92530363788276">Widgets::FFTPlot::updateData</a></div><div class="ttdeci">void updateData()</div><div class="ttdef"><b>Definition:</b> FFTPlot.cpp:156</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_ab74b491e0fd0982e9d7917be01623707"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#ab74b491e0fd0982e9d7917be01623707">Widgets::FFTPlot::m_plot</a></div><div class="ttdeci">QwtPlot m_plot</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:52</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_af3a076fe682a03c462022940de7a67f5"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#af3a076fe682a03c462022940de7a67f5">Widgets::FFTPlot::m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:51</div></div>
+<div class="ttc" id="aclass_widgets_1_1_f_f_t_plot_html_aff04d2c416c43474667f09c2030a9f81"><div class="ttname"><a href="class_widgets_1_1_f_f_t_plot.html#aff04d2c416c43474667f09c2030a9f81">Widgets::FFTPlot::m_fft</a></div><div class="ttdeci">float * m_fft</div><div class="ttdef"><b>Definition:</b> FFTPlot.h:47</div></div>
+<div class="ttc" id="anamespace_widgets_html"><div class="ttname"><a href="namespace_widgets.html">Widgets</a></div><div class="ttdef"><b>Definition:</b> Accelerometer.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><b>FFTPlot.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_66d22e3c827f38fa8649cca280266c51.html">Widgets</a></li><li class="navelem"><a class="el" href="_f_f_t_plot_8h.html">FFTPlot.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

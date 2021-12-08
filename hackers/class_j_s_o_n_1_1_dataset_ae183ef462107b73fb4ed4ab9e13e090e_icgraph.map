@@ -1,0 +1,52 @@
+<map id="JSON::Dataset::widget" name="JSON::Dataset::widget">
+<area shape="rect" id="node1" title=" " alt="" coords="2381,981,2540,1007"/>
+<area shape="rect" id="node2" href="$class_j_s_o_n_1_1_dataset.html#a67c7a3607eb752eb52bf1497edf5a050" title=" " alt="" coords="2188,981,2333,1007"/>
+<area shape="rect" id="node32" href="$class_widgets_1_1_accelerometer.html#adc09d9b6793d69d1d91ebd29aaaf0ceb" title=" " alt="" coords="672,5,835,47"/>
+<area shape="rect" id="node38" href="$class_widgets_1_1_gyroscope.html#a64b6a15b9052bef3b417d142f4bc6df8" title=" " alt="" coords="683,1964,824,2005"/>
+<area shape="rect" id="node3" href="$class_j_s_o_n_1_1_group.html#a2c29472107bc2f3b636081d50f1acd5c" title=" " alt="" coords="2005,981,2140,1007"/>
+<area shape="rect" id="node4" href="$class_j_s_o_n_1_1_frame.html#ac4bf9f5fbb48dcff9e1e6e5ebac9018e" title=" " alt="" coords="1821,981,1957,1007"/>
+<area shape="rect" id="node5" href="$class_u_i_1_1_dashboard.html#a66c7720fc7f80ee694289fdf9383f94a" title=" " alt="" coords="1364,930,1536,957"/>
+<area shape="rect" id="node49" href="$class_u_i_1_1_dashboard.html#afa6f8ff0eeacf1f436f8dc6324139a4e" title=" " alt="" coords="1359,981,1541,1007"/>
+<area shape="rect" id="node50" href="$class_u_i_1_1_dashboard.html#aa9531615e10e876a36ab8b8476f62a28" title=" " alt="" coords="1589,981,1773,1007"/>
+<area shape="rect" id="node6" href="$class_u_i_1_1_dashboard.html#a6b76e18a7ca1b447649fa351de7c1cfe" title=" " alt="" coords="1132,955,1311,982"/>
+<area shape="rect" id="node7" href="$class_u_i_1_1_dashboard.html#aefe0393b859850573b2dbbd0a59e2337" title=" " alt="" coords="901,955,1084,982"/>
+<area shape="rect" id="node8" href="$class_widgets_1_1_accelerometer.html#a148aef13796c3c67882db353ba7fc8fb" title=" " alt="" coords="425,93,587,135"/>
+<area shape="rect" id="node9" href="$class_widgets_1_1_bar.html#ae423da513c55ca1bb013609404e85b1b" title=" " alt="" coords="443,278,569,305"/>
+<area shape="rect" id="node10" href="$class_widgets_1_1_compass.html#a4f0cb626389d206f4aeb5e4515f87690" title=" " alt="" coords="407,354,605,381"/>
+<area shape="rect" id="node11" href="$class_c_s_v_1_1_export.html#a373e9e03b28b356af36479356fdf42f4" title=" " alt="" coords="661,442,845,469"/>
+<area shape="rect" id="node16" href="$class_widgets_1_1_data_group.html#a77718a6cffee4110db2a2428e0623b83" title=" " alt="" coords="435,535,577,576"/>
+<area shape="rect" id="node17" href="$class_widgets_1_1_f_f_t_plot.html#a80c9c686f6b181c2b4edf3caf6ced4d5" title=" " alt="" coords="416,635,596,662"/>
+<area shape="rect" id="node18" href="$class_widgets_1_1_gauge.html#af51b713fbca7f267d380a0be83d6f02d" title=" " alt="" coords="425,737,587,763"/>
+<area shape="rect" id="node19" href="$class_widgets_1_1_g_p_s.html#a7da76a696d718d2ff5f887416cdfbe04" title=" " alt="" coords="435,838,577,865"/>
+<area shape="rect" id="node20" href="$class_widgets_1_1_gyroscope.html#a76cd73663eabf2925a347394dd90ed26" title=" " alt="" coords="435,1935,577,1976"/>
+<area shape="rect" id="node21" href="$class_misc_1_1_module_manager.html#a5b2106f93a2abcb57f62e6d612bcc7a0" title=" " alt="" coords="677,915,829,956"/>
+<area shape="rect" id="node23" href="$class_widgets_1_1_l_e_d_panel.html#a1b0953d430f280c7fc4663fd54056e1b" title=" " alt="" coords="433,1009,579,1051"/>
+<area shape="rect" id="node24" href="$class_widgets_1_1_multi_plot.html#a9396c37f8af92c220dd403a4a7050e38" title=" " alt="" coords="441,1163,571,1204"/>
+<area shape="rect" id="node25" href="$class_widgets_1_1_plot.html#a48047b3134ee723fe8c46cd66ef76db0" title=" " alt="" coords="440,1330,572,1357"/>
+<area shape="rect" id="node26" href="$class_u_i_1_1_widget_loader.html#acd9701cda13e87e9fab878789a64df40" title=" " alt="" coords="666,1432,841,1473"/>
+<area shape="rect" id="node27" href="$class_widgets_1_1_base_widget.html#aa84f62d23e28c7a79442f4c93b2fe96f" title=" " alt="" coords="679,1497,828,1539"/>
+<area shape="rect" id="node28" href="$class_widgets_1_1_data_group.html#a90d3b883ad9aedbee8a0c5dc28bc55bb" title=" " alt="" coords="683,1563,824,1604"/>
+<area shape="rect" id="node29" href="$class_widgets_1_1_l_e_d_panel.html#a033f625d720491d2bd7b8670d64302b4" title=" " alt="" coords="681,1628,826,1669"/>
+<area shape="rect" id="node30" href="$class_u_i_1_1_widget_loader.html#abe38ec2c6e545b8d4f837045c3b62270" title=" " alt="" coords="411,1737,601,1779"/>
+<area shape="rect" id="node31" href="$class_widgets_1_1_compass.html#ab144363ac68c863c59a20950257fa86e" title=" " alt="" coords="663,391,844,418"/>
+<area shape="rect" id="node33" href="$class_widgets_1_1_bar.html#ac6340c3f93418c9e2a38cbca2781909f" title=" " alt="" coords="667,290,840,317"/>
+<area shape="rect" id="node34" href="$class_widgets_1_1_data_group.html#ab37d4d154663b7fd25fec9376bbee3ad" title=" " alt="" coords="683,544,824,585"/>
+<area shape="rect" id="node35" href="$class_widgets_1_1_f_f_t_plot.html#a87fdd0ad6d1c0a636f92530363788276" title=" " alt="" coords="653,661,853,687"/>
+<area shape="rect" id="node36" href="$class_widgets_1_1_gauge.html#acfde4afc3a5d92a4c0bfdb124a09a2b9" title=" " alt="" coords="658,762,849,789"/>
+<area shape="rect" id="node37" href="$class_widgets_1_1_g_p_s.html#ab1fde1f6e15f92656f281b881113aaec" title=" " alt="" coords="663,863,844,890"/>
+<area shape="rect" id="node39" href="$class_widgets_1_1_l_e_d_panel.html#a043d66f9d6ecc899d0eeda3375a4b396" title=" " alt="" coords="681,980,826,1021"/>
+<area shape="rect" id="node40" href="$class_widgets_1_1_multi_plot.html#ab3566e6efe944517fe327ec5d8a8fd1e" title=" " alt="" coords="689,1097,818,1139"/>
+<area shape="rect" id="node41" href="$class_widgets_1_1_plot.html#a096482312d5a4e32a6d1ae9659f7ca61" title=" " alt="" coords="665,1279,841,1306"/>
+<area shape="rect" id="node42" href="$class_widgets_1_1_multi_plot.html#ae676a7cea9507e7f76fc7368596c8a88" title=" " alt="" coords="689,1163,818,1204"/>
+<area shape="rect" id="node43" href="$class_widgets_1_1_plot.html#aa48b7ff4e6ab452239c1bb2ac09cc5d9" title=" " alt="" coords="660,1330,847,1357"/>
+<area shape="rect" id="node44" href="$class_u_i_1_1_widget_loader.html#aa7c16487c9872d1c0136efbd58407bec" title=" " alt="" coords="668,1796,839,1837"/>
+<area shape="rect" id="node45" href="$class_u_i_1_1_widget_loader.html#a91d54ec1bd60f9327e05c5a4e134b70b" title=" " alt="" coords="419,1821,593,1863"/>
+<area shape="rect" id="node46" href="$class_u_i_1_1_widget_loader.html#a51cb8ce799d3b0dbdbd91bc876cd7e5c" title=" " alt="" coords="656,71,851,98"/>
+<area shape="rect" id="node47" href="$class_u_i_1_1_widget_loader.html#a21b21ddc219e5f135030d9c76a43ed66" title=" " alt="" coords="668,123,839,164"/>
+<area shape="rect" id="node48" href="$class_u_i_1_1_widget_loader.html#acebe0208afc922f8d7804fa6ba7613a8" title=" " alt="" coords="654,1745,853,1771"/>
+<area shape="rect" id="node12" href="$class_c_s_v_1_1_export.html#a3efda8a92a4cb590d0f285750d7e1b30" title=" " alt="" coords="421,423,591,450"/>
+<area shape="rect" id="node13" href="$class_c_s_v_1_1_export.html#ad7ebb02acff92640f5be3bd91572e730" title=" " alt="" coords="204,474,359,501"/>
+<area shape="rect" id="node14" href="$class_c_s_v_1_1_export.html#a24c12afd3775efb730d95ddee08cdc26" title=" " alt="" coords="10,423,151,450"/>
+<area shape="rect" id="node15" href="$class_misc_1_1_module_manager.html#a1832f52dba27743a19287d34b71d5bb9" title=" " alt="" coords="5,475,156,516"/>
+<area shape="rect" id="node22" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Entry&#45;point function of the application." alt="" coords="481,922,531,949"/>
+</map>

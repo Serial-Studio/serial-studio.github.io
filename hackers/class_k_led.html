@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('class_k_led.html',''); initResizable()
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_k_led-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">KLed Class Reference</div></div>
 </div><!--header-->
@@ -103,25 +105,37 @@ $(document).ready(function(){initNavTree('class_k_led.html',''); initResizable()
 <div class="dynheader">
 Inheritance diagram for KLed:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_k_led.png" alt=""/>
- </div></div>
+<div class="center"><img src="class_k_led__inherit__graph.png" border="0" usemap="#a_k_led_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_k_led_inherit__map" id="a_k_led_inherit__map">
+<area shape="rect" title="An LED widget." alt="" coords="16,80,68,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,79,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for KLed:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led__coll__graph.png" border="0" usemap="#a_k_led_coll__map" alt="Collaboration graph"/></div>
+<map name="a_k_led_coll__map" id="a_k_led_coll__map">
+<area shape="rect" title="An LED widget." alt="" coords="16,80,68,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,79,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a14ea238119f6332b71c1ac4ec9ac0d0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a> { <b>Off</b>
-, <b>On</b>
+<tr class="memitem:a14ea238119f6332b71c1ac4ec9ac0d0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a> { <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c">Off</a>
+, <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca6d00e86716c2d0bc30d59d3698b4deea">On</a>
  }</td></tr>
 <tr class="memdesc:a14ea238119f6332b71c1ac4ec9ac0d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED on/off.  <a href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">More...</a><br /></td></tr>
 <tr class="separator:a14ea238119f6332b71c1ac4ec9ac0d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22a9c2354515733cd4aa2c6efabc147f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a> { <b>Rectangular</b>
-, <b>Circular</b>
+<tr class="memitem:a22a9c2354515733cd4aa2c6efabc147f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a> { <a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147fade9f208a5109db537f0c7f59503d7244">Rectangular</a>
+, <a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147fa732f474000173d879261c1d62e908fdd">Circular</a>
  }</td></tr>
 <tr class="memdesc:a22a9c2354515733cd4aa2c6efabc147f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED shape.  <a href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">More...</a><br /></td></tr>
 <tr class="separator:a22a9c2354515733cd4aa2c6efabc147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92553d6cca9c224b0aaaeafee0d9a8d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a> { <b>Flat</b>
-, <b>Raised</b>
-, <b>Sunken</b>
+<tr class="memitem:a92553d6cca9c224b0aaaeafee0d9a8d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a> { <a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6ae78600f8e10e52e5f4749e1dba8a01dd">Flat</a>
+, <a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6a1c95118b4329ec5021383d57094f67d0">Raised</a>
+, <a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6a8ccc9504f04ba9fd3a0e8e5e8561b7ac">Sunken</a>
  }</td></tr>
 <tr class="memdesc:a92553d6cca9c224b0aaaeafee0d9a8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED look.  <a href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">More...</a><br /></td></tr>
 <tr class="separator:a92553d6cca9c224b0aaaeafee0d9a8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,10 +153,10 @@ Public Slots</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba3ec87bc54550121297547c02240ac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#aba3ec87bc54550121297547c02240ac8">KLed</a> (QWidget *parent=Q_NULLPTR)</td></tr>
 <tr class="separator:aba3ec87bc54550121297547c02240ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12edf78d8180786338d4c4758be3403a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a12edf78d8180786338d4c4758be3403a">KLed</a> (const QColor &amp;color, QWidget *parent=Q_NULLPTR)</td></tr>
+<tr class="memitem:a12edf78d8180786338d4c4758be3403a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a12edf78d8180786338d4c4758be3403a">KLed</a> (const QColor &amp;<a class="el" href="class_k_led.html#a839b20399215cdd2f7a358a7da4de39b">color</a>, QWidget *parent=Q_NULLPTR)</td></tr>
 <tr class="memdesc:a12edf78d8180786338d4c4758be3403a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_k_led.html#a12edf78d8180786338d4c4758be3403a">More...</a><br /></td></tr>
 <tr class="separator:a12edf78d8180786338d4c4758be3403a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6258443e10532bd283a4cc5667ef81ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a6258443e10532bd283a4cc5667ef81ab">KLed</a> (const QColor &amp;color, <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">KLed::State</a> state, <a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">KLed::Look</a> look, <a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">KLed::Shape</a> shape, QWidget *parent=Q_NULLPTR)</td></tr>
+<tr class="memitem:a6258443e10532bd283a4cc5667ef81ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a6258443e10532bd283a4cc5667ef81ab">KLed</a> (const QColor &amp;<a class="el" href="class_k_led.html#a839b20399215cdd2f7a358a7da4de39b">color</a>, <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">KLed::State</a> <a class="el" href="class_k_led.html#a16057ea380c4962139869f2a6a3bfb6f">state</a>, <a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">KLed::Look</a> <a class="el" href="class_k_led.html#afd2799a894358ba8f1d586a02ed9884b">look</a>, <a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">KLed::Shape</a> <a class="el" href="class_k_led.html#a0ba616d1909ac4bab712ac16ef6b51e0">shape</a>, QWidget *parent=Q_NULLPTR)</td></tr>
 <tr class="memdesc:a6258443e10532bd283a4cc5667ef81ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_k_led.html#a6258443e10532bd283a4cc5667ef81ab">More...</a><br /></td></tr>
 <tr class="separator:a6258443e10532bd283a4cc5667ef81ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c61887fcc135c0c7c5649df10287dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a4c61887fcc135c0c7c5649df10287dcc">~KLed</a> () override</td></tr>
@@ -158,53 +172,53 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada7b842508e789c07983edc66e2a3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d44131436da738f3af59a85c57142c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#ad8d44131436da738f3af59a85c57142c">darkFactor</a> () const</td></tr>
 <tr class="separator:ad8d44131436da738f3af59a85c57142c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3b459618ad0b544dd3568ba26f3b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73">setColor</a> (const QColor &amp;color)</td></tr>
+<tr class="memitem:a0d3b459618ad0b544dd3568ba26f3b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73">setColor</a> (const QColor &amp;<a class="el" href="class_k_led.html#a839b20399215cdd2f7a358a7da4de39b">color</a>)</td></tr>
 <tr class="separator:a0d3b459618ad0b544dd3568ba26f3b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad596242e5b38ec7844e0950527c9749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749">setState</a> (<a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a> state)</td></tr>
+<tr class="memitem:aad596242e5b38ec7844e0950527c9749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749">setState</a> (<a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a> <a class="el" href="class_k_led.html#a16057ea380c4962139869f2a6a3bfb6f">state</a>)</td></tr>
 <tr class="separator:aad596242e5b38ec7844e0950527c9749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9ac9d738e8e78ca263f4397bd75cde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#ac9ac9d738e8e78ca263f4397bd75cde1">setLook</a> (<a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a> look)</td></tr>
+<tr class="memitem:ac9ac9d738e8e78ca263f4397bd75cde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#ac9ac9d738e8e78ca263f4397bd75cde1">setLook</a> (<a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a> <a class="el" href="class_k_led.html#afd2799a894358ba8f1d586a02ed9884b">look</a>)</td></tr>
 <tr class="separator:ac9ac9d738e8e78ca263f4397bd75cde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99818f1a2e79cce792ca63c95b2431e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a99818f1a2e79cce792ca63c95b2431e3">setShape</a> (<a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a> shape)</td></tr>
+<tr class="memitem:a99818f1a2e79cce792ca63c95b2431e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a99818f1a2e79cce792ca63c95b2431e3">setShape</a> (<a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a> <a class="el" href="class_k_led.html#a0ba616d1909ac4bab712ac16ef6b51e0">shape</a>)</td></tr>
 <tr class="memdesc:a99818f1a2e79cce792ca63c95b2431e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LED shape.  <a href="class_k_led.html#a99818f1a2e79cce792ca63c95b2431e3">More...</a><br /></td></tr>
 <tr class="separator:a99818f1a2e79cce792ca63c95b2431e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ae0ad719513f6aed5670fd2c80a01f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a25ae0ad719513f6aed5670fd2c80a01f">setDarkFactor</a> (int darkFactor)</td></tr>
+<tr class="memitem:a25ae0ad719513f6aed5670fd2c80a01f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a25ae0ad719513f6aed5670fd2c80a01f">setDarkFactor</a> (int <a class="el" href="class_k_led.html#a091fdecd863aa637d8c66da18f039820">darkFactor</a>)</td></tr>
 <tr class="separator:a25ae0ad719513f6aed5670fd2c80a01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282de96120a7d3ed346000fdbcde2d84"><td class="memItemLeft" align="right" valign="top"><a id="a282de96120a7d3ed346000fdbcde2d84" name="a282de96120a7d3ed346000fdbcde2d84"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
+<tr class="memitem:a282de96120a7d3ed346000fdbcde2d84"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a282de96120a7d3ed346000fdbcde2d84">sizeHint</a> () const override</td></tr>
 <tr class="separator:a282de96120a7d3ed346000fdbcde2d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7321158cf281e990058421c5e3e99f1e"><td class="memItemLeft" align="right" valign="top"><a id="a7321158cf281e990058421c5e3e99f1e" name="a7321158cf281e990058421c5e3e99f1e"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSizeHint</b> () const override</td></tr>
+<tr class="memitem:a7321158cf281e990058421c5e3e99f1e"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a7321158cf281e990058421c5e3e99f1e">minimumSizeHint</a> () const override</td></tr>
 <tr class="separator:a7321158cf281e990058421c5e3e99f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7488b2e2403bad8961a46a9062363681"><td class="memItemLeft" align="right" valign="top"><a id="a7488b2e2403bad8961a46a9062363681" name="a7488b2e2403bad8961a46a9062363681"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *) override</td></tr>
+<tr class="memitem:a7488b2e2403bad8961a46a9062363681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a7488b2e2403bad8961a46a9062363681">paintEvent</a> (QPaintEvent *) override</td></tr>
 <tr class="separator:a7488b2e2403bad8961a46a9062363681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0571f7c70b52b150390085d675ad20"><td class="memItemLeft" align="right" valign="top"><a id="acc0571f7c70b52b150390085d675ad20" name="acc0571f7c70b52b150390085d675ad20"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *) override</td></tr>
+<tr class="memitem:acc0571f7c70b52b150390085d675ad20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#acc0571f7c70b52b150390085d675ad20">resizeEvent</a> (QResizeEvent *) override</td></tr>
 <tr class="separator:acc0571f7c70b52b150390085d675ad20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ace015d682a686708a1fbe6f8c2d341"><td class="memItemLeft" align="right" valign="top"><a id="a7ace015d682a686708a1fbe6f8c2d341" name="a7ace015d682a686708a1fbe6f8c2d341"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCachedPixmap</b> ()</td></tr>
+<tr class="memitem:a7ace015d682a686708a1fbe6f8c2d341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341">updateCachedPixmap</a> ()</td></tr>
 <tr class="separator:a7ace015d682a686708a1fbe6f8c2d341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a16057ea380c4962139869f2a6a3bfb6f"><td class="memItemLeft" align="right" valign="top"><a id="a16057ea380c4962139869f2a6a3bfb6f" name="a16057ea380c4962139869f2a6a3bfb6f"></a>
-<a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memitem:a16057ea380c4962139869f2a6a3bfb6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a16057ea380c4962139869f2a6a3bfb6f">state</a></td></tr>
 <tr class="separator:a16057ea380c4962139869f2a6a3bfb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba616d1909ac4bab712ac16ef6b51e0"><td class="memItemLeft" align="right" valign="top"><a id="a0ba616d1909ac4bab712ac16ef6b51e0" name="a0ba616d1909ac4bab712ac16ef6b51e0"></a>
-<a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b></td></tr>
+<tr class="memitem:a0ba616d1909ac4bab712ac16ef6b51e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a0ba616d1909ac4bab712ac16ef6b51e0">shape</a></td></tr>
 <tr class="separator:a0ba616d1909ac4bab712ac16ef6b51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2799a894358ba8f1d586a02ed9884b"><td class="memItemLeft" align="right" valign="top"><a id="afd2799a894358ba8f1d586a02ed9884b" name="afd2799a894358ba8f1d586a02ed9884b"></a>
-<a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a>&#160;</td><td class="memItemRight" valign="bottom"><b>look</b></td></tr>
+<tr class="memitem:afd2799a894358ba8f1d586a02ed9884b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#afd2799a894358ba8f1d586a02ed9884b">look</a></td></tr>
 <tr class="separator:afd2799a894358ba8f1d586a02ed9884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839b20399215cdd2f7a358a7da4de39b"><td class="memItemLeft" align="right" valign="top"><a id="a839b20399215cdd2f7a358a7da4de39b" name="a839b20399215cdd2f7a358a7da4de39b"></a>
-QColor&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="memitem:a839b20399215cdd2f7a358a7da4de39b"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a839b20399215cdd2f7a358a7da4de39b">color</a></td></tr>
 <tr class="separator:a839b20399215cdd2f7a358a7da4de39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a091fdecd863aa637d8c66da18f039820"><td class="memItemLeft" align="right" valign="top"><a id="a091fdecd863aa637d8c66da18f039820" name="a091fdecd863aa637d8c66da18f039820"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>darkFactor</b></td></tr>
+<tr class="memitem:a091fdecd863aa637d8c66da18f039820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a091fdecd863aa637d8c66da18f039820">darkFactor</a></td></tr>
 <tr class="separator:a091fdecd863aa637d8c66da18f039820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4e1b063bf3bc35ebeda0cf1ed003f3c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5">updateAccessibleName</a> ()</td></tr>
+<tr class="separator:a4e1b063bf3bc35ebeda0cf1ed003f3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1eb600a0b0d20b57c2e1abbbabecc9d0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; class <a class="el" href="class_k_led_private.html">KLedPrivate</a> &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_led.html#a1eb600a0b0d20b57c2e1abbbabecc9d0">d</a></td></tr>
+<tr class="separator:a1eb600a0b0d20b57c2e1abbbabecc9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >An LED widget. </p>
@@ -231,6 +245,11 @@ KLed Widget</div></div>
 
 <p>LED look. </p>
 <p >Displays a flat, round or sunken LED. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a92553d6cca9c224b0aaaeafee0d9a8d6ae78600f8e10e52e5f4749e1dba8a01dd" name="a92553d6cca9c224b0aaaeafee0d9a8d6ae78600f8e10e52e5f4749e1dba8a01dd"></a>Flat&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92553d6cca9c224b0aaaeafee0d9a8d6a1c95118b4329ec5021383d57094f67d0" name="a92553d6cca9c224b0aaaeafee0d9a8d6a1c95118b4329ec5021383d57094f67d0"></a>Raised&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92553d6cca9c224b0aaaeafee0d9a8d6a8ccc9504f04ba9fd3a0e8e5e8561b7ac" name="a92553d6cca9c224b0aaaeafee0d9a8d6a8ccc9504f04ba9fd3a0e8e5e8561b7ac"></a>Sunken&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -248,6 +267,10 @@ KLed Widget</div></div>
 
 <p>LED shape. </p>
 <p >Shades of the lamp. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22a9c2354515733cd4aa2c6efabc147fade9f208a5109db537f0c7f59503d7244" name="a22a9c2354515733cd4aa2c6efabc147fade9f208a5109db537f0c7f59503d7244"></a>Rectangular&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a22a9c2354515733cd4aa2c6efabc147fa732f474000173d879261c1d62e908fdd" name="a22a9c2354515733cd4aa2c6efabc147fa732f474000173d879261c1d62e908fdd"></a>Circular&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -265,6 +288,10 @@ KLed Widget</div></div>
 
 <p>LED on/off. </p>
 <p >Status of the light is on/off. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c" name="a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c"></a>Off&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14ea238119f6332b71c1ac4ec9ac0d0ca6d00e86716c2d0bc30d59d3698b4deea" name="a14ea238119f6332b71c1ac4ec9ac0d0ca6d00e86716c2d0bc30d59d3698b4deea"></a>On&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -299,6 +326,17 @@ KLed Widget</div></div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_aba3ec87bc54550121297547c02240ac8_cgraph.png" border="0" usemap="#aclass_k_led_aba3ec87bc54550121297547c02240ac8_cgraph" alt=""/></div>
+<map name="aclass_k_led_aba3ec87bc54550121297547c02240ac8_cgraph" id="aclass_k_led_aba3ec87bc54550121297547c02240ac8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,96,57"/>
+<area shape="rect" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73" title=" " alt="" coords="189,5,298,32"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="144,56,343,83"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="391,5,579,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -345,6 +383,17 @@ KLed Widget</div></div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a12edf78d8180786338d4c4758be3403a_cgraph.png" border="0" usemap="#aclass_k_led_a12edf78d8180786338d4c4758be3403a_cgraph" alt=""/></div>
+<map name="aclass_k_led_a12edf78d8180786338d4c4758be3403a_cgraph" id="aclass_k_led_a12edf78d8180786338d4c4758be3403a_cgraph">
+<area shape="rect" title="Constructor." alt="" coords="5,31,96,57"/>
+<area shape="rect" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73" title=" " alt="" coords="189,5,298,32"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="144,56,343,83"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="391,5,579,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -405,6 +454,17 @@ KLed Widget</div></div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a6258443e10532bd283a4cc5667ef81ab_cgraph.png" border="0" usemap="#aclass_k_led_a6258443e10532bd283a4cc5667ef81ab_cgraph" alt=""/></div>
+<map name="aclass_k_led_a6258443e10532bd283a4cc5667ef81ab_cgraph" id="aclass_k_led_a6258443e10532bd283a4cc5667ef81ab_cgraph">
+<area shape="rect" title="Constructor." alt="" coords="5,31,96,57"/>
+<area shape="rect" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73" title=" " alt="" coords="189,5,298,32"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="144,56,343,83"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="391,5,579,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -495,6 +555,31 @@ KLed Widget</div></div>
 
 </div>
 </div>
+<a id="a7321158cf281e990058421c5e3e99f1e" name="a7321158cf281e990058421c5e3e99f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7321158cf281e990058421c5e3e99f1e">&#9670;&nbsp;</a></span>minimumSizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KLed::minimumSizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa789f647307cdfdb95a91811ad82afde" name="aa789f647307cdfdb95a91811ad82afde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa789f647307cdfdb95a91811ad82afde">&#9670;&nbsp;</a></span>off</h2>
 
@@ -519,6 +604,17 @@ KLed Widget</div></div>
 </div><div class="memdoc">
 <p >Sets the state of the widget to Off.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa">on()</a> <a class="el" href="class_k_led.html#abd1dc18cd0e3b34f120d1a1ad9d9b338">toggle()</a> <a class="el" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749">setState()</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_aa789f647307cdfdb95a91811ad82afde_cgraph.png" border="0" usemap="#aclass_k_led_aa789f647307cdfdb95a91811ad82afde_cgraph" alt=""/></div>
+<map name="aclass_k_led_aa789f647307cdfdb95a91811ad82afde_cgraph" id="aclass_k_led_aa789f647307cdfdb95a91811ad82afde_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749" title=" " alt="" coords="128,31,237,57"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="285,5,484,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="291,56,479,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -546,6 +642,78 @@ KLed Widget</div></div>
 </div><div class="memdoc">
 <p >Sets the state of the widget to On.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#aa789f647307cdfdb95a91811ad82afde">off()</a> <a class="el" href="class_k_led.html#abd1dc18cd0e3b34f120d1a1ad9d9b338">toggle()</a> <a class="el" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749">setState()</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a0a4a6589bf59312552edabdeef61f2aa_cgraph.png" border="0" usemap="#aclass_k_led_a0a4a6589bf59312552edabdeef61f2aa_cgraph" alt=""/></div>
+<map name="aclass_k_led_a0a4a6589bf59312552edabdeef61f2aa_cgraph" id="aclass_k_led_a0a4a6589bf59312552edabdeef61f2aa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749" title=" " alt="" coords="128,31,237,57"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="285,5,484,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="291,56,479,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7488b2e2403bad8961a46a9062363681" name="a7488b2e2403bad8961a46a9062363681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7488b2e2403bad8961a46a9062363681">&#9670;&nbsp;</a></span>paintEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLed::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc0571f7c70b52b150390085d675ad20" name="acc0571f7c70b52b150390085d675ad20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0571f7c70b52b150390085d675ad20">&#9670;&nbsp;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLed::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_acc0571f7c70b52b150390085d675ad20_cgraph.png" border="0" usemap="#aclass_k_led_acc0571f7c70b52b150390085d675ad20_cgraph" alt=""/></div>
+<map name="aclass_k_led_acc0571f7c70b52b150390085d675ad20_cgraph" id="aclass_k_led_acc0571f7c70b52b150390085d675ad20_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,135,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="183,5,371,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -565,7 +733,7 @@ KLed Widget</div></div>
       </table>
 </div><div class="memdoc">
 <p >Set the color of the widget.</p>
-<p >The LED is shown with <code>color</code> when in the KLed::On state or with the darken color in KLed::Off state.</p>
+<p >The LED is shown with <code>color</code> when in the <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca6d00e86716c2d0bc30d59d3698b4deea">KLed::On</a> state or with the darken color in <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c">KLed::Off</a> state.</p>
 <p >The widget calls the update() method, so it will be updated when entering the main event loop.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -573,7 +741,25 @@ KLed Widget</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>color() darkFactor() </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a839b20399215cdd2f7a358a7da4de39b">color()</a> <a class="el" href="class_k_led.html#a091fdecd863aa637d8c66da18f039820">darkFactor()</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a0d3b459618ad0b544dd3568ba26f3b73_cgraph.png" border="0" usemap="#aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_cgraph" alt=""/></div>
+<map name="aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_cgraph" id="aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,115,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="163,5,351,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a0d3b459618ad0b544dd3568ba26f3b73_icgraph.png" border="0" usemap="#aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_icgraph" alt=""/></div>
+<map name="aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_icgraph" id="aclass_k_led_a0d3b459618ad0b544dd3568ba26f3b73_icgraph">
+<area shape="rect" title=" " alt="" coords="144,5,253,32"/>
+<area shape="rect" href="class_k_led.html#aba3ec87bc54550121297547c02240ac8" title=" " alt="" coords="5,5,96,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -592,8 +778,8 @@ KLed Widget</div></div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Sets the factor to darken the LED in KLed::Off state.</p>
-<p >The <code>darkFactor</code> should be greater than 100, otherwise the LED becomes lighter in KLed::Off state.</p>
+<p >Sets the factor to darken the LED in <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c">KLed::Off</a> state.</p>
+<p >The <code>darkFactor</code> should be greater than 100, otherwise the LED becomes lighter in <a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0ca133c86551c18ae1d0def10cbceac747c">KLed::Off</a> state.</p>
 <p >Defaults to 300.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -602,6 +788,15 @@ KLed Widget</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73">setColor</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a25ae0ad719513f6aed5670fd2c80a01f_cgraph.png" border="0" usemap="#aclass_k_led_a25ae0ad719513f6aed5670fd2c80a01f_cgraph" alt=""/></div>
+<map name="aclass_k_led_a25ae0ad719513f6aed5670fd2c80a01f_cgraph" id="aclass_k_led_a25ae0ad719513f6aed5670fd2c80a01f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="196,5,384,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -630,6 +825,15 @@ KLed Widget</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6" title="LED look.">Look</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_ac9ac9d738e8e78ca263f4397bd75cde1_cgraph.png" border="0" usemap="#aclass_k_led_ac9ac9d738e8e78ca263f4397bd75cde1_cgraph" alt=""/></div>
+<map name="aclass_k_led_ac9ac9d738e8e78ca263f4397bd75cde1_cgraph" id="aclass_k_led_ac9ac9d738e8e78ca263f4397bd75cde1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="160,5,348,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -657,6 +861,15 @@ KLed Widget</div></div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a99818f1a2e79cce792ca63c95b2431e3_cgraph.png" border="0" usemap="#aclass_k_led_a99818f1a2e79cce792ca63c95b2431e3_cgraph" alt=""/></div>
+<map name="aclass_k_led_a99818f1a2e79cce792ca63c95b2431e3_cgraph" id="aclass_k_led_a99818f1a2e79cce792ca63c95b2431e3_cgraph">
+<area shape="rect" title="Set LED shape." alt="" coords="5,5,120,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="168,5,356,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -683,6 +896,26 @@ KLed Widget</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa">on()</a> <a class="el" href="class_k_led.html#aa789f647307cdfdb95a91811ad82afde">off()</a> <a class="el" href="class_k_led.html#abd1dc18cd0e3b34f120d1a1ad9d9b338">toggle()</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_aad596242e5b38ec7844e0950527c9749_cgraph.png" border="0" usemap="#aclass_k_led_aad596242e5b38ec7844e0950527c9749_cgraph" alt=""/></div>
+<map name="aclass_k_led_aad596242e5b38ec7844e0950527c9749_cgraph" id="aclass_k_led_aad596242e5b38ec7844e0950527c9749_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,115,57"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="163,5,361,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="168,56,356,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_aad596242e5b38ec7844e0950527c9749_icgraph.png" border="0" usemap="#aclass_k_led_aad596242e5b38ec7844e0950527c9749_icgraph" alt=""/></div>
+<map name="aclass_k_led_aad596242e5b38ec7844e0950527c9749_icgraph" id="aclass_k_led_aad596242e5b38ec7844e0950527c9749_icgraph">
+<area shape="rect" title=" " alt="" coords="128,31,237,57"/>
+<area shape="rect" href="class_k_led.html#aa789f647307cdfdb95a91811ad82afde" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" href="class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa" title=" " alt="" coords="5,56,80,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -702,6 +935,31 @@ KLed Widget</div></div>
 </div><div class="memdoc">
 <p >Returns the current shape of the widget. </p><dl class="section return"><dt>Returns</dt><dd>LED shape</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f" title="LED shape.">Shape</a> </dd></dl>
+
+</div>
+</div>
+<a id="a282de96120a7d3ed346000fdbcde2d84" name="a282de96120a7d3ed346000fdbcde2d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282de96120a7d3ed346000fdbcde2d84">&#9670;&nbsp;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize KLed::sizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -747,12 +1005,237 @@ KLed Widget</div></div>
 </table>
 </div><div class="memdoc">
 <p >Toggles the state of the led from Off to On or vice versa. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_abd1dc18cd0e3b34f120d1a1ad9d9b338_cgraph.png" border="0" usemap="#aclass_k_led_abd1dc18cd0e3b34f120d1a1ad9d9b338_cgraph" alt=""/></div>
+<map name="aclass_k_led_abd1dc18cd0e3b34f120d1a1ad9d9b338_cgraph" id="aclass_k_led_abd1dc18cd0e3b34f120d1a1ad9d9b338_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,100,57"/>
+<area shape="rect" href="class_k_led.html#a4e1b063bf3bc35ebeda0cf1ed003f3c5" title=" " alt="" coords="148,5,347,32"/>
+<area shape="rect" href="class_k_led.html#a7ace015d682a686708a1fbe6f8c2d341" title=" " alt="" coords="153,56,341,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e1b063bf3bc35ebeda0cf1ed003f3c5" name="a4e1b063bf3bc35ebeda0cf1ed003f3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1b063bf3bc35ebeda0cf1ed003f3c5">&#9670;&nbsp;</a></span>updateAccessibleName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLed::updateAccessibleName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a4e1b063bf3bc35ebeda0cf1ed003f3c5_icgraph.png" border="0" usemap="#aclass_k_led_a4e1b063bf3bc35ebeda0cf1ed003f3c5_icgraph" alt=""/></div>
+<map name="aclass_k_led_a4e1b063bf3bc35ebeda0cf1ed003f3c5_icgraph" id="aclass_k_led_a4e1b063bf3bc35ebeda0cf1ed003f3c5_icgraph">
+<area shape="rect" title=" " alt="" coords="285,56,484,83"/>
+<area shape="rect" href="class_k_led.html#aba3ec87bc54550121297547c02240ac8" title=" " alt="" coords="137,5,228,32"/>
+<area shape="rect" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749" title=" " alt="" coords="128,56,237,83"/>
+<area shape="rect" href="class_k_led.html#abd1dc18cd0e3b34f120d1a1ad9d9b338" title=" " alt="" coords="135,107,230,133"/>
+<area shape="rect" href="class_k_led.html#aa789f647307cdfdb95a91811ad82afde" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" href="class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa" title=" " alt="" coords="5,81,80,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ace015d682a686708a1fbe6f8c2d341" name="a7ace015d682a686708a1fbe6f8c2d341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ace015d682a686708a1fbe6f8c2d341">&#9670;&nbsp;</a></span>updateCachedPixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLed::updateCachedPixmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_k_led_a7ace015d682a686708a1fbe6f8c2d341_icgraph.png" border="0" usemap="#aclass_k_led_a7ace015d682a686708a1fbe6f8c2d341_icgraph" alt=""/></div>
+<map name="aclass_k_led_a7ace015d682a686708a1fbe6f8c2d341_icgraph" id="aclass_k_led_a7ace015d682a686708a1fbe6f8c2d341_icgraph">
+<area shape="rect" title=" " alt="" coords="335,157,523,184"/>
+<area shape="rect" href="class_k_led.html#acc0571f7c70b52b150390085d675ad20" title=" " alt="" coords="151,5,280,32"/>
+<area shape="rect" href="class_k_led.html#a0d3b459618ad0b544dd3568ba26f3b73" title=" " alt="" coords="161,56,270,83"/>
+<area shape="rect" href="class_k_led.html#a25ae0ad719513f6aed5670fd2c80a01f" title=" " alt="" coords="144,107,287,133"/>
+<area shape="rect" href="class_k_led.html#ac9ac9d738e8e78ca263f4397bd75cde1" title=" " alt="" coords="162,157,269,184"/>
+<area shape="rect" href="class_k_led.html#a99818f1a2e79cce792ca63c95b2431e3" title="Set LED shape." alt="" coords="158,208,273,235"/>
+<area shape="rect" href="class_k_led.html#aad596242e5b38ec7844e0950527c9749" title=" " alt="" coords="161,259,270,285"/>
+<area shape="rect" href="class_k_led.html#abd1dc18cd0e3b34f120d1a1ad9d9b338" title=" " alt="" coords="168,309,263,336"/>
+<area shape="rect" href="class_k_led.html#aba3ec87bc54550121297547c02240ac8" title=" " alt="" coords="5,56,96,83"/>
+<area shape="rect" href="class_k_led.html#aa789f647307cdfdb95a91811ad82afde" title=" " alt="" coords="13,233,88,260"/>
+<area shape="rect" href="class_k_led.html#a0a4a6589bf59312552edabdeef61f2aa" title=" " alt="" coords="13,284,88,311"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1eb600a0b0d20b57c2e1abbbabecc9d0" name="a1eb600a0b0d20b57c2e1abbbabecc9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb600a0b0d20b57c2e1abbbabecc9d0">&#9670;&nbsp;</a></span>d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;class <a class="el" href="class_k_led_private.html">KLedPrivate</a>&gt; const KLed::d</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a839b20399215cdd2f7a358a7da4de39b" name="a839b20399215cdd2f7a358a7da4de39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839b20399215cdd2f7a358a7da4de39b">&#9670;&nbsp;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor KLed::color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a091fdecd863aa637d8c66da18f039820" name="a091fdecd863aa637d8c66da18f039820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091fdecd863aa637d8c66da18f039820">&#9670;&nbsp;</a></span>darkFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KLed::darkFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd2799a894358ba8f1d586a02ed9884b" name="afd2799a894358ba8f1d586a02ed9884b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2799a894358ba8f1d586a02ed9884b">&#9670;&nbsp;</a></span>look</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_led.html#a92553d6cca9c224b0aaaeafee0d9a8d6">Look</a> KLed::look</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ba616d1909ac4bab712ac16ef6b51e0" name="a0ba616d1909ac4bab712ac16ef6b51e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba616d1909ac4bab712ac16ef6b51e0">&#9670;&nbsp;</a></span>shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_led.html#a22a9c2354515733cd4aa2c6efabc147f">Shape</a> KLed::shape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16057ea380c4962139869f2a6a3bfb6f" name="a16057ea380c4962139869f2a6a3bfb6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16057ea380c4962139869f2a6a3bfb6f">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_led.html#a14ea238119f6332b71c1ac4ec9ac0d0c">State</a> KLed::state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/alex/Documents/GitHub/Serial-Studio/src/Widgets/Common/<a class="el" href="_k_led_8h_source.html">KLed.h</a></li>
-<li>/Users/alex/Documents/GitHub/Serial-Studio/src/Widgets/Common/KLed.cpp</li>
+<li>/Users/alex/Documents/GitHub/Serial-Studio/src/Widgets/Common/<a class="el" href="_k_led_8cpp.html">KLed.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

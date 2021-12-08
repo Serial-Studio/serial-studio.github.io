@@ -8,5 +8,7 @@ var class_misc_1_1_module_manager =
     [ "initializeQmlInterface", "class_misc_1_1_module_manager.html#a5b2106f93a2abcb57f62e6d612bcc7a0", null ],
     [ "onQuit", "class_misc_1_1_module_manager.html#a1832f52dba27743a19287d34b71d5bb9", null ],
     [ "registerQmlTypes", "class_misc_1_1_module_manager.html#a33fdcd54b7589562d547e912d30969c6", null ],
-    [ "setSplashScreenMessage", "class_misc_1_1_module_manager.html#a39a0b1fcd86ddb8d7458c2595962299f", null ]
+    [ "setSplashScreenMessage", "class_misc_1_1_module_manager.html#a39a0b1fcd86ddb8d7458c2595962299f", null ],
+    [ "m_engine", "class_misc_1_1_module_manager.html#a6bfd158173f49084f7211c5e9731481c", null ],
+    [ "m_splash", "class_misc_1_1_module_manager.html#a25ad22fe5725a90edcd4f0af39dd0661", null ]
 ];
