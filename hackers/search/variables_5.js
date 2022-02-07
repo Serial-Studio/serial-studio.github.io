@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsondocument_0',['jsonDocument',['../struct_j_f_i___object.html#a2ed9ce19d54d5f8d6acc28926a3c5e27',1,'JFI_Object']]]
+  ['rxdatetime_0',['rxDateTime',['../struct_c_s_v_1_1_raw_frame.html#a760d5647c14f450a5af42333850ae67e',1,'CSV::RawFrame']]]
 ];

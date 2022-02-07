@@ -7,6 +7,7 @@ var namespace_widgets =
     [ "Bar", "class_widgets_1_1_bar.html", "class_widgets_1_1_bar" ],
     [ "BaseWidget", "class_widgets_1_1_base_widget.html", "class_widgets_1_1_base_widget" ],
     [ "Compass", "class_widgets_1_1_compass.html", "class_widgets_1_1_compass" ],
+    [ "DashboardWidgetBase", "class_widgets_1_1_dashboard_widget_base.html", "class_widgets_1_1_dashboard_widget_base" ],
     [ "DataGroup", "class_widgets_1_1_data_group.html", "class_widgets_1_1_data_group" ],
     [ "ElidedLabel", "class_widgets_1_1_elided_label.html", "class_widgets_1_1_elided_label" ],
     [ "FFTPlot", "class_widgets_1_1_f_f_t_plot.html", "class_widgets_1_1_f_f_t_plot" ],
@@ -17,6 +18,5 @@ var namespace_widgets =
     [ "LEDPanel", "class_widgets_1_1_l_e_d_panel.html", "class_widgets_1_1_l_e_d_panel" ],
     [ "MultiPlot", "class_widgets_1_1_multi_plot.html", "class_widgets_1_1_multi_plot" ],
     [ "Plot", "class_widgets_1_1_plot.html", "class_widgets_1_1_plot" ],
-    [ "Terminal", "class_widgets_1_1_terminal.html", "class_widgets_1_1_terminal" ],
-    [ "ansiColor", "namespace_widgets.html#af57323452f8b505058f704442a3bbfb2", null ]
+    [ "Terminal", "class_widgets_1_1_terminal.html", "class_widgets_1_1_terminal" ]
 ];

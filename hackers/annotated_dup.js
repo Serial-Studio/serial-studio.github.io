@@ -18,8 +18,7 @@ var annotated_dup =
       [ "Editor", "class_j_s_o_n_1_1_editor.html", "class_j_s_o_n_1_1_editor" ],
       [ "Frame", "class_j_s_o_n_1_1_frame.html", "class_j_s_o_n_1_1_frame" ],
       [ "Generator", "class_j_s_o_n_1_1_generator.html", "class_j_s_o_n_1_1_generator" ],
-      [ "Group", "class_j_s_o_n_1_1_group.html", "class_j_s_o_n_1_1_group" ],
-      [ "JSONWorker", "class_j_s_o_n_1_1_j_s_o_n_worker.html", "class_j_s_o_n_1_1_j_s_o_n_worker" ]
+      [ "Group", "class_j_s_o_n_1_1_group.html", "class_j_s_o_n_1_1_group" ]
     ] ],
     [ "Misc", "namespace_misc.html", [
       [ "MacExtras", "class_misc_1_1_mac_extras.html", "class_misc_1_1_mac_extras" ],
@@ -37,7 +36,8 @@ var annotated_dup =
     ] ],
     [ "UI", "namespace_u_i.html", [
       [ "Dashboard", "class_u_i_1_1_dashboard.html", "class_u_i_1_1_dashboard" ],
-      [ "WidgetLoader", "class_u_i_1_1_widget_loader.html", "class_u_i_1_1_widget_loader" ]
+      [ "DashboardWidget", "class_u_i_1_1_dashboard_widget.html", "class_u_i_1_1_dashboard_widget" ],
+      [ "DeclarativeWidget", "class_u_i_1_1_declarative_widget.html", "class_u_i_1_1_declarative_widget" ]
     ] ],
     [ "Widgets", "namespace_widgets.html", [
       [ "Accelerometer", "class_widgets_1_1_accelerometer.html", "class_widgets_1_1_accelerometer" ],
@@ -47,6 +47,7 @@ var annotated_dup =
       [ "Bar", "class_widgets_1_1_bar.html", "class_widgets_1_1_bar" ],
       [ "BaseWidget", "class_widgets_1_1_base_widget.html", "class_widgets_1_1_base_widget" ],
       [ "Compass", "class_widgets_1_1_compass.html", "class_widgets_1_1_compass" ],
+      [ "DashboardWidgetBase", "class_widgets_1_1_dashboard_widget_base.html", "class_widgets_1_1_dashboard_widget_base" ],
       [ "DataGroup", "class_widgets_1_1_data_group.html", "class_widgets_1_1_data_group" ],
       [ "ElidedLabel", "class_widgets_1_1_elided_label.html", "class_widgets_1_1_elided_label" ],
       [ "FFTPlot", "class_widgets_1_1_f_f_t_plot.html", "class_widgets_1_1_f_f_t_plot" ],
@@ -59,7 +60,6 @@ var annotated_dup =
       [ "Plot", "class_widgets_1_1_plot.html", "class_widgets_1_1_plot" ],
       [ "Terminal", "class_widgets_1_1_terminal.html", "class_widgets_1_1_terminal" ]
     ] ],
-    [ "JFI_Object", "struct_j_f_i___object.html", "struct_j_f_i___object" ],
     [ "KLed", "class_k_led.html", "class_k_led" ],
     [ "KLedPrivate", "class_k_led_private.html", "class_k_led_private" ]
 ];

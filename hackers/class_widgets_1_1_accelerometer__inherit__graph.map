@@ -1,5 +1,6 @@
 <map id="Widgets::Accelerometer" name="Widgets::Accelerometer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,168,181"/>
-<area shape="rect" id="node2" href="$class_widgets_1_1_base_widget.html" title=" " alt="" coords="12,80,161,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="50,5,123,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="30,513,193,620"/>
+<area shape="rect" id="node2" href="$class_widgets_1_1_base_widget.html" title=" " alt="" coords="37,285,186,465"/>
+<area shape="rect" id="node3" href="$class_widgets_1_1_dashboard_widget_base.html" title="The DashboardWidgetBase class." alt="" coords="5,131,217,237"/>
+<area shape="rect" id="node4" title=" " alt="" coords="75,5,148,83"/>
 </map>

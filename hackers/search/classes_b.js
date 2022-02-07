@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['network_0',['Network',['../class_i_o_1_1_data_sources_1_1_network.html',1,'IO::DataSources']]]
+  ['player_0',['Player',['../class_c_s_v_1_1_player.html',1,'CSV']]],
+  ['plot_1',['Plot',['../class_widgets_1_1_plot.html',1,'Widgets']]]
 ];

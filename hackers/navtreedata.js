@@ -37,7 +37,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -70,18 +69,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accelerometer_8cpp.html",
-"class_c_s_v_1_1_player.html#a4b56b15381ce03794f1455709aca5297",
+"class_c_s_v_1_1_player.html#a8ad4ad86d1d4dc9736706cf5d34429ae",
 "class_i_o_1_1_data_sources_1_1_network.html#a6c5fdfc55a351fe59f45b5412bffb27e",
-"class_i_o_1_1_manager.html#a199920f25c5c6940baf406d3e87bee67",
-"class_j_s_o_n_1_1_editor.html#a39249ee5b0fe418169c4b7a198c860ae",
-"class_j_s_o_n_1_1_group.html#a2c29472107bc2f3b636081d50f1acd5c",
-"class_m_q_t_t_1_1_client.html#ae17ed11e8347405d726631c3035efcb3",
-"class_misc_1_1_theme_manager.html#a856ba52a12633dc4a757d9215c961853",
-"class_plugins_1_1_server.html#ab2ef7e57c71b168eab3fbf033541b669",
-"class_u_i_1_1_dashboard.html#ab5e69468fa07588712173ac5aaca7cae",
-"class_widgets_1_1_base_widget.html#a871f19dd4f2d41bca4eb365603cca571",
-"class_widgets_1_1_plot.html#aa99d27e91a6dc70a8f4d9bab24e06159",
-"functions_w.html"
+"class_i_o_1_1_data_sources_1_1_serial.html#afbe81039d3aa67b035144125ec0033aa",
+"class_j_s_o_n_1_1_editor.html#a2439cfaee8019e5da27b06a0b6e9227e",
+"class_j_s_o_n_1_1_generator.html#ae4f604ddfd7816d27068e04448ad5a63",
+"class_m_q_t_t_1_1_client.html#add9f1dd323af87015c6f32755d815d2b",
+"class_misc_1_1_theme_manager.html#a78a3c59290c6fa5699e7304b2dd062c5",
+"class_misc_1_1_translator.html#ac53c19adcddf4ff8f1eed8e0b7cbd151",
+"class_u_i_1_1_dashboard.html#a87255a257b38203785bc229b260b36b3",
+"class_u_i_1_1_declarative_widget.html#abc911246170609b6085886629dd50525",
+"class_widgets_1_1_gauge.html#af51b713fbca7f267d380a0be83d6f02d",
+"dir_1c1d7146a26cb7e237c2d4fa28ecfcbf.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

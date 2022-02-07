@@ -1,5 +1,0 @@
-<map id="UI::Dashboard::getAccelerometer" name="UI::Dashboard::getAccelerometer">
-<area shape="rect" id="node1" title=" " alt="" coords="427,13,644,39"/>
-<area shape="rect" id="node2" href="$class_widgets_1_1_accelerometer.html#adc09d9b6793d69d1d91ebd29aaaf0ceb" title=" " alt="" coords="216,5,379,47"/>
-<area shape="rect" id="node3" href="$class_widgets_1_1_accelerometer.html#a148aef13796c3c67882db353ba7fc8fb" title=" " alt="" coords="5,5,168,47"/>
-</map>

@@ -1,6 +1,8 @@
 var class_i_o_1_1_data_sources_1_1_serial =
 [
     [ "Serial", "class_i_o_1_1_data_sources_1_1_serial.html#a93ba16fb5d0e75ca5889369c7f6dc2ca", null ],
+    [ "Serial", "class_i_o_1_1_data_sources_1_1_serial.html#a87a75f81b1db9f2b3cc525c668da700e", null ],
+    [ "Serial", "class_i_o_1_1_data_sources_1_1_serial.html#a2a94e205dc75cfc4e9f2db5282464926", null ],
     [ "~Serial", "class_i_o_1_1_data_sources_1_1_serial.html#a10dc92723dc6b634ab5b112d96a82f6f", null ],
     [ "appendBaudRate", "class_i_o_1_1_data_sources_1_1_serial.html#ac66536a7baafd9447623bc36970ab7a0", null ],
     [ "autoReconnect", "class_i_o_1_1_data_sources_1_1_serial.html#a3e2961fae31fadc63164f7fb17b5bd1c", null ],
@@ -23,9 +25,11 @@ var class_i_o_1_1_data_sources_1_1_serial =
     [ "flowControlChanged", "class_i_o_1_1_data_sources_1_1_serial.html#a4c9ad7c92856bd692500ad9ecac18532", null ],
     [ "flowControlIndex", "class_i_o_1_1_data_sources_1_1_serial.html#ac6b9ad0c47c8fe1fbe0dcf6a25242eb1", null ],
     [ "flowControlList", "class_i_o_1_1_data_sources_1_1_serial.html#a9860210f01d23f6e25bbc8522ec65024", null ],
-    [ "getInstance", "class_i_o_1_1_data_sources_1_1_serial.html#a858bbaf84113f0fd5216dcb12358363b", null ],
     [ "handleError", "class_i_o_1_1_data_sources_1_1_serial.html#af9374f7fa7b3a0236e1d5908085efd18", null ],
+    [ "instance", "class_i_o_1_1_data_sources_1_1_serial.html#a0f493dc298d214de6e8439225a8596b6", null ],
     [ "openSerialPort", "class_i_o_1_1_data_sources_1_1_serial.html#aac9daf15d0235eafe1e2782794906b81", null ],
+    [ "operator=", "class_i_o_1_1_data_sources_1_1_serial.html#a1c167da278d7ee5abf00d557301980b2", null ],
+    [ "operator=", "class_i_o_1_1_data_sources_1_1_serial.html#a9164f86faf6e8dde2b9f677fdf5b9106", null ],
     [ "parity", "class_i_o_1_1_data_sources_1_1_serial.html#a72640faeb47bb03a0fcf9e8261049edb", null ],
     [ "parityChanged", "class_i_o_1_1_data_sources_1_1_serial.html#ad124427370270f732bfd0b2746aa31b9", null ],
     [ "parityIndex", "class_i_o_1_1_data_sources_1_1_serial.html#ab6ee1ee1b7b4c792f8d28750469aa643", null ],

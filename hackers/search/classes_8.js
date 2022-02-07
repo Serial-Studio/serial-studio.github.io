@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['kled_0',['KLed',['../class_k_led.html',1,'']]],
-  ['kledprivate_1',['KLedPrivate',['../class_k_led_private.html',1,'']]]
+  ['ledpanel_0',['LEDPanel',['../class_widgets_1_1_l_e_d_panel.html',1,'Widgets']]]
 ];

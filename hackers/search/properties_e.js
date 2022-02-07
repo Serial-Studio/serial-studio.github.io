@@ -14,6 +14,5 @@ var searchData=
   ['portlist_11',['portList',['../class_i_o_1_1_data_sources_1_1_serial.html#ae3b8b3d6c6567855edeedb6fc25935ce',1,'IO::DataSources::Serial']]],
   ['portname_12',['portName',['../class_i_o_1_1_data_sources_1_1_serial.html#ae0352ab5e4694e861cc01bbdc9ca9025',1,'IO::DataSources::Serial']]],
   ['precision_13',['precision',['../class_u_i_1_1_dashboard.html#ada9fdb0a4489f38acdf2a0ec4176238f',1,'UI::Dashboard']]],
-  ['processframesinseparatethread_14',['processFramesInSeparateThread',['../class_j_s_o_n_1_1_generator.html#a1eff361ee3f53c9ba79ba924e8d1e0f0',1,'JSON::Generator']]],
-  ['progress_15',['progress',['../class_c_s_v_1_1_player.html#a0f640b2cacbe302d132e9883690c17ca',1,'CSV::Player']]]
+  ['progress_14',['progress',['../class_c_s_v_1_1_player.html#a0f640b2cacbe302d132e9883690c17ca',1,'CSV::Player']]]
 ];

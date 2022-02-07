@@ -20,5 +20,6 @@ var searchData=
   ['consolewindow_17',['consoleWindow',['../class_misc_1_1_theme_manager.html#a0c6fbe317aa4952441260ced867acc0e',1,'Misc::ThemeManager']]],
   ['copyavailable_18',['copyAvailable',['../class_widgets_1_1_terminal.html#aa9ca458b3b3d432e0f7729f7bf700208',1,'Widgets::Terminal']]],
   ['csvcheckbox_19',['csvCheckbox',['../class_misc_1_1_theme_manager.html#a01ce68f770760bc7cf844eafc6d17a9a',1,'Misc::ThemeManager']]],
-  ['currenthistorystring_20',['currentHistoryString',['../class_i_o_1_1_console.html#a546c58da9a3ef936f38d81e88f7fa423',1,'IO::Console']]]
+  ['currenthistorystring_20',['currentHistoryString',['../class_i_o_1_1_console.html#a546c58da9a3ef936f38d81e88f7fa423',1,'IO::Console']]],
+  ['customwindowdecorations_21',['customWindowDecorations',['../class_misc_1_1_theme_manager.html#adbd59d4f72c5ce3e50de3ca029007b4c',1,'Misc::ThemeManager']]]
 ];

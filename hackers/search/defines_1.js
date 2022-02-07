@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['plotdata_0',['PlotData',['../_data_types_8h.html#a7a29de04ee45961b78f2b584b809e70b',1,'DataTypes.h']]],
-  ['plugins_5ftcp_5fport_1',['PLUGINS_TCP_PORT',['../_server_8h.html#a5a8dbc7a9c8fad9f7406b16f2fb9a11c',1,'Server.h']]]
+  ['dg_5fexec_5fevent_0',['DG_EXEC_EVENT',['../_data_group_8cpp.html#a915d5a8547ce9e078e90e25be28bb356',1,'DataGroup.cpp']]],
+  ['dw_5fexec_5fevent_1',['DW_EXEC_EVENT',['../_declarative_widget_8cpp.html#ad4fc251560ceb5158b411e09e6bbbc31',1,'DeclarativeWidget.cpp']]]
 ];

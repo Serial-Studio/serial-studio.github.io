@@ -1,9 +1,10 @@
 <map id="Widgets::BaseWidget" name="Widgets::BaseWidget">
-<area shape="rect" id="node1" title=" " alt="" coords="127,107,276,133"/>
-<area shape="rect" id="node3" href="$class_widgets_1_1_accelerometer.html" title=" " alt="" coords="324,5,487,32"/>
-<area shape="rect" id="node4" href="$class_widgets_1_1_bar.html" title=" " alt="" coords="356,56,455,83"/>
-<area shape="rect" id="node5" href="$class_widgets_1_1_compass.html" title=" " alt="" coords="338,107,473,133"/>
-<area shape="rect" id="node6" href="$class_widgets_1_1_gauge.html" title=" " alt="" coords="347,157,463,184"/>
-<area shape="rect" id="node7" href="$class_widgets_1_1_gyroscope.html" title=" " alt="" coords="335,208,476,235"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,107,79,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="315,285,464,465"/>
+<area shape="rect" id="node4" href="$class_widgets_1_1_accelerometer.html" title=" " alt="" coords="5,550,168,657"/>
+<area shape="rect" id="node5" href="$class_widgets_1_1_bar.html" title=" " alt="" coords="193,543,298,664"/>
+<area shape="rect" id="node6" href="$class_widgets_1_1_compass.html" title=" " alt="" coords="322,550,457,657"/>
+<area shape="rect" id="node7" href="$class_widgets_1_1_gauge.html" title=" " alt="" coords="481,550,597,657"/>
+<area shape="rect" id="node8" href="$class_widgets_1_1_gyroscope.html" title=" " alt="" coords="621,513,763,693"/>
+<area shape="rect" id="node2" href="$class_widgets_1_1_dashboard_widget_base.html" title="The DashboardWidgetBase class." alt="" coords="283,131,495,237"/>
+<area shape="rect" id="node3" title=" " alt="" coords="353,5,426,83"/>
 </map>

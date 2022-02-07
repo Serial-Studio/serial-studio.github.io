@@ -5,7 +5,8 @@ var searchData=
   ['base_2',['base',['../class_misc_1_1_theme_manager.html#a16d11dbbee029a2969654cc80b31d0ca',1,'Misc::ThemeManager']]],
   ['baudrate_3',['baudRate',['../class_i_o_1_1_data_sources_1_1_serial.html#a90e22e092ca38634eaf7f270bba91d43',1,'IO::DataSources::Serial']]],
   ['baudratelist_4',['baudRateList',['../class_i_o_1_1_data_sources_1_1_serial.html#a9c6c5857723a8e73a2d4b42ce08c3b44',1,'IO::DataSources::Serial']]],
-  ['brighttext_5',['brightText',['../class_misc_1_1_theme_manager.html#ae50609850fb4005bf87bb73c07248bc7',1,'Misc::ThemeManager']]],
-  ['button_6',['button',['../class_misc_1_1_theme_manager.html#ac1fbd9470b160b94ee3e4a179725ab91',1,'Misc::ThemeManager']]],
-  ['buttontext_7',['buttonText',['../class_misc_1_1_theme_manager.html#a119aa5cffee00c83e63e615ae87705cf',1,'Misc::ThemeManager']]]
+  ['border_5',['border',['../class_misc_1_1_theme_manager.html#a7b5cd1a4a9f27d2a5872884d057f7491',1,'Misc::ThemeManager']]],
+  ['brighttext_6',['brightText',['../class_misc_1_1_theme_manager.html#ae50609850fb4005bf87bb73c07248bc7',1,'Misc::ThemeManager']]],
+  ['button_7',['button',['../class_misc_1_1_theme_manager.html#ac1fbd9470b160b94ee3e4a179725ab91',1,'Misc::ThemeManager']]],
+  ['buttontext_8',['buttonText',['../class_misc_1_1_theme_manager.html#a119aa5cffee00c83e63e615ae87705cf',1,'Misc::ThemeManager']]]
 ];
